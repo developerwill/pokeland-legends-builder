@@ -1,20 +1,22 @@
 import React from 'react';
+import navbarLinks from '../../../Data/navbarLinks.js';
+import { Link } from 'react-router-dom';
 
 const NavbarLinks = (props) => {
+
+    const links = navbarLinks.map((data, index) => {
+        return (
+            <li className="nav-item" key={index}>
+                <Link className='nav-link' to={data.href}>
+                    {data.text}
+                </Link>
+            </li>
+        );
+    });
+
     return (
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href=" ">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href=" ">Team Builder</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href=" ">Buy us a coffee</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href=" ">About Us</a>
-            </li>
+            {links}
         </ul>
     );
 }
