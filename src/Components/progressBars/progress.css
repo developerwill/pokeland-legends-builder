@@ -1,0 +1,21 @@
+.pokemon-ratio-img {
+    border-radius: 100%;
+}
+
+.build-ratio p {
+    margin: 0 8px 0 0;
+    text-align: center;
+    line-height: 25px;
+}
+
+.build-ratio p:nth-child(1) {
+    font-size: 2em;
+}
+
+.build-ratio p:nth-child(2) {
+    font-size: 0.8em;
+}
+
+.build-ratio p:nth-child(3) {
+    font-size: 1em;
+}

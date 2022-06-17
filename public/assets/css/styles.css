@@ -1,0 +1,246 @@
+html {
+    font-family: 'Baloo 2', serif;
+    height: 100%;
+}
+
+body {
+    font-family: 'Baloo 2', serif;
+    --bs-primary: #43aada;
+    color: white;
+    text-shadow: 0px 0px 3px #000000;
+    height: 100%;
+    background: url("../../assets/img/bk.webp") no-repeat fixed;
+}
+
+.modal-backdrop {
+    z-index: 1044;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #257fa9;
+    border-color: #257fa9;
+}
+
+.btn-primary,
+.add-ability:focus,
+.add-ability:active {
+    background-color: #43aada;
+    border-color: #43aada;
+}
+
+.purple-bk {
+    background-color: rgba(44, 43, 87, 0.8) !important;
+}
+
+.custom-border {
+    border-left-color: rgba(67, 170, 218, 0);
+    border: 1px solid rgb(67, 170, 218);
+}
+
+.input-copy-link,
+.form-control[readonly] {
+    color: white;
+    border-color: #43aada;
+    border-left-color: rgba(67, 170, 218, 0);
+}
+
+.purple-navbar {
+    background-color: rgb(44, 43, 87) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.types span {
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color: #40429f85;
+    padding: 5px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: solid 1px #fff9;
+    margin-bottom: 0;
+    box-shadow: inset 0px 0px 3px #2c3b99;
+    text-shadow: 0px 1px 2px rgb(0 0 0 / 76%), 0px 0px 2px rgb(0 0 0 / 76%);
+    text-align: center;
+}
+
+.add-button {
+    font-size: 80px;
+    padding: 17px;
+    width: 75px;
+    height: 75px;
+    margin: 0px;
+    background-color: #2c2b57;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: var(--bs-primary);
+    border: 1px solid #43aada !important;
+}
+
+.outlined-button,
+.outlined-button:hover {
+    color: white;
+}
+
+.search-by-types span {
+    margin-top: 15px;
+}
+
+.outlined-button:hover,
+.outlined-button:focus {
+    background-color: #40429fd9;
+}
+
+.header-type-pokemon {
+    max-width: 130px;
+}
+
+form {
+    margin: 15px 0;
+}
+
+.items-title p {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.purple-bk-darker {
+    background-color: rgb(44, 43, 87) !important;
+}
+
+.offcanvas-body {
+    padding-right: 0px;
+}
+
+.offcanvas-close {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin: 30px;
+    font-size: 1.5em;
+}
+
+.offcanvas-close a {
+    text-decoration: none;
+    color: white;
+}
+
+#offcanvas-body-search-1,
+#offcanvas-search-2 {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-width: 80%;
+}
+
+.search-input,
+.search-input:focus {
+    background: rgba(255, 255, 255, 0);
+    text-align: right;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 0;
+    padding-right: 20px;
+    color: #fff;
+    border-width: 1px;
+    border-color: var(--bs-primary);
+    border-right-width: 0px;
+}
+
+.form-builder .search-input {
+    text-align: center;
+}
+
+.best-teams img {
+    margin: 7px 15px;
+}
+
+.items-title {
+    margin: 15px 0;
+    color: #ffd283;
+}
+
+.yellow {
+    color: rgb(255, 210, 131);
+    font-weight: bold;
+}
+
+.site-title {
+    font-size: 1.2em;
+}
+
+.form-floating textarea.form-control {
+    color: white;
+    height: 250px;
+}
+
+.form-floating>.form-control,
+.form-floating>.form-select {
+    height: 40px;
+}
+
+.form-floating>label {
+    padding: 0.4rem .75rem;
+}
+
+#build-info p:first-child {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+#build-info p {
+    margin: 0;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.build-items img {
+    margin: 4px;
+    border-radius: 1em;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid transparent;
+    box-shadow: inset 0px 0px 17px 11px #000000d4, 0px 0px 4px 0px #000000d4;
+}
+
+.build-items img.abilities {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #4fdcff 47%, white 50%, #024dc8 53%) border-box;
+}
+
+.build-items img.hidden-skills {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #de66ff 47%, white 50%, #8d04d6 53%) border-box;
+}
+
+.build-items img.gear {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #ffbc25 47%, white 50%, #d17214 53%) border-box;
+}
+
+.fa-thumbs-up {
+    color: #7c5;
+}
+
+.fa-thumbs-down {
+    color: #f42;
+}
+
+.btn-primary:disabled {
+    background-color: #b7b7b7;
+}
+
+.build-vote {
+    font-size: 1em;
+}
+
+.build-vote i {
+    font-size: 2em;
+}

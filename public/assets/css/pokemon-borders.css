@@ -1,0 +1,54 @@
+.border-small {
+    border-radius: 2em;
+    font-size: 5px;
+    padding: 1px;
+    font-weight: bold;
+    color: #333;
+    padding: 3px;
+    border: 4px solid transparent;
+    box-shadow: inset 0px 0px 17px 11px #000000d4, 0px 0px 4px 0px #000000d4;
+}
+
+img.blue-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #4fdcff 47%, white 50%, #024dc8 53%) border-box;
+}
+
+img.purple-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #de66ff 47%, white 50%, #8d04d6 53%) border-box;
+}
+
+img.gold-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #ffbc25 47%, white 50%, #d17214 53%) border-box;
+}
+
+img.resonance-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #eaf6ff 17%, #4ca3e3 47%, white 50%, #7e34ba 53%) border-box;
+}
+
+img.mega-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #198bb9 10%, #81dfcd 37%, white 49%, #fdff9d 53%) border-box;
+}
+
+img.overlord-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #fbe940 48%, #595323 49%, #e8c954 50%, #b96033 51%) border-box;
+}
+
+img.normal-border,
+img.special-border,
+img.alolan-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #f0eff0 48%, white 49%, #8f8e8f 51%) border-box;
+}
+
+img.epic-border {
+    background: linear-gradient(to bottom, #fff, #bbb) content-box, linear-gradient(to bottom, #ffbc25 47%, white 50%, #d17214 53%) border-box;
+}
+
+.team-mate-border {
+    border-radius: 1em;
+    font-size: 45px;
+    color: #333;
+    border: 0px solid transparent;
+    width: 35px;
+    padding: 1px;
+    box-shadow: inset 0px 0px 12px 11px #000000d4, 0px 0px 2px 0px #000000d4;
+}

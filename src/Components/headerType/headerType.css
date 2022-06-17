@@ -1,0 +1,73 @@
+.builder-header {
+    background: url("../../../public/assets/img/header_types/bk.webp") right / cover no-repeat;
+}
+
+.header-type-pokemon {
+    max-width: 130px;
+}
+
+.header-type-pokemon-container {
+    height: 100%;
+    position: relative;
+}
+
+.header-type-type {
+    min-width: 45px;
+}
+
+/* Header colors */
+.header-type-color-normal,
+.header-type-color-steel,
+.header-type-color-non-type {
+    box-shadow: inset 2000px 0 0 0 rgba(206, 206, 206, 0.35);
+}
+
+.header-type-color-fire {
+    box-shadow: inset 2000px 0 0 0 rgba(255, 0, 0, 0.36);
+}
+
+.header-type-color-water,
+.header-type-color-ice,
+.header-type-color-flying {
+    box-shadow: inset 2000px 0 0 0 rgba(0, 171, 255, 0.37);
+}
+
+.header-type-color-electric {
+    box-shadow: inset 2000px 0 0 0 rgba(255, 239, 0, 0.35);
+}
+
+.header-type-color-grass {
+    box-shadow: inset 2000px 0 0 0 rgba(0, 255, 0, 0.35);
+}
+
+.header-type-color-fighting,
+.header-type-color-ground {
+    box-shadow: inset 2000px 0 0 0 rgba(255, 96, 0, 0.35);
+}
+
+.header-type-color-poison,
+.header-type-color-ghost,
+.header-type-color-dragon {
+    box-shadow: inset 2000px 0 0 0 rgba(56, 0, 255, 0.35);
+}
+
+.header-type-color-psychic,
+.header-type-color-fairy {
+    box-shadow: inset 2000px 0 0 0 rgba(255, 0, 143, 0.35);
+}
+
+.header-type-color-bug {
+    box-shadow: inset 2000px 0 0 0 rgba(211, 255, 0, 0.35);
+}
+
+.header-type-color-rock {
+    box-shadow: inset 2000px 0 0 0 rgba(206, 184, 118, 0.35);
+}
+
+.header-type-color-dark {
+    box-shadow: inset 2000px 0 0 0 rgba(72, 53, 31, 0.35);
+}
+
+.header-type-color-infinity {
+    box-shadow: inset 0px 120px 30px 0 #ff600052, inset 0 250px 10px 17px #ffbf007d;
+}

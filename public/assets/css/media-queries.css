@@ -1,0 +1,49 @@
+@media (max-width: 329px) {
+    .best-teams-fix {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .offcanvas-end {
+        width: 230px;
+    }
+}
+
+@media (min-width: 576px) {
+    .offcanvas-body {
+        margin-left: 40px;
+    }
+
+    .header-type-pokemon {
+        max-width: 200px;
+    }
+
+    .form-floating textarea.form-control {
+        overflow: clip;
+    }
+}
+
+@media (min-width: 768px) {
+    .header-type-pokemon {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .header-type-pokemon {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header-type-pokemon {
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header-type-pokemon {
+        max-width: 200px;
+    }
+}
