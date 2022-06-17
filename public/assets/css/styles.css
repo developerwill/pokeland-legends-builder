@@ -244,3 +244,7 @@ form {
 .build-vote i {
     font-size: 2em;
 }
+
+.not-found {
+    height: calc(100vh - 130px);
+}

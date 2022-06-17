@@ -1,14 +1,22 @@
 const navbarLinks = [
     {
-        href: " ",
+        id: 1,
+        href: "/",
+        text: 'Home'
+    },
+    {
+        id: 2,
+        href: "new-build",
         text: 'Team Builder'
     },
     {
-        href: " ",
+        id: 3,
+        href: "donate",
         text: 'Buy us a coffee'
     },
     {
-        href: " ",
+        id: 4,
+        href: "about-us",
         text: 'About Us'
     }
 ];
