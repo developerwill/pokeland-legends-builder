@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Homepage from './pages/homepage';
 import Builder from './pages/builder';
+import Donate from './pages/donate';
 import PageNotFound from './pages/404';
 
 const Content = (props) => {
@@ -12,6 +13,7 @@ const Content = (props) => {
                 <Routes>
                     <Route path="/" element={<Homepage />}></Route>
                     <Route path="/new-build" element={<Builder />}></Route>
+                    <Route path="/donate" element={<Donate />}></Route>
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </div>
