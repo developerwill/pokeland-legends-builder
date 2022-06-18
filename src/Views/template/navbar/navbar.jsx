@@ -6,8 +6,8 @@ import NavbarLinks from './navbarLinks';
 const Navbar = (props) => {
     return (
         <header>
-            <nav class="navbar navbar-dark navbar-expand-sm py-3 purple-navbar">
-                <div class="container p-sm-0">
+            <nav className="navbar navbar-dark navbar-expand-sm py-3 purple-navbar">
+                <div className="container p-sm-0">
 
                     <div className='col d-flex justify-content-end'>
                         <BtnOffcanvas classes="navbar-toggler" disabled={false} offcanvas="navbar-mobile">
@@ -16,7 +16,7 @@ const Navbar = (props) => {
                     </div>
 
                     <div className="col-12 d-none d-sm-flex justify-content-between">
-                        <a class="navbar-brand" href=" ">Navbar</a>
+                        <a className="navbar-brand" href=" ">Navbar</a>
                         <NavbarLinks />
                     </div>
 

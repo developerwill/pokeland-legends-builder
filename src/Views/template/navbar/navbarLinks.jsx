@@ -16,7 +16,7 @@ const NavbarLinks = (props) => {
     });
 
     return (
-        <ul class="navbar-nav">
+        <ul className="navbar-nav">
             {links}
         </ul>
     );
