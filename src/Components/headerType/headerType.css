@@ -2,10 +2,6 @@
     background: url("../../../public/assets/img/header_types/bk.webp") right / cover no-repeat;
 }
 
-.header-type-pokemon {
-    max-width: 130px;
-}
-
 .header-type-pokemon-container {
     height: 100%;
     position: relative;

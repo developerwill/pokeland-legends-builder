@@ -10,7 +10,7 @@ const HeaderType = (props) => {
                 </div>
                 <div className='col-12'>
                     <h1 className='text-center text-uppercase fw-bold'>{props.type === 'non-type' ? 'non-' : props.type + ' '}type</h1>
-                    <img className="img-fluid header-type-pokemon float-end" src="assets/img/bulbasaur.png" alt="alt"></img>
+                    <img className="img-fluid header-type-pokemon float-end" src={`assets/img/pokedex/builder-header/${props.pokemonId}.webp`} alt="alt"></img>
                 </div>
             </div>
         </div>
