@@ -1,3 +1,6 @@
+const homeSprite = 'assets/img/pokedex/pokemon-home/';
+const pokelandSprite = 'assets/img/pokedex/pokeland/';
+
 const pokedex = [
     {
         "id": "1",
@@ -7,7 +10,10 @@ const pokedex = [
         "variation": "mega",
         "img": "9_mega_blastoise.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "1.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "2",
@@ -17,7 +23,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "95_overlord_crystal_onix.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "2.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "3",
@@ -27,7 +36,10 @@ const pokedex = [
         "variation": "epic",
         "img": "95_epic_crystal_onix.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "3.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "4",
@@ -37,7 +49,10 @@ const pokedex = [
         "variation": "mega",
         "img": "94_mega_gengar.webp",
         "type_1": "ghost",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "4.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "5",
@@ -47,7 +62,10 @@ const pokedex = [
         "variation": "epic",
         "img": "94_epic_agatha_gengar.webp",
         "type_1": "ghost",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "5.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "6",
@@ -57,7 +75,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "89_alolan_muk.webp",
         "type_1": "poison",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "6.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "7",
@@ -67,7 +88,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "88_alolan_grimer.webp",
         "type_1": "poison",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "7.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "8",
@@ -77,7 +101,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "889_overlord_zamazenta.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "8.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "9",
@@ -87,7 +114,10 @@ const pokedex = [
         "variation": "epic",
         "img": "889_epic_zamazenta.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "9.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "10",
@@ -97,7 +127,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "888_overlord_zacian.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "10.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "11",
@@ -107,7 +140,10 @@ const pokedex = [
         "variation": "epic",
         "img": "888_epic_zacian.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "11.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "12",
@@ -117,7 +153,10 @@ const pokedex = [
         "variation": "mega",
         "img": "80_mega_slowbrow.webp",
         "type_1": "water",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "12.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "13",
@@ -127,7 +166,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "809_overlord_melmetal.webp",
         "type_1": "steel",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "13.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "14",
@@ -137,7 +179,10 @@ const pokedex = [
         "variation": "epic",
         "img": "809_epic_melmetal.webp",
         "type_1": "steel",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "14.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "15",
@@ -147,7 +192,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "807_resonance_zeraora.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "15.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "16",
@@ -157,7 +205,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "807_overlord_zeraora.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "16.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "17",
@@ -167,7 +218,10 @@ const pokedex = [
         "variation": "epic",
         "img": "807_epic_zeraora.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "17.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "18",
@@ -177,7 +231,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "806_overlord_blacephalon.webp",
         "type_1": "fire",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "18.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "19",
@@ -187,7 +244,10 @@ const pokedex = [
         "variation": "epic",
         "img": "806_epic_blacephalon.webp",
         "type_1": "fire",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "19.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "20",
@@ -197,7 +257,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "805_overlord_stakataka.webp",
         "type_1": "rock",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "20.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "21",
@@ -207,7 +270,10 @@ const pokedex = [
         "variation": "epic",
         "img": "805_epic_stakataka.webp",
         "type_1": "rock",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "21.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "22",
@@ -217,7 +283,10 @@ const pokedex = [
         "variation": "epic",
         "img": "804_epic_naganadel.webp",
         "type_1": "poison",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "22.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "23",
@@ -227,7 +296,10 @@ const pokedex = [
         "variation": "epic",
         "img": "803_epic_poipole.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "23.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "24",
@@ -237,7 +309,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "802_overlord_marshadow.webp",
         "type_1": "fighting",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "24.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "25",
@@ -247,7 +322,10 @@ const pokedex = [
         "variation": "epic",
         "img": "802_epic_marshadow.webp",
         "type_1": "fighting",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "25.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "26",
@@ -257,7 +335,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "801_overlord_soul_heart_magearna.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "26.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "27",
@@ -267,7 +348,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "801_overlord_magearna.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "27.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "28",
@@ -277,7 +361,10 @@ const pokedex = [
         "variation": "epic",
         "img": "801_epic_soul_magearna.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "28.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "29",
@@ -287,7 +374,10 @@ const pokedex = [
         "variation": "epic",
         "img": "801_epic_magearna.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "29.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "30",
@@ -297,7 +387,10 @@ const pokedex = [
         "variation": "mega",
         "img": "800_mega_necrozma.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "30.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "31",
@@ -307,7 +400,10 @@ const pokedex = [
         "variation": "epic",
         "img": "800_epic_ultra_sun_dusk_mane_necrozma.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "31.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "32",
@@ -317,7 +413,10 @@ const pokedex = [
         "variation": "epic",
         "img": "800_epic_ultra_moon_dawn_wings_necrozma.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "32.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "33",
@@ -327,7 +426,10 @@ const pokedex = [
         "variation": "epic",
         "img": "800_epic_necrozma.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "33.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "34",
@@ -337,7 +439,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "799_overlord_guzzlord.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "34.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "35",
@@ -347,7 +452,10 @@ const pokedex = [
         "variation": "epic",
         "img": "799_epic_guzzlord.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "35.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "36",
@@ -357,7 +465,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "798_overlord_kartana.webp",
         "type_1": "grass",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "36.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "37",
@@ -367,7 +478,10 @@ const pokedex = [
         "variation": "epic",
         "img": "798_epic_kartana.webp",
         "type_1": "grass",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "37.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "38",
@@ -377,7 +491,10 @@ const pokedex = [
         "variation": "epic",
         "img": "797_epic_celesteela.webp",
         "type_1": "steel",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "38.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "39",
@@ -387,7 +504,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "796_overlord_xurkitree.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "39.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "40",
@@ -397,7 +517,10 @@ const pokedex = [
         "variation": "epic",
         "img": "796_epic_xurkitree.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "40.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "41",
@@ -407,7 +530,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "795_overlord_pheromosa.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "41.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "42",
@@ -417,7 +543,10 @@ const pokedex = [
         "variation": "epic",
         "img": "795_epic_pheromosa.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "42.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "43",
@@ -427,7 +556,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "794_overlord_buzzwole.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "43.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "44",
@@ -437,7 +569,10 @@ const pokedex = [
         "variation": "epic",
         "img": "794_epic_buzzwole.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "44.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "45",
@@ -447,7 +582,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "793_overlord_void_lusamine_nihilego.webp",
         "type_1": "rock",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "45.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "46",
@@ -457,7 +595,10 @@ const pokedex = [
         "variation": "epic",
         "img": "793_epic_void_lusamine_nihilego.webp",
         "type_1": "rock",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "46.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "47",
@@ -467,7 +608,10 @@ const pokedex = [
         "variation": "epic",
         "img": "793_epic_nihilego.webp",
         "type_1": "rock",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "47.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "48",
@@ -477,7 +621,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "792_overlord_lunala.webp",
         "type_1": "psychic",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "48.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "49",
@@ -487,7 +634,10 @@ const pokedex = [
         "variation": "epic",
         "img": "792_epic_lunala.webp",
         "type_1": "psychic",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "49.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "50",
@@ -497,7 +647,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "791_overlord_solgaleo.webp",
         "type_1": "psychic",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "50.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "51",
@@ -507,7 +660,10 @@ const pokedex = [
         "variation": "epic",
         "img": "791_epic_solgaleo.webp",
         "type_1": "psychic",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "51.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "52",
@@ -517,7 +673,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "788_overlord_tapu-fini.webp",
         "type_1": "water",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "52.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "53",
@@ -527,7 +686,10 @@ const pokedex = [
         "variation": "epic",
         "img": "788_epic_tapu-fini.webp",
         "type_1": "water",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "53.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "54",
@@ -537,7 +699,10 @@ const pokedex = [
         "variation": "epic",
         "img": "787_epic_tapu-bulu.webp",
         "type_1": "grass",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "54.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "55",
@@ -547,7 +712,10 @@ const pokedex = [
         "variation": "epic",
         "img": "786_epic_tapu-lele.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "55.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "56",
@@ -557,7 +725,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "785_resonance_tapu-koko.webp",
         "type_1": "electric",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "56.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "57",
@@ -567,7 +738,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "785_overlord_tapu-koko.webp",
         "type_1": "electric",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "57.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "58",
@@ -577,7 +751,10 @@ const pokedex = [
         "variation": "epic",
         "img": "785_epic_tapu-koko.webp",
         "type_1": "electric",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "58.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "59",
@@ -587,7 +764,10 @@ const pokedex = [
         "variation": "epic",
         "img": "784_epic_kommo-o.webp",
         "type_1": "dragon",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "59.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "60",
@@ -597,7 +777,10 @@ const pokedex = [
         "variation": "epic",
         "img": "773_epic_silvally.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "60.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "61",
@@ -607,7 +790,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "76_alolan_golem.webp",
         "type_1": "rock",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "61.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "62",
@@ -617,7 +803,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "75_alolan_graveler.webp",
         "type_1": "rock",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "62.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "63",
@@ -627,7 +816,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "74_alolan_geodude.webp",
         "type_1": "rock",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "63.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "64",
@@ -637,7 +829,10 @@ const pokedex = [
         "variation": "epic",
         "img": "747_epic_james_mareanie.webp",
         "type_1": "poison",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "64.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "65",
@@ -647,7 +842,10 @@ const pokedex = [
         "variation": "epic",
         "img": "745_epic_champion_lycanroc.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "65.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "66",
@@ -657,7 +855,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "721_overlord_volcanion.webp",
         "type_1": "fire",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "66.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "67",
@@ -667,7 +868,10 @@ const pokedex = [
         "variation": "epic",
         "img": "721_epic_volcanion.webp",
         "type_1": "fire",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "67.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "68",
@@ -677,7 +881,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "720_overlord_unbound_hoopa.webp",
         "type_1": "psychic",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "68.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "69",
@@ -687,7 +894,10 @@ const pokedex = [
         "variation": "epic",
         "img": "720_epic_unbound_hoopa.webp",
         "type_1": "psychic",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "69.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "70",
@@ -697,7 +907,10 @@ const pokedex = [
         "variation": "epic",
         "img": "720_epic_confined_hoopa.webp",
         "type_1": "psychic",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "70.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "71",
@@ -707,7 +920,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "719_resonance_diancie.webp",
         "type_1": "rock",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "71.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "72",
@@ -717,7 +933,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "719_overlord_diancie.webp",
         "type_1": "rock",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "72.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "73",
@@ -727,7 +946,10 @@ const pokedex = [
         "variation": "mega",
         "img": "719_mega_diancie.webp",
         "type_1": "rock",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "73.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "74",
@@ -737,7 +959,10 @@ const pokedex = [
         "variation": "epic",
         "img": "719_epic_diancie.webp",
         "type_1": "rock",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "74.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "75",
@@ -747,7 +972,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "718_resonance_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "75.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "76",
@@ -757,7 +985,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "718_overlord_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "76.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "77",
@@ -767,7 +998,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "718_overlord_flare_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "77.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "78",
@@ -777,7 +1011,10 @@ const pokedex = [
         "variation": "epic",
         "img": "718_epic_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "78.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "79",
@@ -787,7 +1024,10 @@ const pokedex = [
         "variation": "epic",
         "img": "718_epic_flare_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "79.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "80",
@@ -797,7 +1037,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "717_resonance_yveltal.webp",
         "type_1": "dark",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "80.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "81",
@@ -807,7 +1050,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "717_overlord_yveltal.webp",
         "type_1": "dark",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "81.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "82",
@@ -817,7 +1063,10 @@ const pokedex = [
         "variation": "epic",
         "img": "717_epic_yveltal.webp",
         "type_1": "dark",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "82.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "83",
@@ -827,7 +1076,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "716_overlord_xerneas.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "83.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "84",
@@ -837,7 +1089,10 @@ const pokedex = [
         "variation": "epic",
         "img": "716_epic_xerneas.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "84.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "85",
@@ -847,7 +1102,10 @@ const pokedex = [
         "variation": "epic",
         "img": "706_epic_goodra.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "85.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "86",
@@ -857,7 +1115,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "6_overlord_charizard-x.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "86.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "87",
@@ -867,7 +1128,10 @@ const pokedex = [
         "variation": "mega",
         "img": "6_mega_charizard-y.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "87.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "88",
@@ -877,7 +1141,10 @@ const pokedex = [
         "variation": "mega",
         "img": "6_mega_charizard-x.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "88.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "89",
@@ -887,7 +1154,10 @@ const pokedex = [
         "variation": "mega",
         "img": "65_mega_alakazam.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "89.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "90",
@@ -897,7 +1167,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "658_overlord_ash_greninja.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "90.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "91",
@@ -907,7 +1180,10 @@ const pokedex = [
         "variation": "mega",
         "img": "658_mega_bone_type_greninja.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "91.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "92",
@@ -917,7 +1193,10 @@ const pokedex = [
         "variation": "mega",
         "img": "658_mega_ash_greninja.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "92.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "93",
@@ -927,7 +1206,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "649_overlord_genesect.webp",
         "type_1": "bug",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "93.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "94",
@@ -937,7 +1219,10 @@ const pokedex = [
         "variation": "epic",
         "img": "649_epic_genesect.webp",
         "type_1": "bug",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "94.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "95",
@@ -947,7 +1232,10 @@ const pokedex = [
         "variation": "epic",
         "img": "648_epic_pirouette_form_meloetta.webp",
         "type_1": "normal",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "95.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "96",
@@ -957,7 +1245,10 @@ const pokedex = [
         "variation": "epic",
         "img": "648_epic_aria_form_meloetta.webp",
         "type_1": "normal",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "96.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "97",
@@ -967,7 +1258,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "647_overlord_resolute_form_keldeo.webp",
         "type_1": "water",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "97.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "98",
@@ -977,7 +1271,10 @@ const pokedex = [
         "variation": "epic",
         "img": "647_epic_resolute_form_keldeo.webp",
         "type_1": "water",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "98.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "99",
@@ -987,7 +1284,10 @@ const pokedex = [
         "variation": "epic",
         "img": "647_epic_ordinary_form_keldeo.webp",
         "type_1": "water",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "99.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "100",
@@ -997,7 +1297,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "646_resonance_white_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "100.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "101",
@@ -1007,7 +1310,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "646_resonance_black_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "101.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "102",
@@ -1017,7 +1323,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "646_overlord_unova_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "102.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "103",
@@ -1027,7 +1336,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "646_overlord_black_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "103.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "104",
@@ -1037,7 +1349,10 @@ const pokedex = [
         "variation": "epic",
         "img": "646_epic_white_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "104.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "105",
@@ -1047,7 +1362,10 @@ const pokedex = [
         "variation": "epic",
         "img": "646_epic_unova_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "105.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "106",
@@ -1057,7 +1375,10 @@ const pokedex = [
         "variation": "epic",
         "img": "646_epic_kyurem.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "106.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "107",
@@ -1067,7 +1388,10 @@ const pokedex = [
         "variation": "epic",
         "img": "646_epic_black_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "107.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "108",
@@ -1077,7 +1401,10 @@ const pokedex = [
         "variation": "epic",
         "img": "645_epic_therian_landorus.webp",
         "type_1": "ground",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "108.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "109",
@@ -1087,7 +1414,10 @@ const pokedex = [
         "variation": "epic",
         "img": "645_epic_incarnate_landorus.webp.webp",
         "type_1": "ground",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "109.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "110",
@@ -1097,7 +1427,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "644_overlord_zekrom.webp",
         "type_1": "dragon",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "110.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "111",
@@ -1107,7 +1440,10 @@ const pokedex = [
         "variation": "epic",
         "img": "644_epic_zekrom.webp",
         "type_1": "dragon",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "111.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "112",
@@ -1117,7 +1453,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "643_overlord_reshiram.webp",
         "type_1": "dragon",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "112.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "113",
@@ -1127,7 +1466,10 @@ const pokedex = [
         "variation": "epic",
         "img": "643_epic_reshiram.webp",
         "type_1": "dragon",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "113.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "114",
@@ -1137,7 +1479,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "642_overlord_therian_form_thundurus.webp.webp",
         "type_1": "electric",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "114.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "115",
@@ -1147,7 +1492,10 @@ const pokedex = [
         "variation": "epic",
         "img": "642_epic_therian_form_thundurus.webp.webp",
         "type_1": "electric",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "115.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "116",
@@ -1157,7 +1505,10 @@ const pokedex = [
         "variation": "epic",
         "img": "642_epic_incarnate_form_thundurus.webp.webp",
         "type_1": "electric",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "116.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "117",
@@ -1167,7 +1518,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "641_overlord_therian_form_tornadus.webp",
         "type_1": "flying",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "117.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "118",
@@ -1177,7 +1531,10 @@ const pokedex = [
         "variation": "epic",
         "img": "641_epic_therian_form_tornadus.webp",
         "type_1": "flying",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "118.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "119",
@@ -1187,7 +1544,10 @@ const pokedex = [
         "variation": "epic",
         "img": "641_epic_incarnate_form_tornadus.webp",
         "type_1": "flying",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "119.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "120",
@@ -1197,7 +1557,10 @@ const pokedex = [
         "variation": "epic",
         "img": "640_epic_verizion.webp",
         "type_1": "grass",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "120.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "121",
@@ -1207,7 +1570,10 @@ const pokedex = [
         "variation": "epic",
         "img": "639_epic_terrakion.webp",
         "type_1": "rock",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "121.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "122",
@@ -1217,7 +1583,10 @@ const pokedex = [
         "variation": "epic",
         "img": "638_epic_cobalion.webp",
         "type_1": "steel",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "122.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "123",
@@ -1227,7 +1596,10 @@ const pokedex = [
         "variation": "epic",
         "img": "635_epic_hydreigon.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "123.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "124",
@@ -1237,7 +1609,10 @@ const pokedex = [
         "variation": "epic",
         "img": "621_epic_druddigon.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "124.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "125",
@@ -1247,7 +1622,10 @@ const pokedex = [
         "variation": "epic",
         "img": "612_epic_haxorus.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "125.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "126",
@@ -1257,7 +1635,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "571_overlord_zoroark.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "126.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "127",
@@ -1267,7 +1648,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "571_overlord_master_of_illusions_zoroark.webp",
         "type_1": "dark",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "127.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "128",
@@ -1277,7 +1661,10 @@ const pokedex = [
         "variation": "epic",
         "img": "571_epic_zoroark.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "128.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "129",
@@ -1287,7 +1674,10 @@ const pokedex = [
         "variation": "epic",
         "img": "571_epic_master_of_illusions_zoroark.webp",
         "type_1": "dark",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "129.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "130",
@@ -1297,7 +1687,10 @@ const pokedex = [
         "variation": "epic",
         "img": "570_epic_zorua.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "130.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "131",
@@ -1307,7 +1700,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "53_alolan_persian.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "131.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "132",
@@ -1317,7 +1713,10 @@ const pokedex = [
         "variation": "mega",
         "img": "531_mega_audino.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "132.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "133",
@@ -1327,7 +1726,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "52_alolan_meowth.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "133.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "134",
@@ -1337,7 +1739,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "51_alolan_dugtrio.webp",
         "type_1": "ground",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "134.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "135",
@@ -1347,7 +1752,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "50_alolan_diglet.webp",
         "type_1": "ground",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "135.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "136",
@@ -1357,7 +1765,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "494_overlord_victini.webp",
         "type_1": "psychic",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "136.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "137",
@@ -1367,7 +1778,10 @@ const pokedex = [
         "variation": "epic",
         "img": "494_epic_victini.webp",
         "type_1": "psychic",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "137.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "138",
@@ -1377,7 +1791,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "493_overlord_creator_arceus.webp",
         "type_1": "infinity",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "138.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "139",
@@ -1387,7 +1804,10 @@ const pokedex = [
         "variation": "epic",
         "img": "493_epic_creator_arceus.webp",
         "type_1": "non-type",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "139.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "140",
@@ -1397,7 +1817,10 @@ const pokedex = [
         "variation": "epic",
         "img": "493_epic_arceus.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "140.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "141",
@@ -1407,7 +1830,10 @@ const pokedex = [
         "variation": "epic",
         "img": "492_epic_sky_form_shaymin.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "141.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "142",
@@ -1417,7 +1843,10 @@ const pokedex = [
         "variation": "epic",
         "img": "492_epic_land_form_shaymin.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "142.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "143",
@@ -1427,7 +1856,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "491_overlord_darkrai.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "143.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "144",
@@ -1437,7 +1869,10 @@ const pokedex = [
         "variation": "epic",
         "img": "491_epic_darkrai.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "144.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "145",
@@ -1447,7 +1882,10 @@ const pokedex = [
         "variation": "epic",
         "img": "490_epic_manaphy.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "145.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "146",
@@ -1457,7 +1895,10 @@ const pokedex = [
         "variation": "epic",
         "img": "489_epic_phione.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "146.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "147",
@@ -1467,7 +1908,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "488_overlord_cresselia.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "147.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "148",
@@ -1477,7 +1921,10 @@ const pokedex = [
         "variation": "epic",
         "img": "488_epic_cresselia.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "148.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "149",
@@ -1487,7 +1934,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "487_resonance_origin_form_giratina.webp",
         "type_1": "ghost",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "149.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "150",
@@ -1497,7 +1947,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "487_overlord_origin_form_giratina.webp",
         "type_1": "ghost",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "150.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "151",
@@ -1507,7 +1960,10 @@ const pokedex = [
         "variation": "mega",
         "img": "487_mega_origin_form_giratina.webp",
         "type_1": "ghost",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "151.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "152",
@@ -1517,7 +1973,10 @@ const pokedex = [
         "variation": "epic",
         "img": "487_epic_giratina.webp",
         "type_1": "ghost",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "152.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "153",
@@ -1527,7 +1986,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "486_overlord_regigigas.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "153.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "154",
@@ -1537,7 +1999,10 @@ const pokedex = [
         "variation": "epic",
         "img": "486_epic_regigigas.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "154.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "155",
@@ -1547,7 +2012,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "485_resonance_heatran.webp",
         "type_1": "fire",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "155.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "156",
@@ -1557,7 +2025,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "485_overlord_heatran.webp",
         "type_1": "fire",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "156.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "157",
@@ -1567,7 +2038,10 @@ const pokedex = [
         "variation": "epic",
         "img": "485_epic_heatran.webp",
         "type_1": "fire",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "157.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "158",
@@ -1577,7 +2051,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "484_resonance_palkia.webp",
         "type_1": "water",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "158.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "159",
@@ -1587,7 +2064,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "484_overlord_palkia.webp",
         "type_1": "water",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "159.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "160",
@@ -1597,7 +2077,10 @@ const pokedex = [
         "variation": "epic",
         "img": "484_epic_palkia.webp",
         "type_1": "water",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "160.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "161",
@@ -1607,7 +2090,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "483_resonance_dialga.webp",
         "type_1": "steel",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "161.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "162",
@@ -1617,7 +2103,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "483_overlord_primal_dialga.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "162.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "163",
@@ -1627,7 +2116,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "483_overlord_dialga.webp",
         "type_1": "steel",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "163.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "164",
@@ -1637,7 +2129,10 @@ const pokedex = [
         "variation": "epic",
         "img": "483_epic_primal_dialga.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "164.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "165",
@@ -1647,7 +2142,10 @@ const pokedex = [
         "variation": "epic",
         "img": "483_epic_dialga.webp",
         "type_1": "steel",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "165.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "166",
@@ -1657,7 +2155,10 @@ const pokedex = [
         "variation": "epic",
         "img": "482_epic_azelf.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "166.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "167",
@@ -1667,7 +2168,10 @@ const pokedex = [
         "variation": "epic",
         "img": "481_epic_mesprit.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "167.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "168",
@@ -1677,7 +2181,10 @@ const pokedex = [
         "variation": "epic",
         "img": "480_epic_uxie.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "168.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "169",
@@ -1687,7 +2194,10 @@ const pokedex = [
         "variation": "mega",
         "img": "475_mega_gallade.webp",
         "type_1": "psychic",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "169.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "170",
@@ -1697,7 +2207,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "646_overlord_white_kyurem.webp.webp",
         "type_1": "dragon",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "170.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "171",
@@ -1707,7 +2220,10 @@ const pokedex = [
         "variation": "mega",
         "img": "460_mega_abomasnow.webp",
         "type_1": "grass",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "171.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "172",
@@ -1717,7 +2233,10 @@ const pokedex = [
         "variation": "mega",
         "img": "448_mega_lucario.webp",
         "type_1": "fighting",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "172.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "173",
@@ -1727,7 +2246,10 @@ const pokedex = [
         "variation": "mega",
         "img": "445_mega_garchomp.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "173.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "174",
@@ -1737,7 +2259,10 @@ const pokedex = [
         "variation": "mega",
         "img": "445_mega_cynthias_garchomp.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "174.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "175",
@@ -1747,7 +2272,10 @@ const pokedex = [
         "variation": "epic",
         "img": "445_epic_garchomp.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "175.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "176",
@@ -1757,7 +2285,10 @@ const pokedex = [
         "variation": "epic",
         "img": "429_epic_mismagius.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "176.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "177",
@@ -1767,7 +2298,10 @@ const pokedex = [
         "variation": "mega",
         "img": "428_mega_lopunny.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "177.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "178",
@@ -1777,7 +2311,10 @@ const pokedex = [
         "variation": "mega",
         "img": "3_mega_venusaur.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "178.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "179",
@@ -1787,7 +2324,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "38_alolan_ninetiles.webp",
         "type_1": "ice",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "179.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "180",
@@ -1797,7 +2337,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "386_overlord_speed_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "180.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "181",
@@ -1807,7 +2350,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "386_overlord_normal_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "181.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "182",
@@ -1817,7 +2363,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "386_overlord_defense_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "182.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "183",
@@ -1827,7 +2376,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "386_overlord_attack_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "183.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "184",
@@ -1837,7 +2389,10 @@ const pokedex = [
         "variation": "epic",
         "img": "386_epic_speed_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "184.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "185",
@@ -1847,7 +2402,10 @@ const pokedex = [
         "variation": "epic",
         "img": "386_epic_normal_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "185.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "186",
@@ -1857,7 +2415,10 @@ const pokedex = [
         "variation": "epic",
         "img": "386_epic_defense_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "186.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "187",
@@ -1867,7 +2428,10 @@ const pokedex = [
         "variation": "epic",
         "img": "386_epic_attack_form_deoxys.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "187.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "188",
@@ -1877,7 +2441,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "385_overlord_jirachi.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "188.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "189",
@@ -1887,7 +2454,10 @@ const pokedex = [
         "variation": "epic",
         "img": "385_epic_jirachi.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "189.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "190",
@@ -1897,7 +2467,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "384_overlord_rayquaza.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "190.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "191",
@@ -1907,7 +2480,10 @@ const pokedex = [
         "variation": "mega",
         "img": "384_mega_rayquaza.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "191.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "192",
@@ -1917,7 +2493,10 @@ const pokedex = [
         "variation": "epic",
         "img": "384_epic_rayquaza.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "192.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "193",
@@ -1927,7 +2506,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "383_overlord_primal_groudon.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "193.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "194",
@@ -1937,7 +2519,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "383_overlord_origin_primal_groudon.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "194.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "195",
@@ -1947,7 +2532,10 @@ const pokedex = [
         "variation": "mega",
         "img": "383_mega_origin_primal_groudon.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "195.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "196",
@@ -1957,7 +2545,10 @@ const pokedex = [
         "variation": "epic",
         "img": "383_epic_primal_groudon.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "196.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "197",
@@ -1967,7 +2558,10 @@ const pokedex = [
         "variation": "epic",
         "img": "383_epic_groudon.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "197.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "198",
@@ -1977,7 +2571,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "382_overlord_primal_kyogre.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "198.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "199",
@@ -1987,7 +2584,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "382_overlord_origin_primal_kyogre.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "199.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "200",
@@ -1997,7 +2597,10 @@ const pokedex = [
         "variation": "mega",
         "img": "382_mega_origin_primal_kyogre.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "200.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "201",
@@ -2007,7 +2610,10 @@ const pokedex = [
         "variation": "epic",
         "img": "382_epic_primal_kyogre.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "201.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "202",
@@ -2017,7 +2623,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "381_overlord_latios.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "202.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "203",
@@ -2027,7 +2636,10 @@ const pokedex = [
         "variation": "epic",
         "img": "381_epic_latios.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "203.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "204",
@@ -2037,7 +2649,10 @@ const pokedex = [
         "variation": "epic",
         "img": "382_epic_kyogre.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "204.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "205",
@@ -2047,7 +2662,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "380_overlord_latias.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "205.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "206",
@@ -2057,7 +2675,10 @@ const pokedex = [
         "variation": "epic",
         "img": "380_epic_latias.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "206.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "207",
@@ -2067,7 +2688,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "37_alolan_vulpix.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "207.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "208",
@@ -2077,7 +2701,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "37_alolan_lilie_vulpix.webp",
         "type_1": "ice",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "208.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "209",
@@ -2087,7 +2714,10 @@ const pokedex = [
         "variation": "epic",
         "img": "379_epic_regiteel.webp",
         "type_1": "steel",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "209.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "210",
@@ -2097,7 +2727,10 @@ const pokedex = [
         "variation": "epic",
         "img": "378_epic_regice.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "210.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "211",
@@ -2107,7 +2740,10 @@ const pokedex = [
         "variation": "epic",
         "img": "377_epic_regirock.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "211.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "212",
@@ -2117,7 +2753,10 @@ const pokedex = [
         "variation": "mega",
         "img": "376_mega_metagross.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "212.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "213",
@@ -2127,7 +2766,10 @@ const pokedex = [
         "variation": "epic",
         "img": "376_epic_steven_stone_metagross.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "213.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "214",
@@ -2137,7 +2779,10 @@ const pokedex = [
         "variation": "epic",
         "img": "376_epic_metagross.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "214.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "215",
@@ -2147,7 +2792,10 @@ const pokedex = [
         "variation": "mega",
         "img": "373_mega_salamence.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "215.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "216",
@@ -2157,7 +2805,10 @@ const pokedex = [
         "variation": "epic",
         "img": "373_epic_salamence.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "216.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "217",
@@ -2167,7 +2818,10 @@ const pokedex = [
         "variation": "mega",
         "img": "359_mega_absol.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "217.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "218",
@@ -2177,7 +2831,10 @@ const pokedex = [
         "variation": "mega",
         "img": "354_mega_banette.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "218.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "219",
@@ -2187,7 +2844,10 @@ const pokedex = [
         "variation": "mega",
         "img": "334_mega_altaria.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "219.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "220",
@@ -2197,7 +2857,10 @@ const pokedex = [
         "variation": "mega",
         "img": "323_mega_camerupt.webp",
         "type_1": "fire",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "220.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "221",
@@ -2207,7 +2870,10 @@ const pokedex = [
         "variation": "mega",
         "img": "319_mega_sharpedo.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "221.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "222",
@@ -2217,7 +2883,10 @@ const pokedex = [
         "variation": "mega",
         "img": "310_mega_manectric.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "222.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "223",
@@ -2227,7 +2896,10 @@ const pokedex = [
         "variation": "mega",
         "img": "308_mega_medicham.webp",
         "type_1": "fighting",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "223.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "224",
@@ -2237,7 +2909,10 @@ const pokedex = [
         "variation": "mega",
         "img": "306_mega_aggron.webp",
         "type_1": "steel",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "224.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "225",
@@ -2247,7 +2922,10 @@ const pokedex = [
         "variation": "mega",
         "img": "303_mega_mawile.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "225.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "226",
@@ -2257,7 +2935,10 @@ const pokedex = [
         "variation": "mega",
         "img": "302_mega_sableye.webp",
         "type_1": "dark",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "226.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "227",
@@ -2267,7 +2948,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "28_alolan_sandslash.webp",
         "type_1": "ice",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "227.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "228",
@@ -2277,7 +2961,10 @@ const pokedex = [
         "variation": "epic",
         "img": "289_epic_slaking.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "228.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "229",
@@ -2287,7 +2974,10 @@ const pokedex = [
         "variation": "mega",
         "img": "282_mega_gardevoir.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "229.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "230",
@@ -2297,7 +2987,10 @@ const pokedex = [
         "variation": "mega",
         "img": "282_mega_dianthas_gardevoir.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "230.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "231",
@@ -2307,7 +3000,10 @@ const pokedex = [
         "variation": "mega",
         "img": "381_mega_latios.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "231.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "232",
@@ -2317,7 +3013,10 @@ const pokedex = [
         "variation": "mega",
         "img": "380_mega_latias.webp",
         "type_1": "dragon",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "232.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "233",
@@ -2327,7 +3026,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "27_alolan_sandshrew.webp",
         "type_1": "ice",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "233.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "234",
@@ -2337,7 +3039,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "26_alolan_raichu.webp",
         "type_1": "electric",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "234.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "235",
@@ -2347,7 +3052,10 @@ const pokedex = [
         "variation": "mega",
         "img": "260_mega_swampert.webp",
         "type_1": "water",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "235.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "236",
@@ -2357,7 +3065,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "25_overlord_pikachu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "236.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "237",
@@ -2367,7 +3078,10 @@ const pokedex = [
         "variation": "mega",
         "img": "257_mega_blaziken.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "237.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "238",
@@ -2377,7 +3091,10 @@ const pokedex = [
         "variation": "mega",
         "img": "254_mega_septile.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "238.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "239",
@@ -2387,7 +3104,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "251_overlord_celebi.webp",
         "type_1": "psychic",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "239.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "240",
@@ -2397,7 +3117,10 @@ const pokedex = [
         "variation": "epic",
         "img": "251_epic_celebi.webp",
         "type_1": "psychic",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "240.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "241",
@@ -2407,7 +3130,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "150_resonance_shadow_mewtwo-x.webp",
         "type_1": "dark",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "241.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "242",
@@ -2417,7 +3143,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "250_resonance_ohoh.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "242.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "243",
@@ -2427,7 +3156,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "250_overlord_ohoh.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "243.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "244",
@@ -2437,7 +3169,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "250_overlord_dark_ohoh.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "244.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "245",
@@ -2447,7 +3182,10 @@ const pokedex = [
         "variation": "epic",
         "img": "250_epic_ohoh.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "245.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "246",
@@ -2457,7 +3195,10 @@ const pokedex = [
         "variation": "epic",
         "img": "250_epic_dark_ohoh.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "246.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "247",
@@ -2467,7 +3208,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "249_resonance_lugia.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "247.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "248",
@@ -2477,7 +3221,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "249_overlord_lugia.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "248.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "249",
@@ -2487,7 +3234,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "249_overlord_dark_lugia.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "249.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "250",
@@ -2497,7 +3247,10 @@ const pokedex = [
         "variation": "epic",
         "img": "249_epic_lugia.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "250.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "251",
@@ -2507,7 +3260,10 @@ const pokedex = [
         "variation": "epic",
         "img": "249_epic_dark_lugia.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "251.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "252",
@@ -2517,7 +3273,10 @@ const pokedex = [
         "variation": "mega",
         "img": "248_mega_tyranitar.webp",
         "type_1": "rock",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "252.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "253",
@@ -2527,7 +3286,10 @@ const pokedex = [
         "variation": "epic",
         "img": "248_epic_tyranitar.webp",
         "type_1": "rock",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "253.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "254",
@@ -2537,7 +3299,10 @@ const pokedex = [
         "variation": "epic",
         "img": "245_epic_suicune.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "254.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "255",
@@ -2547,7 +3312,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "244_resonance_spell_of_the_unknow_entei.webp",
         "type_1": "fire",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "255.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "256",
@@ -2557,7 +3325,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "244_overlord_spell_of_the_unknow_entei.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "256.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "257",
@@ -2567,7 +3338,10 @@ const pokedex = [
         "variation": "epic",
         "img": "244_epic_spell_of_the_unknow_entei.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "257.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "258",
@@ -2577,7 +3351,10 @@ const pokedex = [
         "variation": "epic",
         "img": "244_epic_entei.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "258.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "259",
@@ -2587,7 +3364,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "243_resonance_raiko.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "259.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "260",
@@ -2597,7 +3377,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "243_overlord_raiko.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "260.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "261",
@@ -2607,7 +3390,10 @@ const pokedex = [
         "variation": "epic",
         "img": "243_epic_raiko.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "261.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "262",
@@ -2617,7 +3403,10 @@ const pokedex = [
         "variation": "mega",
         "img": "229_mega_houndoom.webp",
         "type_1": "dark",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "262.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "263",
@@ -2627,7 +3416,10 @@ const pokedex = [
         "variation": "mega",
         "img": "214_mega_heracross.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "263.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "264",
@@ -2637,7 +3429,10 @@ const pokedex = [
         "variation": "mega",
         "img": "212_mega_scizor.webp",
         "type_1": "bug",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "264.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "265",
@@ -2647,7 +3442,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "20_alolan_raticate.webp",
         "type_1": "dark",
-        "type_2": "normal"
+        "type_2": "normal",
+        "homeSprite": "265.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "266",
@@ -2657,7 +3455,10 @@ const pokedex = [
         "variation": "mega",
         "img": "208_mega_steelix.webp",
         "type_1": "steel",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "266.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "267",
@@ -2667,7 +3468,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "19_alolan_rattata.webp",
         "type_1": "dark",
-        "type_2": "normal"
+        "type_2": "normal",
+        "homeSprite": "267.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "268",
@@ -2677,7 +3481,10 @@ const pokedex = [
         "variation": "mega",
         "img": "18_mega_pidgeot.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "268.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "269",
@@ -2687,7 +3494,10 @@ const pokedex = [
         "variation": "mega",
         "img": "181_mega_ampharos.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "269.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "270",
@@ -2697,7 +3507,10 @@ const pokedex = [
         "variation": "epic",
         "img": "149_epic_lance_dragonite.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "270.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "271",
@@ -2707,7 +3520,10 @@ const pokedex = [
         "variation": "mega",
         "img": "15_mega_beedrill.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "271.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "272",
@@ -2717,7 +3533,10 @@ const pokedex = [
         "variation": "epic",
         "img": "151_epic_mew.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "272.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "273",
@@ -2727,7 +3546,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "150_resonance_mewtwo_y.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "273.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "274",
@@ -2737,7 +3559,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "150_resonance_mewtwo-x.webp",
         "type_1": "psychic",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "274.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "275",
@@ -2747,7 +3572,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "150_overlord_shadow_mewtwo-x.webp",
         "type_1": "dark",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "275.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "276",
@@ -2757,7 +3585,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "150_overlord_mewtwo_y.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "276.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "277",
@@ -2767,7 +3598,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "150_overlord_mewtwo-x.webp",
         "type_1": "psychic",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "277.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "278",
@@ -2777,7 +3611,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "150_overlord_armor_mewtwo-v2.webp",
         "type_1": "psychic",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "278.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "279",
@@ -2787,7 +3624,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "150_overlord_armor_mewtwo-v1.webp",
         "type_1": "psychic",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "279.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "280",
@@ -2797,7 +3637,10 @@ const pokedex = [
         "variation": "mega",
         "img": "150_mega_shadow_mewtwo-x.webp",
         "type_1": "dark",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "280.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "281",
@@ -2807,7 +3650,10 @@ const pokedex = [
         "variation": "mega",
         "img": "150_mega_mewtwo_y.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "281.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "282",
@@ -2817,7 +3663,10 @@ const pokedex = [
         "variation": "mega",
         "img": "150_mega_mewtwo-x.webp",
         "type_1": "psychic",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "282.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "283",
@@ -2827,7 +3676,10 @@ const pokedex = [
         "variation": "epic",
         "img": "150_epic_mewtwo.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "283.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "284",
@@ -2837,7 +3689,10 @@ const pokedex = [
         "variation": "epic",
         "img": "150_epic_armor_mewtwo.webp",
         "type_1": "psychic",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "284.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "285",
@@ -2847,7 +3702,10 @@ const pokedex = [
         "variation": "epic",
         "img": "149_epic_dragonite.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "285.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "286",
@@ -2857,7 +3715,10 @@ const pokedex = [
         "variation": "epic",
         "img": "146_epic_moltres.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "286.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "287",
@@ -2867,7 +3728,10 @@ const pokedex = [
         "variation": "epic",
         "img": "145_epic_zapdos.webp",
         "type_1": "electric",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "287.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "288",
@@ -2877,7 +3741,10 @@ const pokedex = [
         "variation": "epic",
         "img": "144_epic_articuno.webp",
         "type_1": "ice",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "288.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "289",
@@ -2887,7 +3754,10 @@ const pokedex = [
         "variation": "epic",
         "img": "143_epic_snorlax.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "289.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "290",
@@ -2897,7 +3767,10 @@ const pokedex = [
         "variation": "epic",
         "img": "143_epic_ash_snorlax.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "290.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "291",
@@ -2907,7 +3780,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "142_overlord_aerodactyl.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "291.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "292",
@@ -2917,7 +3793,10 @@ const pokedex = [
         "variation": "mega",
         "img": "142_mega_aerodactyl.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "292.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "293",
@@ -2927,7 +3806,10 @@ const pokedex = [
         "variation": "epic",
         "img": "142_epic_erodactyl.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "293.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "294",
@@ -2937,7 +3819,10 @@ const pokedex = [
         "variation": "mega",
         "img": "130_mega_red_gyarados.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "294.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "295",
@@ -2947,7 +3832,10 @@ const pokedex = [
         "variation": "mega",
         "img": "130_mega_gyarados.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "295.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "296",
@@ -2957,7 +3845,10 @@ const pokedex = [
         "variation": "mega",
         "img": "127_mega_pinsir.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "296.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "297",
@@ -2967,7 +3858,10 @@ const pokedex = [
         "variation": "mega",
         "img": "115_mega_kangaskhan.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "297.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "298",
@@ -2977,7 +3871,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "105_alolan_marowak.webp",
         "type_1": "fire",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "298.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "299",
@@ -2987,7 +3884,10 @@ const pokedex = [
         "variation": "alolan",
         "img": "103_alolan_exeggutor.webp",
         "type_1": "grass",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "299.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "300",
@@ -2997,7 +3897,10 @@ const pokedex = [
         "variation": "normal",
         "img": "9_blastoise.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "300.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "301",
@@ -3007,7 +3910,10 @@ const pokedex = [
         "variation": "special",
         "img": "9_ash_blastoise.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "301.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "302",
@@ -3017,7 +3923,10 @@ const pokedex = [
         "variation": "normal",
         "img": "99_kingler.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "302.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "303",
@@ -3027,7 +3936,10 @@ const pokedex = [
         "variation": "normal",
         "img": "98_krabby.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "303.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "304",
@@ -3037,7 +3949,10 @@ const pokedex = [
         "variation": "normal",
         "img": "97_hypno.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "304.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "305",
@@ -3047,7 +3962,10 @@ const pokedex = [
         "variation": "normal",
         "img": "96_drowzee.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "305.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "306",
@@ -3057,7 +3975,10 @@ const pokedex = [
         "variation": "normal",
         "img": "95_onix.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "306.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "307",
@@ -3067,7 +3988,10 @@ const pokedex = [
         "variation": "special",
         "img": "95_brock_onix.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "307.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "308",
@@ -3077,7 +4001,10 @@ const pokedex = [
         "variation": "normal",
         "img": "94_gengar.webp",
         "type_1": "ghost",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "308.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "309",
@@ -3087,7 +4014,10 @@ const pokedex = [
         "variation": "normal",
         "img": "93_haunter.webp",
         "type_1": "ghost",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "309.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "310",
@@ -3097,7 +4027,10 @@ const pokedex = [
         "variation": "normal",
         "img": "92_gastly.webp",
         "type_1": "ghost",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "310.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "311",
@@ -3107,7 +4040,10 @@ const pokedex = [
         "variation": "normal",
         "img": "91_cloyster.webp",
         "type_1": "water",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "311.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "312",
@@ -3117,7 +4053,10 @@ const pokedex = [
         "variation": "normal",
         "img": "90_shellder.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "312.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "313",
@@ -3127,7 +4066,10 @@ const pokedex = [
         "variation": "normal",
         "img": "8_wartortle.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "313.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "314",
@@ -3137,7 +4079,10 @@ const pokedex = [
         "variation": "normal",
         "img": "89_muk.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "314.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "315",
@@ -3147,7 +4092,10 @@ const pokedex = [
         "variation": "normal",
         "img": "88_grimer.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "315.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "316",
@@ -3157,7 +4105,10 @@ const pokedex = [
         "variation": "normal",
         "img": "87_dewgong.webp",
         "type_1": "water",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "316.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "317",
@@ -3167,7 +4118,10 @@ const pokedex = [
         "variation": "special",
         "img": "877_hangry_mode_morpeko.webp.webp",
         "type_1": "electric",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "317.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "318",
@@ -3177,7 +4131,10 @@ const pokedex = [
         "variation": "normal",
         "img": "877_full_belly_mode_morpeko.webp",
         "type_1": "electric",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "318.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "319",
@@ -3187,7 +4144,10 @@ const pokedex = [
         "variation": "normal",
         "img": "86_seel.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "319.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "320",
@@ -3197,7 +4157,10 @@ const pokedex = [
         "variation": "normal",
         "img": "85_dodrio.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "320.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "321",
@@ -3207,7 +4170,10 @@ const pokedex = [
         "variation": "normal",
         "img": "84_doduo.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "321.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "322",
@@ -3217,7 +4183,10 @@ const pokedex = [
         "variation": "normal",
         "img": "83_farfetch'd.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "322.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "323",
@@ -3227,7 +4196,10 @@ const pokedex = [
         "variation": "normal",
         "img": "82_magneton.webp",
         "type_1": "electric",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "323.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "324",
@@ -3237,7 +4209,10 @@ const pokedex = [
         "variation": "normal",
         "img": "81_magnemite.webp",
         "type_1": "electric",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "324.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "325",
@@ -3247,7 +4222,10 @@ const pokedex = [
         "variation": "normal",
         "img": "80_slowbro.webp",
         "type_1": "water",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "325.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "326",
@@ -3257,7 +4235,10 @@ const pokedex = [
         "variation": "normal",
         "img": "808_meltan.webp",
         "type_1": "steel",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "326.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "327",
@@ -3267,7 +4248,10 @@ const pokedex = [
         "variation": "normal",
         "img": "7_squirtle.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "327.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "328",
@@ -3277,7 +4261,10 @@ const pokedex = [
         "variation": "special",
         "img": "7_ash_squirtle.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "328.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "329",
@@ -3287,7 +4274,10 @@ const pokedex = [
         "variation": "normal",
         "img": "79_slowpoke.webp",
         "type_1": "water",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "329.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "330",
@@ -3297,7 +4287,10 @@ const pokedex = [
         "variation": "normal",
         "img": "78_rapidash.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "330.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "331",
@@ -3307,7 +4300,10 @@ const pokedex = [
         "variation": "normal",
         "img": "783_hakamo-o.webp",
         "type_1": "dragon",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "331.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "332",
@@ -3317,7 +4313,10 @@ const pokedex = [
         "variation": "normal",
         "img": "782_jangmo-o.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "332.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "333",
@@ -3327,7 +4326,10 @@ const pokedex = [
         "variation": "normal",
         "img": "77_ponyta.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "333.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "334",
@@ -3337,7 +4339,10 @@ const pokedex = [
         "variation": "normal",
         "img": "778_mimikyu.webp",
         "type_1": "ghost",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "334.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "335",
@@ -3347,7 +4352,10 @@ const pokedex = [
         "variation": "special",
         "img": "778_jessie_mimikyu.webp",
         "type_1": "ghost",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "335.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "336",
@@ -3357,7 +4365,10 @@ const pokedex = [
         "variation": "normal",
         "img": "776_turtonator.webp",
         "type_1": "fire",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "336.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "337",
@@ -3367,7 +4378,10 @@ const pokedex = [
         "variation": "normal",
         "img": "76_golem.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "337.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "338",
@@ -3377,7 +4391,10 @@ const pokedex = [
         "variation": "normal",
         "img": "765_oranguru.webp",
         "type_1": "normal",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "338.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "339",
@@ -3387,7 +4404,10 @@ const pokedex = [
         "variation": "normal",
         "img": "760_bewear.webp",
         "type_1": "normal",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "339.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "340",
@@ -3397,7 +4417,10 @@ const pokedex = [
         "variation": "normal",
         "img": "75_graveler.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "340.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "341",
@@ -3407,7 +4430,10 @@ const pokedex = [
         "variation": "normal",
         "img": "759_stufful.webp",
         "type_1": "normal",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "341.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "342",
@@ -3417,7 +4443,10 @@ const pokedex = [
         "variation": "normal",
         "img": "758_salazzle.webp",
         "type_1": "poison",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "342.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "343",
@@ -3427,7 +4456,10 @@ const pokedex = [
         "variation": "normal",
         "img": "757_salandit.webp",
         "type_1": "poison",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "343.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "344",
@@ -3437,7 +4469,10 @@ const pokedex = [
         "variation": "normal",
         "img": "756_shiinotic.webp",
         "type_1": "grass",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "344.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "345",
@@ -3447,7 +4482,10 @@ const pokedex = [
         "variation": "normal",
         "img": "755_morelull.webp",
         "type_1": "grass",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "345.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "346",
@@ -3457,7 +4495,10 @@ const pokedex = [
         "variation": "normal",
         "img": "752_araquanid.webp",
         "type_1": "water",
-        "type_2": "bug"
+        "type_2": "bug",
+        "homeSprite": "346.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "347",
@@ -3467,7 +4508,10 @@ const pokedex = [
         "variation": "normal",
         "img": "751_dewpider.webp",
         "type_1": "water",
-        "type_2": "bug"
+        "type_2": "bug",
+        "homeSprite": "347.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "348",
@@ -3477,7 +4521,10 @@ const pokedex = [
         "variation": "normal",
         "img": "74_geodude.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "348.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "349",
@@ -3487,7 +4534,10 @@ const pokedex = [
         "variation": "normal",
         "img": "748_toxapex.webp",
         "type_1": "poison",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "349.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "350",
@@ -3497,7 +4547,10 @@ const pokedex = [
         "variation": "normal",
         "img": "747_mareanie.webp",
         "type_1": "poison",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "350.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "351",
@@ -3507,7 +4560,10 @@ const pokedex = [
         "variation": "special",
         "img": "745_midnight_form_lycanroc.webp.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "351.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "352",
@@ -3517,7 +4573,10 @@ const pokedex = [
         "variation": "normal",
         "img": "745_midday_form_lycanroc.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "352.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "353",
@@ -3527,7 +4586,10 @@ const pokedex = [
         "variation": "special",
         "img": "745_dusk_form_lycanroc.webp.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "353.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "354",
@@ -3537,7 +4599,10 @@ const pokedex = [
         "variation": "normal",
         "img": "744_rockruff.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "354.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "355",
@@ -3547,7 +4612,10 @@ const pokedex = [
         "variation": "normal",
         "img": "73_tentacruel.webp",
         "type_1": "water",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "355.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "356",
@@ -3557,7 +4625,10 @@ const pokedex = [
         "variation": "normal",
         "img": "738_vikavolt.webp",
         "type_1": "bug",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "356.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "357",
@@ -3567,7 +4638,10 @@ const pokedex = [
         "variation": "normal",
         "img": "737_charjabug.webp",
         "type_1": "bug",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "357.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "358",
@@ -3577,7 +4651,10 @@ const pokedex = [
         "variation": "normal",
         "img": "736_grubbin.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "358.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "359",
@@ -3587,7 +4664,10 @@ const pokedex = [
         "variation": "normal",
         "img": "72_tentacool.webp",
         "type_1": "water",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "359.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "360",
@@ -3597,7 +4677,10 @@ const pokedex = [
         "variation": "normal",
         "img": "725_litten.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "360.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "361",
@@ -3607,7 +4690,10 @@ const pokedex = [
         "variation": "normal",
         "img": "71_victreebel.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "361.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "362",
@@ -3617,7 +4703,10 @@ const pokedex = [
         "variation": "special",
         "img": "718_cell_form_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "362.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "363",
@@ -3627,7 +4716,10 @@ const pokedex = [
         "variation": "normal",
         "img": "718_50_form_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "363.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "364",
@@ -3637,7 +4729,10 @@ const pokedex = [
         "variation": "special",
         "img": "718_10_form_zygarde.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "364.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "365",
@@ -3647,7 +4742,10 @@ const pokedex = [
         "variation": "normal",
         "img": "70_weepinbell.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "365.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "366",
@@ -3657,7 +4755,10 @@ const pokedex = [
         "variation": "normal",
         "img": "709_trevenant.webp",
         "type_1": "ghost",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "366.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "367",
@@ -3667,7 +4768,10 @@ const pokedex = [
         "variation": "normal",
         "img": "708_phantump.webp",
         "type_1": "ghost",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "367.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "368",
@@ -3677,7 +4781,10 @@ const pokedex = [
         "variation": "normal",
         "img": "705_sliggoo.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "368.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "369",
@@ -3687,7 +4794,10 @@ const pokedex = [
         "variation": "normal",
         "img": "704_goomy.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "369.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "370",
@@ -3697,7 +4807,10 @@ const pokedex = [
         "variation": "normal",
         "img": "702_dedenne.webp",
         "type_1": "electric",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "370.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "371",
@@ -3707,7 +4820,10 @@ const pokedex = [
         "variation": "normal",
         "img": "701_hawlucha.webp",
         "type_1": "fighting",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "371.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "372",
@@ -3717,7 +4833,10 @@ const pokedex = [
         "variation": "normal",
         "img": "700_sylveon.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "372.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "373",
@@ -3727,7 +4846,10 @@ const pokedex = [
         "variation": "normal",
         "img": "6_charizard.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "373.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "374",
@@ -3737,7 +4859,10 @@ const pokedex = [
         "variation": "special",
         "img": "6_ash_charizard.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "374.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "375",
@@ -3747,7 +4872,10 @@ const pokedex = [
         "variation": "normal",
         "img": "69_bellsprout.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "375.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "376",
@@ -3757,7 +4885,10 @@ const pokedex = [
         "variation": "normal",
         "img": "699_aurorus.webp",
         "type_1": "rock",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "376.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "377",
@@ -3767,7 +4898,10 @@ const pokedex = [
         "variation": "normal",
         "img": "698_amaura.webp",
         "type_1": "rock",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "377.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "378",
@@ -3777,7 +4911,10 @@ const pokedex = [
         "variation": "normal",
         "img": "696_tyrunt.webp",
         "type_1": "rock",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "378.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "379",
@@ -3787,7 +4924,10 @@ const pokedex = [
         "variation": "normal",
         "img": "68_machamp.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "379.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "380",
@@ -3797,7 +4937,10 @@ const pokedex = [
         "variation": "normal",
         "img": "687_malamar.webp",
         "type_1": "dark",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "380.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "381",
@@ -3807,7 +4950,10 @@ const pokedex = [
         "variation": "normal",
         "img": "686_inkay.webp",
         "type_1": "dark",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "381.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "382",
@@ -3817,7 +4963,10 @@ const pokedex = [
         "variation": "normal",
         "img": "681_shield_form_aegislash.webp",
         "type_1": "steel",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "382.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "383",
@@ -3827,7 +4976,10 @@ const pokedex = [
         "variation": "normal",
         "img": "680_doublade.webp",
         "type_1": "steel",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "383.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "384",
@@ -3837,7 +4989,10 @@ const pokedex = [
         "variation": "normal",
         "img": "67_machoke.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "384.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "385",
@@ -3847,7 +5002,10 @@ const pokedex = [
         "variation": "normal",
         "img": "679_honedge.webp",
         "type_1": "steel",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "385.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "386",
@@ -3857,7 +5015,10 @@ const pokedex = [
         "variation": "special",
         "img": "678_male_meowstic.webp.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "386.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "387",
@@ -3867,7 +5028,10 @@ const pokedex = [
         "variation": "normal",
         "img": "678_female_meowstic.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "387.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "388",
@@ -3877,7 +5041,10 @@ const pokedex = [
         "variation": "normal",
         "img": "675_pangoro.webp",
         "type_1": "fighting",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "388.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "389",
@@ -3887,7 +5054,10 @@ const pokedex = [
         "variation": "normal",
         "img": "674_pancham.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "389.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "390",
@@ -3897,7 +5067,10 @@ const pokedex = [
         "variation": "normal",
         "img": "697_tyrantrum.webp",
         "type_1": "rock",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "390.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "391",
@@ -3907,7 +5080,10 @@ const pokedex = [
         "variation": "normal",
         "img": "66_machop.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "391.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "392",
@@ -3917,7 +5093,10 @@ const pokedex = [
         "variation": "normal",
         "img": "668_pyroar.webp",
         "type_1": "fire",
-        "type_2": "normal"
+        "type_2": "normal",
+        "homeSprite": "392.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "393",
@@ -3927,7 +5106,10 @@ const pokedex = [
         "variation": "normal",
         "img": "667_litleo.webp",
         "type_1": "fire",
-        "type_2": "normal"
+        "type_2": "normal",
+        "homeSprite": "393.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "394",
@@ -3937,7 +5119,10 @@ const pokedex = [
         "variation": "normal",
         "img": "662_talonflame.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "394.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "395",
@@ -3947,7 +5132,10 @@ const pokedex = [
         "variation": "normal",
         "img": "662_fletchinder.webp",
         "type_1": "fire",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "395.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "396",
@@ -3957,7 +5145,10 @@ const pokedex = [
         "variation": "normal",
         "img": "661_fletchling.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "396.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "397",
@@ -3967,7 +5158,10 @@ const pokedex = [
         "variation": "normal",
         "img": "65_alakazam.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "397.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "398",
@@ -3977,7 +5171,10 @@ const pokedex = [
         "variation": "normal",
         "img": "658_greninja.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "398.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "399",
@@ -3987,7 +5184,10 @@ const pokedex = [
         "variation": "normal",
         "img": "657_frogadier.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "399.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "400",
@@ -3997,7 +5197,10 @@ const pokedex = [
         "variation": "normal",
         "img": "656_froakie.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "400.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "401",
@@ -4007,7 +5210,10 @@ const pokedex = [
         "variation": "normal",
         "img": "655_delphox.webp",
         "type_1": "fire",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "401.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "402",
@@ -4017,7 +5223,10 @@ const pokedex = [
         "variation": "normal",
         "img": "654_braixen.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "402.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "403",
@@ -4027,7 +5236,10 @@ const pokedex = [
         "variation": "normal",
         "img": "653_fennekin.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "403.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "404",
@@ -4037,7 +5249,10 @@ const pokedex = [
         "variation": "normal",
         "img": "64_kadabra.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "404.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "405",
@@ -4047,7 +5262,10 @@ const pokedex = [
         "variation": "normal",
         "img": "63_abra.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "405.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "406",
@@ -4057,7 +5275,10 @@ const pokedex = [
         "variation": "normal",
         "img": "637_volcarona.webp",
         "type_1": "bug",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "406.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "407",
@@ -4067,7 +5288,10 @@ const pokedex = [
         "variation": "normal",
         "img": "636_larvesta.webp",
         "type_1": "bug",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "407.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "408",
@@ -4077,7 +5301,10 @@ const pokedex = [
         "variation": "normal",
         "img": "634_zweilous.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "408.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "409",
@@ -4087,7 +5314,10 @@ const pokedex = [
         "variation": "normal",
         "img": "633_deino.webp",
         "type_1": "dark",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "409.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "410",
@@ -4097,7 +5327,10 @@ const pokedex = [
         "variation": "normal",
         "img": "62_poliwrath.webp",
         "type_1": "water",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "410.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "411",
@@ -4107,7 +5340,10 @@ const pokedex = [
         "variation": "normal",
         "img": "61_poliwhirl.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "411.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "412",
@@ -4117,7 +5353,10 @@ const pokedex = [
         "variation": "normal",
         "img": "617_accelgor.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "412.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "413",
@@ -4127,7 +5366,10 @@ const pokedex = [
         "variation": "normal",
         "img": "616_shelmet.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "413.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "414",
@@ -4137,7 +5379,10 @@ const pokedex = [
         "variation": "normal",
         "img": "615_cryogonal.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "414.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "415",
@@ -4147,7 +5392,10 @@ const pokedex = [
         "variation": "normal",
         "img": "611_fraxure.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "415.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "416",
@@ -4157,7 +5405,10 @@ const pokedex = [
         "variation": "normal",
         "img": "610_axew.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "416.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "417",
@@ -4167,7 +5418,10 @@ const pokedex = [
         "variation": "normal",
         "img": "60_poliwag.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "417.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "418",
@@ -4177,7 +5431,10 @@ const pokedex = [
         "variation": "normal",
         "img": "609_chandelure.webp",
         "type_1": "ghost",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "418.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "419",
@@ -4187,7 +5444,10 @@ const pokedex = [
         "variation": "normal",
         "img": "608_lampent.webp",
         "type_1": "ghost",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "419.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "420",
@@ -4197,7 +5457,10 @@ const pokedex = [
         "variation": "normal",
         "img": "607_litwick.webp",
         "type_1": "ghost",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "420.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "421",
@@ -4207,7 +5470,10 @@ const pokedex = [
         "variation": "normal",
         "img": "5_charmeleon.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "421.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "422",
@@ -4217,7 +5483,10 @@ const pokedex = [
         "variation": "normal",
         "img": "58_growlithe.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "422.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "423",
@@ -4227,7 +5496,10 @@ const pokedex = [
         "variation": "normal",
         "img": "587_emolga.webp",
         "type_1": "electric",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "423.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "424",
@@ -4237,7 +5509,10 @@ const pokedex = [
         "variation": "normal",
         "img": "583_vanillish.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "424.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "425",
@@ -4247,7 +5522,10 @@ const pokedex = [
         "variation": "normal",
         "img": "582_vanillite.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "425.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "426",
@@ -4257,7 +5535,10 @@ const pokedex = [
         "variation": "normal",
         "img": "57_primeape.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "426.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "427",
@@ -4267,7 +5548,10 @@ const pokedex = [
         "variation": "normal",
         "img": "576_gothitelle.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "427.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "428",
@@ -4277,7 +5561,10 @@ const pokedex = [
         "variation": "normal",
         "img": "575_gothorita.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "428.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "429",
@@ -4287,7 +5574,10 @@ const pokedex = [
         "variation": "normal",
         "img": "574_gothita.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "429.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "430",
@@ -4297,7 +5587,10 @@ const pokedex = [
         "variation": "normal",
         "img": "573_cinccino.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "430.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "431",
@@ -4307,7 +5600,10 @@ const pokedex = [
         "variation": "normal",
         "img": "572_minccino.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "431.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "432",
@@ -4317,7 +5613,10 @@ const pokedex = [
         "variation": "normal",
         "img": "56_mankey.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "432.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "433",
@@ -4327,7 +5626,10 @@ const pokedex = [
         "variation": "normal",
         "img": "567_archeops.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "433.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "434",
@@ -4337,7 +5639,10 @@ const pokedex = [
         "variation": "normal",
         "img": "566_archen.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "434.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "435",
@@ -4347,7 +5652,10 @@ const pokedex = [
         "variation": "normal",
         "img": "563_cofagrigus.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "435.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "735",
@@ -4357,7 +5665,10 @@ const pokedex = [
         "variation": "normal",
         "img": "584_vanilluxe.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "735.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "437",
@@ -4367,7 +5678,10 @@ const pokedex = [
         "variation": "normal",
         "img": "562_yamask.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "437.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "438",
@@ -4377,7 +5691,10 @@ const pokedex = [
         "variation": "normal",
         "img": "55_golduck.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "438.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "439",
@@ -4387,7 +5704,10 @@ const pokedex = [
         "variation": "normal",
         "img": "553_krookodile.webp",
         "type_1": "ground",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "439.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "440",
@@ -4397,7 +5717,10 @@ const pokedex = [
         "variation": "normal",
         "img": "552_krokorok.webp",
         "type_1": "ground",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "440.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "441",
@@ -4407,7 +5730,10 @@ const pokedex = [
         "variation": "normal",
         "img": "551_sandile.webp",
         "type_1": "ground",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "441.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "442",
@@ -4417,7 +5743,10 @@ const pokedex = [
         "variation": "normal",
         "img": "54_psyduck.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "442.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "443",
@@ -4427,7 +5756,10 @@ const pokedex = [
         "variation": "normal",
         "img": "547_whimsicott.webp",
         "type_1": "grass",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "443.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "444",
@@ -4437,7 +5769,10 @@ const pokedex = [
         "variation": "normal",
         "img": "546_cottonee.webp",
         "type_1": "grass",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "444.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "445",
@@ -4447,7 +5782,10 @@ const pokedex = [
         "variation": "normal",
         "img": "53_persian.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "445.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "446",
@@ -4457,7 +5795,10 @@ const pokedex = [
         "variation": "normal",
         "img": "531_audino.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "446.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "447",
@@ -4467,7 +5808,10 @@ const pokedex = [
         "variation": "special",
         "img": "52_team_rocket_meowth.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "447.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "448",
@@ -4477,7 +5821,10 @@ const pokedex = [
         "variation": "normal",
         "img": "52_meowth.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "448.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "449",
@@ -4487,7 +5834,10 @@ const pokedex = [
         "variation": "normal",
         "img": "51_dugtrio.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "449.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "450",
@@ -4497,7 +5847,10 @@ const pokedex = [
         "variation": "normal",
         "img": "50_diglett.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "450.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "451",
@@ -4507,7 +5860,10 @@ const pokedex = [
         "variation": "normal",
         "img": "4_charmander.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "451.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "452",
@@ -4517,7 +5873,10 @@ const pokedex = [
         "variation": "normal",
         "img": "49_venomoth.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "452.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "453",
@@ -4527,7 +5886,10 @@ const pokedex = [
         "variation": "normal",
         "img": "498_tepig.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "453.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "454",
@@ -4537,7 +5899,10 @@ const pokedex = [
         "variation": "normal",
         "img": "497_serperior.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "454.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "455",
@@ -4547,7 +5912,10 @@ const pokedex = [
         "variation": "normal",
         "img": "496_servine.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "455.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "456",
@@ -4557,7 +5925,10 @@ const pokedex = [
         "variation": "normal",
         "img": "495_snivy.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "456.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "457",
@@ -4567,7 +5938,10 @@ const pokedex = [
         "variation": "normal",
         "img": "48_venonat.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "457.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "458",
@@ -4577,7 +5951,10 @@ const pokedex = [
         "variation": "normal",
         "img": "47_parasect.webp",
         "type_1": "bug",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "458.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "459",
@@ -4587,7 +5964,10 @@ const pokedex = [
         "variation": "normal",
         "img": "477_dusknoir.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "459.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "460",
@@ -4597,7 +5977,10 @@ const pokedex = [
         "variation": "normal",
         "img": "476_probopass.webp",
         "type_1": "rock",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "460.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "461",
@@ -4607,7 +5990,10 @@ const pokedex = [
         "variation": "normal",
         "img": "475_gallade.webp",
         "type_1": "psychic",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "461.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "462",
@@ -4617,7 +6003,10 @@ const pokedex = [
         "variation": "normal",
         "img": "474_porygon-z.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "462.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "463",
@@ -4627,7 +6016,10 @@ const pokedex = [
         "variation": "normal",
         "img": "473_mamoswine.webp",
         "type_1": "ice",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "463.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "464",
@@ -4637,7 +6029,10 @@ const pokedex = [
         "variation": "normal",
         "img": "471_glaceon.webp",
         "type_1": "ice",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "464.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "465",
@@ -4647,7 +6042,10 @@ const pokedex = [
         "variation": "normal",
         "img": "470_leafeon.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "465.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "466",
@@ -4657,7 +6055,10 @@ const pokedex = [
         "variation": "normal",
         "img": "46_paras.webp",
         "type_1": "bug",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "466.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "467",
@@ -4667,7 +6068,10 @@ const pokedex = [
         "variation": "normal",
         "img": "468_togekiss.webp",
         "type_1": "fairy",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "467.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "468",
@@ -4677,7 +6081,10 @@ const pokedex = [
         "variation": "normal",
         "img": "467_magmortar.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "468.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "469",
@@ -4687,7 +6094,10 @@ const pokedex = [
         "variation": "normal",
         "img": "466_electivire.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "469.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "470",
@@ -4697,7 +6107,10 @@ const pokedex = [
         "variation": "normal",
         "img": "465_tangrowth.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "470.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "471",
@@ -4707,7 +6120,10 @@ const pokedex = [
         "variation": "normal",
         "img": "464_rhyperior.webp",
         "type_1": "ground",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "471.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "472",
@@ -4717,7 +6133,10 @@ const pokedex = [
         "variation": "normal",
         "img": "463_lickilicky.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "472.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "473",
@@ -4727,7 +6146,10 @@ const pokedex = [
         "variation": "normal",
         "img": "462_magnezone.webp",
         "type_1": "electric",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "473.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "474",
@@ -4737,7 +6159,10 @@ const pokedex = [
         "variation": "normal",
         "img": "461_weavile.webp",
         "type_1": "dark",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "474.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "475",
@@ -4747,7 +6172,10 @@ const pokedex = [
         "variation": "normal",
         "img": "460_abomasnow.webp",
         "type_1": "grass",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "475.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "476",
@@ -4757,7 +6185,10 @@ const pokedex = [
         "variation": "normal",
         "img": "45_vileplume.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "476.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "477",
@@ -4767,7 +6198,10 @@ const pokedex = [
         "variation": "normal",
         "img": "459_snover.webp",
         "type_1": "grass",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "477.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "478",
@@ -4777,7 +6211,10 @@ const pokedex = [
         "variation": "normal",
         "img": "458_mantyke.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "478.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "479",
@@ -4787,7 +6224,10 @@ const pokedex = [
         "variation": "normal",
         "img": "457_lumineon.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "479.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "480",
@@ -4797,7 +6237,10 @@ const pokedex = [
         "variation": "normal",
         "img": "454_toxicroak.webp",
         "type_1": "poison",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "480.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "481",
@@ -4807,7 +6250,10 @@ const pokedex = [
         "variation": "normal",
         "img": "453_croagunk.webp",
         "type_1": "poison",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "481.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "482",
@@ -4817,7 +6263,10 @@ const pokedex = [
         "variation": "normal",
         "img": "452_drapion.webp",
         "type_1": "poison",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "482.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "483",
@@ -4827,7 +6276,10 @@ const pokedex = [
         "variation": "normal",
         "img": "451_skorupi.webp",
         "type_1": "poison",
-        "type_2": "bug"
+        "type_2": "bug",
+        "homeSprite": "483.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "484",
@@ -4837,7 +6289,10 @@ const pokedex = [
         "variation": "normal",
         "img": "44_gloom.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "484.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "485",
@@ -4847,7 +6302,10 @@ const pokedex = [
         "variation": "normal",
         "img": "448_lucario.webp",
         "type_1": "fighting",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "485.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "486",
@@ -4857,7 +6315,10 @@ const pokedex = [
         "variation": "normal",
         "img": "447_riolu.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "486.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "487",
@@ -4867,7 +6328,10 @@ const pokedex = [
         "variation": "normal",
         "img": "446_munchlax.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "487.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "488",
@@ -4877,7 +6341,10 @@ const pokedex = [
         "variation": "normal",
         "img": "444_gabite.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "488.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "489",
@@ -4887,7 +6354,10 @@ const pokedex = [
         "variation": "normal",
         "img": "443_gible.webp",
         "type_1": "dragon",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "489.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "490",
@@ -4897,7 +6367,10 @@ const pokedex = [
         "variation": "normal",
         "img": "440_happiny.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "490.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "491",
@@ -4907,7 +6380,10 @@ const pokedex = [
         "variation": "normal",
         "img": "43_oddish.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "491.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "492",
@@ -4917,7 +6393,10 @@ const pokedex = [
         "variation": "normal",
         "img": "439_mime jr..webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "492.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "493",
@@ -4927,7 +6406,10 @@ const pokedex = [
         "variation": "normal",
         "img": "437_bronzong.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "493.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "494",
@@ -4937,7 +6419,10 @@ const pokedex = [
         "variation": "normal",
         "img": "436_bronzor.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "494.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "495",
@@ -4947,7 +6432,10 @@ const pokedex = [
         "variation": "normal",
         "img": "430_honchkrow.webp",
         "type_1": "dark",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "495.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "496",
@@ -4957,7 +6445,10 @@ const pokedex = [
         "variation": "normal",
         "img": "42_golbat.webp",
         "type_1": "poison",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "496.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "497",
@@ -4967,7 +6458,10 @@ const pokedex = [
         "variation": "normal",
         "img": "428_lopunny.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "497.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "498",
@@ -4977,7 +6471,10 @@ const pokedex = [
         "variation": "normal",
         "img": "427_buneary.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "498.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "499",
@@ -4987,7 +6484,10 @@ const pokedex = [
         "variation": "normal",
         "img": "41_zubat.webp",
         "type_1": "poison",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "499.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "500",
@@ -4997,7 +6497,10 @@ const pokedex = [
         "variation": "normal",
         "img": "40_wigglytuff.webp",
         "type_1": "normal",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "500.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "501",
@@ -5007,7 +6510,10 @@ const pokedex = [
         "variation": "normal",
         "img": "409_rampardos.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "501.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "502",
@@ -5017,7 +6523,10 @@ const pokedex = [
         "variation": "normal",
         "img": "408_cranidos.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "502.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "503",
@@ -5027,7 +6536,10 @@ const pokedex = [
         "variation": "normal",
         "img": "405_luxray.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "503.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "504",
@@ -5037,7 +6549,10 @@ const pokedex = [
         "variation": "normal",
         "img": "404_luxio.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "504.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "505",
@@ -5047,7 +6562,10 @@ const pokedex = [
         "variation": "normal",
         "img": "403_shinx.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "505.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "506",
@@ -5057,7 +6575,10 @@ const pokedex = [
         "variation": "normal",
         "img": "3_venusaur.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "506.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "507",
@@ -5067,7 +6588,10 @@ const pokedex = [
         "variation": "normal",
         "img": "39_jigglypuff.webp",
         "type_1": "normal",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "507.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "508",
@@ -5077,7 +6601,10 @@ const pokedex = [
         "variation": "normal",
         "img": "395_empoleon.webp",
         "type_1": "water",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "508.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "509",
@@ -5087,7 +6614,10 @@ const pokedex = [
         "variation": "normal",
         "img": "394_prinplup.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "509.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "510",
@@ -5097,7 +6627,10 @@ const pokedex = [
         "variation": "normal",
         "img": "393_piplup.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "510.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "511",
@@ -5107,7 +6640,10 @@ const pokedex = [
         "variation": "normal",
         "img": "392_infernape.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "511.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "512",
@@ -5117,7 +6653,10 @@ const pokedex = [
         "variation": "special",
         "img": "392_ash_infernape.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "512.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "513",
@@ -5127,7 +6666,10 @@ const pokedex = [
         "variation": "normal",
         "img": "391_monferno.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "513.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "514",
@@ -5137,7 +6679,10 @@ const pokedex = [
         "variation": "normal",
         "img": "390_chimchar.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "514.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "515",
@@ -5147,7 +6692,10 @@ const pokedex = [
         "variation": "normal",
         "img": "38_ninetales.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "515.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "516",
@@ -5157,7 +6705,10 @@ const pokedex = [
         "variation": "normal",
         "img": "389_torterra.webp",
         "type_1": "grass",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "516.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "517",
@@ -5167,7 +6718,10 @@ const pokedex = [
         "variation": "normal",
         "img": "388_grotle.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "517.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "518",
@@ -5177,7 +6731,10 @@ const pokedex = [
         "variation": "normal",
         "img": "387_turtwig.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "518.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "519",
@@ -5187,7 +6744,10 @@ const pokedex = [
         "variation": "normal",
         "img": "37_vulpix.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "519.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "520",
@@ -5197,7 +6757,10 @@ const pokedex = [
         "variation": "normal",
         "img": "375_metang.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "520.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "521",
@@ -5207,7 +6770,10 @@ const pokedex = [
         "variation": "normal",
         "img": "374_beldum.webp",
         "type_1": "steel",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "521.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "522",
@@ -5217,7 +6783,10 @@ const pokedex = [
         "variation": "normal",
         "img": "372_shelgon.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "522.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "523",
@@ -5227,7 +6796,10 @@ const pokedex = [
         "variation": "normal",
         "img": "371_bagon.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "523.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "524",
@@ -5237,7 +6809,10 @@ const pokedex = [
         "variation": "normal",
         "img": "36_clefable.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "524.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "525",
@@ -5247,7 +6822,10 @@ const pokedex = [
         "variation": "normal",
         "img": "478_froslass.webp",
         "type_1": "ice",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "525.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "526",
@@ -5257,7 +6835,10 @@ const pokedex = [
         "variation": "normal",
         "img": "367_huntail.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "526.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "527",
@@ -5267,7 +6848,10 @@ const pokedex = [
         "variation": "normal",
         "img": "366_clamperl.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "527.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "528",
@@ -5277,7 +6861,10 @@ const pokedex = [
         "variation": "normal",
         "img": "360_wynaut.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "528.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "529",
@@ -5287,7 +6874,10 @@ const pokedex = [
         "variation": "normal",
         "img": "35_clefairy.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "529.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "530",
@@ -5297,7 +6887,10 @@ const pokedex = [
         "variation": "normal",
         "img": "359_absol.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "530.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "531",
@@ -5307,7 +6900,10 @@ const pokedex = [
         "variation": "normal",
         "img": "357_tropius.webp",
         "type_1": "grass",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "531.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "532",
@@ -5317,7 +6913,10 @@ const pokedex = [
         "variation": "normal",
         "img": "356_dusclops.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "532.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "533",
@@ -5327,7 +6926,10 @@ const pokedex = [
         "variation": "normal",
         "img": "355_duskull.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "533.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "534",
@@ -5337,7 +6939,10 @@ const pokedex = [
         "variation": "normal",
         "img": "354_banette.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "534.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "535",
@@ -5347,7 +6952,10 @@ const pokedex = [
         "variation": "normal",
         "img": "353_shuppet.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "535.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "536",
@@ -5357,7 +6965,10 @@ const pokedex = [
         "variation": "special",
         "img": "351_rany_form_castform.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "536.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "537",
@@ -5367,7 +6978,10 @@ const pokedex = [
         "variation": "normal",
         "img": "351_castform.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "537.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "538",
@@ -5377,7 +6991,10 @@ const pokedex = [
         "variation": "normal",
         "img": "350_milotic.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "538.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "539",
@@ -5387,7 +7004,10 @@ const pokedex = [
         "variation": "normal",
         "img": "34_nidoking.webp",
         "type_1": "poison",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "539.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "540",
@@ -5397,7 +7017,10 @@ const pokedex = [
         "variation": "normal",
         "img": "349_feebas.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "540.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "541",
@@ -5407,7 +7030,10 @@ const pokedex = [
         "variation": "normal",
         "img": "348_armaldo.webp",
         "type_1": "rock",
-        "type_2": "bug"
+        "type_2": "bug",
+        "homeSprite": "541.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "542",
@@ -5417,7 +7043,10 @@ const pokedex = [
         "variation": "normal",
         "img": "347_anorith.webp",
         "type_1": "rock",
-        "type_2": "bug"
+        "type_2": "bug",
+        "homeSprite": "542.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "543",
@@ -5427,7 +7056,10 @@ const pokedex = [
         "variation": "normal",
         "img": "346_cradily.webp",
         "type_1": "rock",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "543.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "544",
@@ -5437,7 +7069,10 @@ const pokedex = [
         "variation": "normal",
         "img": "345_lileep.webp",
         "type_1": "rock",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "544.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "545",
@@ -5447,7 +7082,10 @@ const pokedex = [
         "variation": "normal",
         "img": "344_claydol.webp",
         "type_1": "ground",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "545.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "546",
@@ -5457,7 +7095,10 @@ const pokedex = [
         "variation": "normal",
         "img": "343_baltoy.webp",
         "type_1": "ground",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "546.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "547",
@@ -5467,7 +7108,10 @@ const pokedex = [
         "variation": "special",
         "img": "342_giant_crawdaunt.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "547.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "548",
@@ -5477,7 +7121,10 @@ const pokedex = [
         "variation": "normal",
         "img": "342_crawdaunt.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "548.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "549",
@@ -5487,7 +7134,10 @@ const pokedex = [
         "variation": "normal",
         "img": "341_corphish.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "549.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "550",
@@ -5497,7 +7147,10 @@ const pokedex = [
         "variation": "normal",
         "img": "334_altaria.webp",
         "type_1": "dragon",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "550.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "551",
@@ -5507,7 +7160,10 @@ const pokedex = [
         "variation": "normal",
         "img": "333_swablu.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "551.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "552",
@@ -5517,7 +7173,10 @@ const pokedex = [
         "variation": "normal",
         "img": "330_flygon.webp",
         "type_1": "ground",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "552.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "553",
@@ -5527,7 +7186,10 @@ const pokedex = [
         "variation": "normal",
         "img": "329_vibrava.webp",
         "type_1": "ground",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "553.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "554",
@@ -5537,7 +7199,10 @@ const pokedex = [
         "variation": "normal",
         "img": "328_trapinch.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "554.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "555",
@@ -5547,7 +7212,10 @@ const pokedex = [
         "variation": "normal",
         "img": "324_torkoal.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "555.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "556",
@@ -5557,7 +7225,10 @@ const pokedex = [
         "variation": "normal",
         "img": "323_camerupt.webp",
         "type_1": "fire",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "556.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "557",
@@ -5567,7 +7238,10 @@ const pokedex = [
         "variation": "normal",
         "img": "322_numel.webp",
         "type_1": "fire",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "557.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "558",
@@ -5577,7 +7251,10 @@ const pokedex = [
         "variation": "normal",
         "img": "321_wailord.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "558.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "559",
@@ -5587,7 +7264,10 @@ const pokedex = [
         "variation": "normal",
         "img": "320_wailmer.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "559.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "560",
@@ -5597,7 +7277,10 @@ const pokedex = [
         "variation": "normal",
         "img": "319_sharpedo.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "560.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "561",
@@ -5607,7 +7290,10 @@ const pokedex = [
         "variation": "normal",
         "img": "318_carvanha.webp",
         "type_1": "water",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "561.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "562",
@@ -5617,7 +7303,10 @@ const pokedex = [
         "variation": "normal",
         "img": "317_swalot.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "562.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "563",
@@ -5627,7 +7316,10 @@ const pokedex = [
         "variation": "normal",
         "img": "316_gulpin.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "563.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "564",
@@ -5637,7 +7329,10 @@ const pokedex = [
         "variation": "normal",
         "img": "312_minun.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "564.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "565",
@@ -5647,7 +7342,10 @@ const pokedex = [
         "variation": "normal",
         "img": "311_plusle.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "565.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "566",
@@ -5657,7 +7355,10 @@ const pokedex = [
         "variation": "normal",
         "img": "310_manectric.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "566.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "567",
@@ -5667,7 +7368,10 @@ const pokedex = [
         "variation": "normal",
         "img": "309_electrike.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "567.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "568",
@@ -5677,7 +7381,10 @@ const pokedex = [
         "variation": "normal",
         "img": "308_medicham.webp",
         "type_1": "fighting",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "568.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "569",
@@ -5687,7 +7394,10 @@ const pokedex = [
         "variation": "normal",
         "img": "307_meditite.webp",
         "type_1": "fighting",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "569.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "570",
@@ -5697,7 +7407,10 @@ const pokedex = [
         "variation": "normal",
         "img": "306_aggron.webp",
         "type_1": "steel",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "570.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "571",
@@ -5707,7 +7420,10 @@ const pokedex = [
         "variation": "normal",
         "img": "305_lairon.webp",
         "type_1": "steel",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "571.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "572",
@@ -5717,7 +7433,10 @@ const pokedex = [
         "variation": "normal",
         "img": "304_aron.webp",
         "type_1": "steel",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "572.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "573",
@@ -5727,7 +7446,10 @@ const pokedex = [
         "variation": "normal",
         "img": "303_mawile.webp",
         "type_1": "steel",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "573.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "574",
@@ -5737,7 +7459,10 @@ const pokedex = [
         "variation": "normal",
         "img": "302_sableye.webp",
         "type_1": "dark",
-        "type_2": "ghost"
+        "type_2": "ghost",
+        "homeSprite": "574.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "575",
@@ -5747,7 +7472,10 @@ const pokedex = [
         "variation": "normal",
         "img": "2_ivysaur.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "575.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "576",
@@ -5757,7 +7485,10 @@ const pokedex = [
         "variation": "normal",
         "img": "29_nidoqueen.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "576.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "577",
@@ -5767,7 +7498,10 @@ const pokedex = [
         "variation": "normal",
         "img": "299_nosepass.webp",
         "type_1": "rock",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "577.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "578",
@@ -5777,7 +7511,10 @@ const pokedex = [
         "variation": "normal",
         "img": "298_azurill.webp",
         "type_1": "normal",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "578.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "579",
@@ -5787,7 +7524,10 @@ const pokedex = [
         "variation": "normal",
         "img": "295_exploud.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "579.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "580",
@@ -5797,7 +7537,10 @@ const pokedex = [
         "variation": "normal",
         "img": "294_loudred.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "580.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "581",
@@ -5807,7 +7550,10 @@ const pokedex = [
         "variation": "normal",
         "img": "293_whismur.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "581.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "582",
@@ -5817,7 +7563,10 @@ const pokedex = [
         "variation": "normal",
         "img": "28_sandslash.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "582.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "583",
@@ -5827,7 +7576,10 @@ const pokedex = [
         "variation": "normal",
         "img": "288_vigoroth.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "583.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "584",
@@ -5837,7 +7589,10 @@ const pokedex = [
         "variation": "normal",
         "img": "287_slakoth.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "584.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "585",
@@ -5847,7 +7602,10 @@ const pokedex = [
         "variation": "normal",
         "img": "282_gardevoir.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "585.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "586",
@@ -5857,7 +7615,10 @@ const pokedex = [
         "variation": "normal",
         "img": "281_kirlia.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "586.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "587",
@@ -5867,7 +7628,10 @@ const pokedex = [
         "variation": "normal",
         "img": "280_ralts.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "587.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "588",
@@ -5877,7 +7641,10 @@ const pokedex = [
         "variation": "normal",
         "img": "27_sandshrew.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "588.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "589",
@@ -5887,7 +7654,10 @@ const pokedex = [
         "variation": "normal",
         "img": "272_ludicolo.webp",
         "type_1": "water",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "589.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "590",
@@ -5897,7 +7667,10 @@ const pokedex = [
         "variation": "normal",
         "img": "271_lombre.webp",
         "type_1": "water",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "590.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "591",
@@ -5907,7 +7680,10 @@ const pokedex = [
         "variation": "normal",
         "img": "270_lotad.webp",
         "type_1": "water",
-        "type_2": "grass"
+        "type_2": "grass",
+        "homeSprite": "591.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "592",
@@ -5917,7 +7693,10 @@ const pokedex = [
         "variation": "normal",
         "img": "26_raichu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "592.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "593",
@@ -5927,7 +7706,10 @@ const pokedex = [
         "variation": "normal",
         "img": "269_dustox.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "593.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "594",
@@ -5937,7 +7719,10 @@ const pokedex = [
         "variation": "normal",
         "img": "268_cascoon.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "594.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "595",
@@ -5947,7 +7732,10 @@ const pokedex = [
         "variation": "normal",
         "img": "267_beautifly.webp",
         "type_1": "bug",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "595.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "596",
@@ -5957,7 +7745,10 @@ const pokedex = [
         "variation": "normal",
         "img": "265_wurmple.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "596.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "597",
@@ -5967,7 +7758,10 @@ const pokedex = [
         "variation": "normal",
         "img": "260_swampert.webp",
         "type_1": "water",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "597.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "598",
@@ -5977,7 +7771,10 @@ const pokedex = [
         "variation": "special",
         "img": "260_bradon_swampert.webp",
         "type_1": "water",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "598.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "599",
@@ -5987,7 +7784,10 @@ const pokedex = [
         "variation": "normal",
         "img": "25_pikachu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "599.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "600",
@@ -5997,7 +7797,10 @@ const pokedex = [
         "variation": "special",
         "img": "54_misty_psyduck.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "600.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "601",
@@ -6007,7 +7810,10 @@ const pokedex = [
         "variation": "special",
         "img": "25_dectective_pikachu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "601.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "602",
@@ -6017,7 +7823,10 @@ const pokedex = [
         "variation": "special",
         "img": "25_ash_pikachu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "602.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "603",
@@ -6027,7 +7836,10 @@ const pokedex = [
         "variation": "normal",
         "img": "259_marshtomp.webp",
         "type_1": "water",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "603.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "604",
@@ -6037,7 +7849,10 @@ const pokedex = [
         "variation": "normal",
         "img": "258_mudkip.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "604.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "605",
@@ -6047,7 +7862,10 @@ const pokedex = [
         "variation": "special",
         "img": "257_may_blaziken.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "605.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "606",
@@ -6057,7 +7875,10 @@ const pokedex = [
         "variation": "normal",
         "img": "257_blaziken.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "606.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "607",
@@ -6067,7 +7888,10 @@ const pokedex = [
         "variation": "normal",
         "img": "256_combusken.webp",
         "type_1": "fire",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "607.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "608",
@@ -6077,7 +7901,10 @@ const pokedex = [
         "variation": "normal",
         "img": "255_torchic.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "608.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "609",
@@ -6087,7 +7914,10 @@ const pokedex = [
         "variation": "normal",
         "img": "254_sceptile.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "609.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "610",
@@ -6097,7 +7927,10 @@ const pokedex = [
         "variation": "special",
         "img": "254_ash_sceptile.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "610.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "611",
@@ -6107,7 +7940,10 @@ const pokedex = [
         "variation": "normal",
         "img": "253_grovyle.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "611.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "612",
@@ -6117,7 +7953,10 @@ const pokedex = [
         "variation": "normal",
         "img": "252_treecko.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "612.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "613",
@@ -6127,7 +7966,10 @@ const pokedex = [
         "variation": "special",
         "img": "24_jessie_arbok.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "613.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "614",
@@ -6137,7 +7979,10 @@ const pokedex = [
         "variation": "normal",
         "img": "24_arbok.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "614.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "615",
@@ -6147,7 +7992,10 @@ const pokedex = [
         "variation": "normal",
         "img": "246_larvitar.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "615.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "616",
@@ -6157,7 +8005,10 @@ const pokedex = [
         "variation": "normal",
         "img": "247_pupitar.webp",
         "type_1": "rock",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "616.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "617",
@@ -6167,7 +8018,10 @@ const pokedex = [
         "variation": "normal",
         "img": "242_blissey.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "617.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "618",
@@ -6177,7 +8031,10 @@ const pokedex = [
         "variation": "normal",
         "img": "240_magby.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "618.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "619",
@@ -6187,7 +8044,10 @@ const pokedex = [
         "variation": "normal",
         "img": "23_ekans.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "619.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "620",
@@ -6197,7 +8057,10 @@ const pokedex = [
         "variation": "normal",
         "img": "239_elekid.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "620.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "621",
@@ -6207,7 +8070,10 @@ const pokedex = [
         "variation": "normal",
         "img": "238_smoochum.webp",
         "type_1": "ice",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "621.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "622",
@@ -6217,7 +8083,10 @@ const pokedex = [
         "variation": "normal",
         "img": "234_stantler.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "622.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "623",
@@ -6227,7 +8096,10 @@ const pokedex = [
         "variation": "normal",
         "img": "233_porygon2.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "623.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "624",
@@ -6237,7 +8109,10 @@ const pokedex = [
         "variation": "normal",
         "img": "230_kingdra.webp",
         "type_1": "water",
-        "type_2": "dragon"
+        "type_2": "dragon",
+        "homeSprite": "624.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "625",
@@ -6247,7 +8122,10 @@ const pokedex = [
         "variation": "normal",
         "img": "22_fearow.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "625.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "626",
@@ -6257,7 +8135,10 @@ const pokedex = [
         "variation": "normal",
         "img": "229_houndoom.webp",
         "type_1": "dark",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "626.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "627",
@@ -6267,7 +8148,10 @@ const pokedex = [
         "variation": "normal",
         "img": "228_houndour.webp",
         "type_1": "dark",
-        "type_2": "fire"
+        "type_2": "fire",
+        "homeSprite": "627.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "628",
@@ -6277,7 +8161,10 @@ const pokedex = [
         "variation": "normal",
         "img": "226_mantine.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "628.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "629",
@@ -6287,7 +8174,10 @@ const pokedex = [
         "variation": "normal",
         "img": "225_delibird.webp",
         "type_1": "ice",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "629.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "630",
@@ -6297,7 +8187,10 @@ const pokedex = [
         "variation": "normal",
         "img": "221_piloswine.webp",
         "type_1": "ice",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "630.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "631",
@@ -6307,7 +8200,10 @@ const pokedex = [
         "variation": "normal",
         "img": "220_swinub.webp",
         "type_1": "ice",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "631.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "632",
@@ -6317,7 +8213,10 @@ const pokedex = [
         "variation": "normal",
         "img": "21_spearow.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "632.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "633",
@@ -6327,7 +8226,10 @@ const pokedex = [
         "variation": "normal",
         "img": "215_sneasel.webp",
         "type_1": "dark",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "633.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "634",
@@ -6337,7 +8239,10 @@ const pokedex = [
         "variation": "normal",
         "img": "214_heracross.webp",
         "type_1": "bug",
-        "type_2": "fighting"
+        "type_2": "fighting",
+        "homeSprite": "634.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "635",
@@ -6347,7 +8252,10 @@ const pokedex = [
         "variation": "normal",
         "img": "213_shuckle.webp",
         "type_1": "bug",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "635.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "636",
@@ -6357,7 +8265,10 @@ const pokedex = [
         "variation": "normal",
         "img": "212_scizor.webp",
         "type_1": "bug",
-        "type_2": "steel"
+        "type_2": "steel",
+        "homeSprite": "636.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "637",
@@ -6367,7 +8278,10 @@ const pokedex = [
         "variation": "normal",
         "img": "20_raticate.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "637.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "638",
@@ -6377,7 +8291,10 @@ const pokedex = [
         "variation": "normal",
         "img": "208_steelix.webp",
         "type_1": "steel",
-        "type_2": "ground"
+        "type_2": "ground",
+        "homeSprite": "638.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "639",
@@ -6387,7 +8304,10 @@ const pokedex = [
         "variation": "normal",
         "img": "203_girafarig.webp",
         "type_1": "normal",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "639.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "640",
@@ -6397,7 +8317,10 @@ const pokedex = [
         "variation": "normal",
         "img": "202_wobbuffet.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "640.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "641",
@@ -6407,7 +8330,10 @@ const pokedex = [
         "variation": "special",
         "img": "202_team_rocket_wobbuffet.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "641.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "642",
@@ -6417,7 +8343,10 @@ const pokedex = [
         "variation": "normal",
         "img": "200_misdreavus.webp",
         "type_1": "ghost",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "642.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "643",
@@ -6427,7 +8356,10 @@ const pokedex = [
         "variation": "normal",
         "img": "1_bulbasaur.webp",
         "type_1": "grass",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "643.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "644",
@@ -6437,7 +8369,10 @@ const pokedex = [
         "variation": "normal",
         "img": "19_rattata.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "644.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "645",
@@ -6447,7 +8382,10 @@ const pokedex = [
         "variation": "normal",
         "img": "198_murkrow.webp",
         "type_1": "dark",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "645.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "646",
@@ -6457,7 +8395,10 @@ const pokedex = [
         "variation": "normal",
         "img": "197_umbreon.webp",
         "type_1": "dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "646.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "647",
@@ -6467,7 +8408,10 @@ const pokedex = [
         "variation": "normal",
         "img": "196_espeon.webp",
         "type_1": "psychic",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "647.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "648",
@@ -6477,7 +8421,10 @@ const pokedex = [
         "variation": "normal",
         "img": "18_pidgeot.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "648.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "649",
@@ -6487,7 +8434,10 @@ const pokedex = [
         "variation": "normal",
         "img": "186_politoed.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "649.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "650",
@@ -6497,7 +8447,10 @@ const pokedex = [
         "variation": "normal",
         "img": "184_azumarill.webp",
         "type_1": "water",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "650.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "651",
@@ -6507,7 +8460,10 @@ const pokedex = [
         "variation": "normal",
         "img": "183_marill.webp",
         "type_1": "water",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "651.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "652",
@@ -6517,7 +8473,10 @@ const pokedex = [
         "variation": "normal",
         "img": "182_bellossom.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "652.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "653",
@@ -6527,7 +8486,10 @@ const pokedex = [
         "variation": "normal",
         "img": "181_ampharos.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "653.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "654",
@@ -6537,7 +8499,10 @@ const pokedex = [
         "variation": "normal",
         "img": "180_flaaffy.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "654.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "655",
@@ -6547,7 +8512,10 @@ const pokedex = [
         "variation": "normal",
         "img": "17_pidgeotto.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "655.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "656",
@@ -6557,7 +8525,10 @@ const pokedex = [
         "variation": "normal",
         "img": "179_mareep.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "656.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "657",
@@ -6567,7 +8538,10 @@ const pokedex = [
         "variation": "normal",
         "img": "178_xatu.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "657.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "658",
@@ -6577,7 +8551,10 @@ const pokedex = [
         "variation": "normal",
         "img": "177_natu.webp",
         "type_1": "psychic",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "658.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "659",
@@ -6587,7 +8564,10 @@ const pokedex = [
         "variation": "normal",
         "img": "176_togetic.webp",
         "type_1": "fairy",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "659.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "660",
@@ -6597,7 +8577,10 @@ const pokedex = [
         "variation": "normal",
         "img": "175_togepi.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "660.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "661",
@@ -6607,7 +8590,10 @@ const pokedex = [
         "variation": "normal",
         "img": "174_igglybuff.webp",
         "type_1": "normal",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "661.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "662",
@@ -6617,7 +8603,10 @@ const pokedex = [
         "variation": "normal",
         "img": "173_cleffa.webp",
         "type_1": "fairy",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "662.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "663",
@@ -6627,7 +8616,10 @@ const pokedex = [
         "variation": "normal",
         "img": "172_pichu.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "663.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "664",
@@ -6637,7 +8629,10 @@ const pokedex = [
         "variation": "normal",
         "img": "171_lanturn.webp",
         "type_1": "water",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "664.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "665",
@@ -6647,7 +8642,10 @@ const pokedex = [
         "variation": "normal",
         "img": "170_chinchou.webp",
         "type_1": "water",
-        "type_2": "electric"
+        "type_2": "electric",
+        "homeSprite": "665.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "666",
@@ -6657,7 +8655,10 @@ const pokedex = [
         "variation": "normal",
         "img": "16_pidgey.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "666.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "667",
@@ -6667,7 +8668,10 @@ const pokedex = [
         "variation": "normal",
         "img": "169_crobat.webp",
         "type_1": "poison",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "667.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "668",
@@ -6677,7 +8681,10 @@ const pokedex = [
         "variation": "normal",
         "img": "166_ledian.webp",
         "type_1": "bug",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "668.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "669",
@@ -6687,7 +8694,10 @@ const pokedex = [
         "variation": "normal",
         "img": "165_ledyba.webp",
         "type_1": "bug",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "669.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "670",
@@ -6697,7 +8707,10 @@ const pokedex = [
         "variation": "normal",
         "img": "164_noctowl.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "670.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "671",
@@ -6707,7 +8720,10 @@ const pokedex = [
         "variation": "normal",
         "img": "163_hoothoot.webp",
         "type_1": "normal",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "671.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "672",
@@ -6717,7 +8733,10 @@ const pokedex = [
         "variation": "normal",
         "img": "162_furret.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "672.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "673",
@@ -6727,7 +8746,10 @@ const pokedex = [
         "variation": "normal",
         "img": "161_sentret.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "673.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "674",
@@ -6737,7 +8759,10 @@ const pokedex = [
         "variation": "normal",
         "img": "160_feraligatr.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "674.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "675",
@@ -6747,7 +8772,10 @@ const pokedex = [
         "variation": "normal",
         "img": "15_beedrill.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "675.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "676",
@@ -6757,7 +8785,10 @@ const pokedex = [
         "variation": "normal",
         "img": "159_croconaw.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "676.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "677",
@@ -6767,7 +8798,10 @@ const pokedex = [
         "variation": "normal",
         "img": "158_totodile.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "677.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "678",
@@ -6777,7 +8811,10 @@ const pokedex = [
         "variation": "normal",
         "img": "157_typhlosion.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "678.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "679",
@@ -6787,7 +8824,10 @@ const pokedex = [
         "variation": "normal",
         "img": "156_quilava.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "679.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "680",
@@ -6797,7 +8837,10 @@ const pokedex = [
         "variation": "normal",
         "img": "155_cyndaquil.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "680.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "681",
@@ -6807,7 +8850,10 @@ const pokedex = [
         "variation": "normal",
         "img": "154_meganium.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "681.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "682",
@@ -6817,7 +8863,10 @@ const pokedex = [
         "variation": "normal",
         "img": "153_bayleef.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "682.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "683",
@@ -6827,7 +8876,10 @@ const pokedex = [
         "variation": "normal",
         "img": "152_chikorita.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "683.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "684",
@@ -6837,7 +8889,10 @@ const pokedex = [
         "variation": "normal",
         "img": "14_kakuna.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "684.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "685",
@@ -6847,7 +8902,10 @@ const pokedex = [
         "variation": "normal",
         "img": "148_dragonair.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "685.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "686",
@@ -6857,7 +8915,10 @@ const pokedex = [
         "variation": "normal",
         "img": "147_dratini.webp",
         "type_1": "dragon",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "686.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "687",
@@ -6867,7 +8928,10 @@ const pokedex = [
         "variation": "normal",
         "img": "142_aerodactyl.webp",
         "type_1": "rock",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "687.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "688",
@@ -6877,7 +8941,10 @@ const pokedex = [
         "variation": "normal",
         "img": "141_kabutops.webp",
         "type_1": "rock",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "688.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "689",
@@ -6887,7 +8954,10 @@ const pokedex = [
         "variation": "normal",
         "img": "140_kabuto.webp",
         "type_1": "rock",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "689.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "690",
@@ -6897,7 +8967,10 @@ const pokedex = [
         "variation": "normal",
         "img": "13_weedle.webp",
         "type_1": "bug",
-        "type_2": "poison"
+        "type_2": "poison",
+        "homeSprite": "690.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "691",
@@ -6907,7 +8980,10 @@ const pokedex = [
         "variation": "normal",
         "img": "139_omastar.webp",
         "type_1": "rock",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "691.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "692",
@@ -6917,7 +8993,10 @@ const pokedex = [
         "variation": "normal",
         "img": "138_omanyte.webp",
         "type_1": "rock",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "692.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "693",
@@ -6927,7 +9006,10 @@ const pokedex = [
         "variation": "normal",
         "img": "137_porygon.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "693.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "694",
@@ -6937,7 +9019,10 @@ const pokedex = [
         "variation": "normal",
         "img": "136_flareon.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "694.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "695",
@@ -6947,7 +9032,10 @@ const pokedex = [
         "variation": "normal",
         "img": "135_jolteon.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "695.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "696",
@@ -6957,7 +9045,10 @@ const pokedex = [
         "variation": "normal",
         "img": "134_vaporeon.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "696.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "697",
@@ -6967,7 +9058,10 @@ const pokedex = [
         "variation": "normal",
         "img": "133_eevee.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "697.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "698",
@@ -6977,7 +9071,10 @@ const pokedex = [
         "variation": "normal",
         "img": "131_lapras.webp",
         "type_1": "water",
-        "type_2": "ice"
+        "type_2": "ice",
+        "homeSprite": "698.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "699",
@@ -6987,7 +9084,10 @@ const pokedex = [
         "variation": "special",
         "img": "130_shinny_red_gyarados.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "699.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "700",
@@ -6997,7 +9097,10 @@ const pokedex = [
         "variation": "normal",
         "img": "130_gyarados.webp",
         "type_1": "water",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "700.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "701",
@@ -7007,7 +9110,10 @@ const pokedex = [
         "variation": "normal",
         "img": "12_butterfree.webp",
         "type_1": "bug",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "701.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "702",
@@ -7017,7 +9123,10 @@ const pokedex = [
         "variation": "special",
         "img": "129_shinny_gold_magikarp.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "702.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "703",
@@ -7027,7 +9136,10 @@ const pokedex = [
         "variation": "normal",
         "img": "129_magikarp.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "703.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "704",
@@ -7037,7 +9149,10 @@ const pokedex = [
         "variation": "normal",
         "img": "128_tauros.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "704.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "705",
@@ -7047,7 +9162,10 @@ const pokedex = [
         "variation": "normal",
         "img": "127_pinsir.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "705.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "706",
@@ -7057,7 +9175,10 @@ const pokedex = [
         "variation": "normal",
         "img": "126_magmar.webp",
         "type_1": "fire",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "706.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "707",
@@ -7067,7 +9188,10 @@ const pokedex = [
         "variation": "normal",
         "img": "125_electabuzz.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "707.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "708",
@@ -7077,7 +9201,10 @@ const pokedex = [
         "variation": "normal",
         "img": "124_jynx.webp",
         "type_1": "ice",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "708.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "709",
@@ -7087,7 +9214,10 @@ const pokedex = [
         "variation": "normal",
         "img": "123_scyther.webp",
         "type_1": "bug",
-        "type_2": "flying"
+        "type_2": "flying",
+        "homeSprite": "709.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "710",
@@ -7097,7 +9227,10 @@ const pokedex = [
         "variation": "normal",
         "img": "122_mr_mime.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "710.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "711",
@@ -7107,7 +9240,10 @@ const pokedex = [
         "variation": "normal",
         "img": "121_starmie.webp",
         "type_1": "water",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "711.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "712",
@@ -7117,7 +9253,10 @@ const pokedex = [
         "variation": "special",
         "img": "121_misty_starmie.webp",
         "type_1": "water",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "712.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "713",
@@ -7127,7 +9266,10 @@ const pokedex = [
         "variation": "normal",
         "img": "120_staryu.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "713.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "714",
@@ -7137,7 +9279,10 @@ const pokedex = [
         "variation": "normal",
         "img": "11_metapod.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "714.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "715",
@@ -7147,7 +9292,10 @@ const pokedex = [
         "variation": "normal",
         "img": "119_seaking.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "715.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "716",
@@ -7157,7 +9305,10 @@ const pokedex = [
         "variation": "normal",
         "img": "118_goldeen.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "716.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "717",
@@ -7167,7 +9318,10 @@ const pokedex = [
         "variation": "normal",
         "img": "117_seadra.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "717.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "718",
@@ -7177,7 +9331,10 @@ const pokedex = [
         "variation": "normal",
         "img": "116_horsea.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "718.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "719",
@@ -7187,7 +9344,10 @@ const pokedex = [
         "variation": "normal",
         "img": "115_kangaskhan.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "719.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "720",
@@ -7197,7 +9357,10 @@ const pokedex = [
         "variation": "normal",
         "img": "114_tangela.webp",
         "type_1": "grass",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "720.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "721",
@@ -7207,7 +9370,10 @@ const pokedex = [
         "variation": "normal",
         "img": "113_chansey.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "721.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "722",
@@ -7217,7 +9383,10 @@ const pokedex = [
         "variation": "normal",
         "img": "112_rhydon.webp",
         "type_1": "ground",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "722.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "723",
@@ -7227,7 +9396,10 @@ const pokedex = [
         "variation": "normal",
         "img": "111_rhyhorn.webp",
         "type_1": "ground",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "723.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "724",
@@ -7237,7 +9409,10 @@ const pokedex = [
         "variation": "normal",
         "img": "110_weezing.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "724.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "725",
@@ -7247,7 +9422,10 @@ const pokedex = [
         "variation": "special",
         "img": "110_james_weezing.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "725.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "726",
@@ -7257,7 +9435,10 @@ const pokedex = [
         "variation": "normal",
         "img": "10_caterpie.webp",
         "type_1": "bug",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "726.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "727",
@@ -7267,7 +9448,10 @@ const pokedex = [
         "variation": "normal",
         "img": "109_koffing.webp",
         "type_1": "poison",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "727.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "728",
@@ -7277,7 +9461,10 @@ const pokedex = [
         "variation": "normal",
         "img": "108_lickitung.webp",
         "type_1": "normal",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "728.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "729",
@@ -7287,7 +9474,10 @@ const pokedex = [
         "variation": "normal",
         "img": "105_marowak.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "729.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "730",
@@ -7297,7 +9487,10 @@ const pokedex = [
         "variation": "normal",
         "img": "104_cubone.webp",
         "type_1": "ground",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "730.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "731",
@@ -7307,7 +9500,10 @@ const pokedex = [
         "variation": "normal",
         "img": "103_exeggutor.webp",
         "type_1": "grass",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "731.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "732",
@@ -7317,7 +9513,10 @@ const pokedex = [
         "variation": "normal",
         "img": "102_exeggcute.webp",
         "type_1": "grass",
-        "type_2": "psychic"
+        "type_2": "psychic",
+        "homeSprite": "732.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "733",
@@ -7327,7 +9526,10 @@ const pokedex = [
         "variation": "normal",
         "img": "101_electrode.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "733.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "734",
@@ -7337,7 +9539,10 @@ const pokedex = [
         "variation": "normal",
         "img": "100_voltorb.webp",
         "type_1": "electric",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "734.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "738",
@@ -7347,7 +9552,10 @@ const pokedex = [
         "variation": "resonance",
         "img": "491_resonance_darkrai.webp",
         "type_1": "Dark",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "738.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "739",
@@ -7357,7 +9565,10 @@ const pokedex = [
         "variation": "normal",
         "img": "766_passimian.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "739.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "740",
@@ -7367,7 +9578,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "786_overlord_tapu_lele.webp",
         "type_1": "psychic",
-        "type_2": "fairy"
+        "type_2": "fairy",
+        "homeSprite": "740.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "741",
@@ -7377,7 +9591,10 @@ const pokedex = [
         "variation": "normal",
         "img": "833_chewtle.webp",
         "type_1": "water",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "741.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "742",
@@ -7387,7 +9604,10 @@ const pokedex = [
         "variation": "normal",
         "img": "834_drednaw.webp",
         "type_1": "water",
-        "type_2": "rock"
+        "type_2": "rock",
+        "homeSprite": "742.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "743",
@@ -7397,7 +9617,10 @@ const pokedex = [
         "variation": "normal",
         "img": "891_kubfu.webp",
         "type_1": "fighting",
-        "type_2": ""
+        "type_2": "",
+        "homeSprite": "743.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "744",
@@ -7407,7 +9630,10 @@ const pokedex = [
         "variation": "overlord",
         "img": "892_overlord_urshifu_rapid_strike_style.webp",
         "type_1": "fighting",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "744.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "745",
@@ -7417,7 +9643,10 @@ const pokedex = [
         "variation": "epic",
         "img": "892_epic_urshifu_single_strike_style.webp",
         "type_1": "fighting",
-        "type_2": "dark"
+        "type_2": "dark",
+        "homeSprite": "745.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     },
     {
         "id": "746",
@@ -7427,7 +9656,10 @@ const pokedex = [
         "variation": "epic",
         "img": "892_epic_urshifu_rapid_strike_style.webp",
         "type_1": "fighting",
-        "type_2": "water"
+        "type_2": "water",
+        "homeSprite": "746.webp",
+        "pokemon_home_base_url": homeSprite,
+        "pokeland_base_url": pokelandSprite
     }
 ]
 export default pokedex;
