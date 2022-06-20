@@ -16,7 +16,7 @@ const PokemonInfo = (props) => {
     if (props.isBuilding)
         for (let i = 1; i <= 6; i++) {
             if (i === 3 || i === 5) {
-                teamMates.push(<div className='row best-teams-fix'></div>)
+                teamMates.push(<div key={i * 7} className='row best-teams-fix'></div>)
             }
 
             teamMates.push(
