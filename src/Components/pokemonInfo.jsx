@@ -23,7 +23,7 @@ const PokemonInfo = (props) => {
     else
         for (let i = 1; i <= 9; i++)
             teamMates.push(
-                <ImgTooltip classes="col-3 col-md-2 col-lg-3 blue-border border-small m-1" src="assets/img/150_mega_shadow_mewtwo-x.webp" alt="butt"></ImgTooltip>
+                <ImgTooltip key={i} classes="col-3 col-md-2 col-lg-3 blue-border border-small m-1" src="assets/img/150_mega_shadow_mewtwo-x.webp" alt="butt"></ImgTooltip>
             )
 
     return (
