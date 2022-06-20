@@ -1,18 +1,16 @@
-import React, { useState } from "react";
+// eslint-disable-next-line
+import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-import pokedexDataContext, { pokedex } from "./Data/pokedexDataContext";
-
-
 import SearchPokemonForm from "./Components/forms/searchPokemon";
 import Navbar from "./Views/template/navbar/navbar";
 import Content from "./Views/content";
 import OffcanvasBase from "./Components/offcanvas/offcanvasBase";
+import { PokedexProvider } from "./Data/Context/pokelandApi";
 
 function App() {
-    const [state, setState] = useState(pokedex)
 
     return (
-        <pokedexDataContext.Provider value={{ state, setState }}>
+        <PokedexProvider>
             <Router>
                 <Navbar />
                 <Content></Content>
@@ -20,7 +18,7 @@ function App() {
                     <SearchPokemonForm searchByAbility={false} />
                 </OffcanvasBase>
             </Router>
-        </pokedexDataContext.Provider>
+        </PokedexProvider>
     );
 }
 
