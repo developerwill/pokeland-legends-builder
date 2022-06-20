@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Span from './span/span';
 import PokemonImg from './pokemonImg/pokemonImg';
 import BtnOffcanvas from './btn/btnOffcanvas';
@@ -7,17 +7,20 @@ import BestTeams from './bestTeams';
 import BtnModal from './btn/btnModal';
 import ImgTooltip from './pokemonImg/imgTooltip';
 
+import { PokemonDataContext } from '../Data/Context/pokemonData';
+
 const PokemonInfo = (props) => {
     let teamMates = [];
+    const pokemon = useContext(PokemonDataContext);
 
-    if (!props.isLoggedIn)
+    if (props.isBuilding)
         for (let i = 1; i <= 6; i++) {
             if (i === 3 || i === 5) {
                 teamMates.push(<div className='row best-teams-fix'></div>)
             }
 
             teamMates.push(
-                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="border rounded-circle d-flex justify-content-center align-items-center add-button box mx-2 my-2"></BtnModal>
+                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary  mx-2 my-2">+</BtnModal>
             );
         }
     else
@@ -32,14 +35,13 @@ const PokemonInfo = (props) => {
                 <div className="col-12 py-3 text-center">
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="mb-3">
-                            <Span type="grass"></Span>
-                            <Span type="poison"></Span>
+                            <Span type={pokemon.types.type_1}></Span>
+                            <Span type={pokemon.types.type_2}></Span>
                         </div>
-                        <p className="box col mb-3">Resonance Shadow Mewtwo X</p>
-                        <PokemonImg borderType="blue-border" animated={true} />
+                        <p className="box col mb-3">{pokemon.name.pokeland}</p>
+                        <PokemonImg borderType="blue-border" src={pokemon.sprites.pokeland} animated={true} />
 
-                        {props.isLoggedIn
-
+                        {props.isBuilding
                             ? <BtnOffcanvas classes="btn-primary mt-3" offcanvas="offcanvas-search-1" text="Change Pokémon"></BtnOffcanvas>
                             :
                             <div className='row d-flex justify-content-center build-vote mt-3'>
@@ -69,7 +71,7 @@ const PokemonInfo = (props) => {
                 </div>
             </div>
 
-            <BestTeams id="best-teams" title="Teammates for" pokemonName="Resonance Spell Of The Unown">
+            <BestTeams id="best-teams" title="Teammates for" pokemonName={pokemon.name.pokeland}>
                 {teamMates}
             </BestTeams>
         </>
