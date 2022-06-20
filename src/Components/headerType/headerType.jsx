@@ -13,7 +13,7 @@ const HeaderType = (props) => {
                         <img className="header-type-type"
                             src={pokemon.assets.type_1}
                             alt={pokemon.seo.type_1_alt}></img>
-                        {pokemon.type_2 &&
+                        {pokemon.types.type_2 &&
                             <img className="header-type-type"
                                 src={pokemon.assets.type_2}
                                 alt={pokemon.seo.type_2_alt}></img>
