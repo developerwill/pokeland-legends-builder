@@ -10,12 +10,13 @@ import { PokemonDataProvider } from '../../Data/Context/pokemonData';
 
 const BuilderPage = (props) => {
     const isLoggedIn = false;
+    const isBuilding = true;
 
     return (
         <PokemonDataProvider pokemonID={69}>
             <CopyLinkHeader />
             <SideInfo classes="col mb-4 mb-lg-0 me-lg-3 pb-3">
-                <PokemonInfo isLoggedIn={isLoggedIn} />
+                <PokemonInfo isLoggedIn={isLoggedIn} isBuilding={isBuilding} />
                 {isLoggedIn &&
                     <Textarea classes="mt-3">
                         Build Notes
