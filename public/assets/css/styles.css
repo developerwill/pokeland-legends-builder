@@ -244,3 +244,12 @@ form {
 .not-found {
     height: calc(100vh - 130px);
 }
+
+.search-result .list-group-item {
+    background: transparent;
+    color: white;
+}
+
+.search-result .list-group-item:hover {
+    background: rgb(28, 27, 70);
+}

@@ -1,4 +1,3 @@
-// eslint-disable-next-line
 import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 import SearchPokemonForm from "./Components/forms/searchPokemon";
