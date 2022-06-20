@@ -12,6 +12,7 @@ export const PokemonDataProvider = props => {
     const type_2 = pokemonInfo[0].types.type_2;
     const pokedexID = pokemonInfo[0].pokedex_id;
     const pokelandName = pokemonInfo[0].name.pokeland;
+    const variation = pokemonInfo[0].variation;
 
     //SEO
     const alt = `Pokeland Legends Builder - ${pokelandName}`;
@@ -21,6 +22,7 @@ export const PokemonDataProvider = props => {
     //Path for pictures
     const picture = 'assets/img/pokedex/pokemon-home/';
     const typeImg = 'assets/img/header_types/types/';
+    const spritePath = 'assets/img/pokedex/pokeland/';
 
     const pokemonData =
     {
@@ -30,9 +32,9 @@ export const PokemonDataProvider = props => {
             pokedex: pokemonInfo[0].name.pokedex,
             pokeland: pokelandName
         },
-        variation: pokemonInfo[0].variation,
+        variation: variation,
         sprites: {
-            pokeland: pokemonInfo[0].sprites.pokeland,
+            pokeland: spritePath + variation + '/' + pokemonInfo[0].sprites.pokeland,
             pokemonHome: pokemonInfo[0].sprites.home
         },
         types: {
