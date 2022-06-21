@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import InputText from './inputText';
-import { SearchPokemonProvider } from '../../Data/Context/searchPokemon';
+import { QueryProvider } from '../../Data/Context/queries';
+import SearchResults from '../searchResults';
 
 const SearchPokemonForm = (props) => {
     const [pokemonName, setPokemonName] = useState('');
+
     let searching = false;
 
     if (pokemonName.length >= 2)
@@ -26,8 +28,9 @@ const SearchPokemonForm = (props) => {
                 ?
                 <div className="search-result">
                     <div className="list-group">
-                        <SearchPokemonProvider pokemonName={pokemonName} />
-
+                        <QueryProvider pokemonName={pokemonName}>
+                            <SearchResults />
+                        </QueryProvider>
                     </div>
                 </div>
                 :
