@@ -7,11 +7,11 @@ import BestTeams from './bestTeams';
 import BtnModal from './btn/btnModal';
 import ImgTooltip from './pokemonImg/imgTooltip';
 
-import { PokemonDataContext } from '../Data/Context/pokemonData';
+import { PokedexContext } from '../Data/Context/pokelandApi';
 
 const PokemonInfo = (props) => {
     let teamMates = [];
-    const pokemon = useContext(PokemonDataContext);
+    const { pokemonData } = useContext(PokedexContext)
 
     if (props.isBuilding)
         for (let i = 1; i <= 6; i++) {
@@ -20,7 +20,7 @@ const PokemonInfo = (props) => {
             }
 
             teamMates.push(
-                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary  mx-2 my-2">+</BtnModal>
+                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary mx-2 my-2">+</BtnModal>
             );
         }
     else
@@ -35,11 +35,11 @@ const PokemonInfo = (props) => {
                 <div className="col-12 py-3 text-center">
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="mb-3">
-                            <Span type={pokemon.types.type_1}></Span>
-                            <Span type={pokemon.types.type_2}></Span>
+                            <Span type={pokemonData.types.type_1}></Span>
+                            <Span type={pokemonData.types.type_2}></Span>
                         </div>
-                        <p className="box col mb-3">{pokemon.name.pokeland}</p>
-                        <PokemonImg borderType="blue-border" src={pokemon.sprites.pokeland} animated={true} />
+                        <p className="box col mb-3">{pokemonData.name.pokeland}</p>
+                        <PokemonImg borderType="blue-border" src={pokemonData.sprites.pokeland} animated={true} />
 
                         {props.isBuilding
                             ? <BtnOffcanvas classes="btn-primary mt-3" offcanvas="offcanvas-search-1" text="Change Pokémon"></BtnOffcanvas>
@@ -71,7 +71,7 @@ const PokemonInfo = (props) => {
                 </div>
             </div>
 
-            <BestTeams id="best-teams" title="Teammates for" pokemonName={pokemon.name.pokeland}>
+            <BestTeams id="best-teams" title="Teammates for" pokemonName={pokemonData.name.pokeland}>
                 {teamMates}
             </BestTeams>
         </>
