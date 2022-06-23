@@ -36,7 +36,9 @@ const PokemonInfo = (props) => {
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="mb-3">
                             <Span type={pokemonData.types.type_1}></Span>
-                            <Span type={pokemonData.types.type_2}></Span>
+                            {pokemonData.types.type_2 &&
+                                <Span type={pokemonData.types.type_2}></Span>
+                            }
                         </div>
                         <p className="box col mb-3">{pokemonData.name.pokeland}</p>
                         <PokemonImg borderType="blue-border" src={pokemonData.sprites.pokeland} animated={true} />
