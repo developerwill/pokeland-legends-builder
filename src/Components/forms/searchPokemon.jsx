@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import InputText from './inputText';
-import { QueryProvider } from '../../Data/Context/queries';
-import SearchResults from '../searchResults';
+import { PokedexContext } from '../../Data/Context/pokelandApi';
 
 const SearchPokemonForm = (props) => {
     const [pokemonName, setPokemonName] = useState('');
+    const { getPokemonList, pokemonList, fetchPokemon } = useContext(PokedexContext)
+
+    //Tentar resetar o input depois de escolher o pokemon
+    //resetar a lista de pokemons tambem
+    function onPokemonSelect(pokemonID) {
+        fetchPokemon(pokemonID)
+        //getPokemonList()
+    }
+
+    useEffect(() => {
+        getPokemonList(pokemonName)
+        // eslint-disable-next-line
+    }, [pokemonName])
 
     let searching = false;
 
@@ -15,7 +27,7 @@ const SearchPokemonForm = (props) => {
         <>
             <div className="col-12">
                 <form>
-                    <InputText placeholder="Type a Pokémon name" name="pokemon-name" setPokemonName={setPokemonName}>Search by name</InputText>
+                    <InputText placeholder="Type a Pokémon name" name="pokemon_name" setPokemonName={setPokemonName}>Search by name</InputText>
                 </form>
                 {props.searchByAbility &&
                     <form>
@@ -28,9 +40,15 @@ const SearchPokemonForm = (props) => {
                 ?
                 <div className="search-result">
                     <div className="list-group">
-                        <QueryProvider pokemonName={pokemonName}>
-                            <SearchResults />
-                        </QueryProvider>
+                        {pokemonList && (
+                            <>
+                                {pokemonList.map((pokemon) => (
+                                    <li onClick={() => onPokemonSelect(pokemon.id)} key={pokemon.id} data-bs-dismiss="offcanvas" aria-label="Close" className="list-group-item list-group-item-action">
+                                        {pokemon.name.pokeland}
+                                    </li>
+                                ))}
+                            </>
+                        )}
                     </div>
                 </div>
                 :

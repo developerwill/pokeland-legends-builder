@@ -8,9 +8,11 @@ export const PokedexProvider = props => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [pokedex, setPokedex] = useState([]);
     const [pokemonData, setPokemonData] = useState({})
+    const [pokemonList, setPokemonList] = useState([])
 
     useEffect(() => {
-        fetch("https://pokeland-legends.club/api/pokemon/all")
+        //fetch("https://pokeland-legends.club/api/pokemon/all")
+        fetch("assets/pokedex.json")
             .then(res => res.json())
             .then(
                 (data) => {
@@ -22,13 +24,19 @@ export const PokedexProvider = props => {
                     setError(error);
                 }
             )
-    }, [isLoaded]);
+    }, []);
 
     if (error) {
         return <p>Error: {error.message}</p>;
     } else if (!isLoaded) {
         return <p>Loading...</p>;
     } else {
+
+        function getPokemonList(pokemonName) {
+            setPokemonList(
+                [...pokedex.filter(pokemon => pokemon.name.pokeland.toLowerCase().includes(pokemonName))]
+            )
+        }
 
         function fetchPokemon(pokemonID) {
             const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID) }
@@ -84,7 +92,7 @@ export const PokedexProvider = props => {
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
 
         return (
-            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData }}>
+            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList }}>
                 {props.children}
             </PokedexContext.Provider>
         );
