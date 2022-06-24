@@ -1,10 +1,10 @@
 import React from 'react';
 
-const OffcanvasBase = (props) => {
+const OffcanvasBase = ({ children, id }) => {
     return (
-        <div className="offcanvas offcanvas-end purple-bk-darker" tabIndex="-1" id={props.id}>
+        <div className="offcanvas offcanvas-end purple-bk-darker" tabIndex="-1" id={id}>
             <div className="offcanvas-body">
-                {props.children}
+                {children}
             </div>
             <div className='offcanvas-close'>
                 <a href=" " data-bs-dismiss="offcanvas" aria-label="Close">

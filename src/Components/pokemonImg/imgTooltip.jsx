@@ -6,10 +6,10 @@ import React from 'react';
  * @param src Img src
  * @param alt Img Alt is required 
  */
-const ImgTooltip = (props) => {
+const ImgTooltip = ({ classes, src, alt }) => {
     return (
         <img data-bs-toggle="tooltip"
-            data-bss-tooltip="" className={`${props.classes}`} src={props.src} title={props.alt} alt={props.alt}></img>
+            data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
     );
 }
 export default ImgTooltip;

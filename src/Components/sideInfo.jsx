@@ -1,9 +1,9 @@
 import React from 'react';
 
-const SideInfo = (props) => {
+const SideInfo = ({ children, classes }) => {
     return (
-        <div className={`purple-bk rounded ${props.classes}`}>
-            {props.children}
+        <div className={`purple-bk rounded ${classes}`}>
+            {children}
         </div>
     );
 }

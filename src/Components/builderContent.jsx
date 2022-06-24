@@ -45,7 +45,7 @@ const BuilderContent = (props) => {
                 {hiddenSkillsButtons}
                 <div className='row my-1'>
                     <div className='d-flex justify-content-end flex-column flex-sm-row'>
-                        <BuildStatus public={true} />
+                        <BuildStatus isPublic={true} />
                         <button className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save Build</button>
                     </div>
                 </div>

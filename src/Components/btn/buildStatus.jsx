@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BuildStatus = (props) => {
-    if (props.public)
+const BuildStatus = ({ isPublic }) => {
+    if (isPublic)
         return (
             <button className='btn btn-primary m-2' type="button"><i className="fa-solid fa-eye"></i> Make Build Public</button>
         )

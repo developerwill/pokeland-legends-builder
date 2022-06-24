@@ -1,20 +1,20 @@
 import React from 'react';
 
-const BestTeams = (props) => {
+const BestTeams = ({ children, id, title, pokemonName }) => {
     return (
-        <div id={props.id} className="row">
+        <div id={id} className="row">
             <div className="col-12 d-flex flex-column text-center">
 
-                {props.title && (
-                    <p className="best-teams yellow">{props.title}
+                {title && (
+                    <p className="best-teams yellow">{title}
                         <br></br>
-                        {props.pokemonName}
+                        {pokemonName}
                     </p>
                 )}
 
                 <div className="row best-teams">
                     <div className="row d-flex justify-content-center ms-1">
-                        {props.children}
+                        {children}
                     </div>
                 </div>
             </div>

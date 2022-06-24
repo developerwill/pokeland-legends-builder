@@ -4,7 +4,7 @@ import { AppConfigContext } from '../../Config/App';
 
 export const PokedexContext = createContext();
 
-export const PokedexProvider = props => {
+export const PokedexProvider = ({ children }) => {
 
     const { site_url } = useContext(AppConfigContext)
     const [error, setError] = useState(null);
@@ -98,7 +98,7 @@ export const PokedexProvider = props => {
 
         return (
             <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList }}>
-                {props.children}
+                {children}
             </PokedexContext.Provider>
         );
     }

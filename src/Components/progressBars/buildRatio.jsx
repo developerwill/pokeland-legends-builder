@@ -1,8 +1,6 @@
 import React from 'react';
 
-const BuildRatio = (props) => {
-    const likes = props.likes;
-    const dislikes = props.dislikes;
+const BuildRatio = ({ likes, dislikes }) => {
 
     const ratio = (10 / (likes + dislikes) * likes).toFixed(1);
 

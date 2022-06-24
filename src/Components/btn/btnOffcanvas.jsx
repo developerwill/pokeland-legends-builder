@@ -1,14 +1,14 @@
 import React from 'react';
 
-const BtnOffcanvas = (props) => {
+const BtnOffcanvas = ({ children, classes, text, icon, offcanvas }) => {
     return (
         <button
-            className={`btn ${props.classes}`}
+            className={`btn ${classes}`}
             type="button"
             data-bs-toggle="offcanvas"
-            data-bs-target={`#${props.offcanvas}`}>
-            {props.text} <i className={props.icon}></i>
-            {props.children}
+            data-bs-target={`#${offcanvas}`}>
+            {text} <i className={icon}></i>
+            {children}
         </button>
     );
 }

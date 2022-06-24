@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import InputText from './inputText';
 import { PokedexContext } from '../../Data/Context/pokelandApi';
 
-const SearchPokemonForm = (props) => {
+const SearchPokemonForm = ({ searchByAbility }) => {
     const [pokemonName, setPokemonName] = useState('');
     const { getPokemonList, pokemonList, fetchPokemon } = useContext(PokedexContext)
 
@@ -29,7 +29,7 @@ const SearchPokemonForm = (props) => {
                 <form>
                     <InputText placeholder="Type a Pokémon name" name="pokemon_name" setPokemonName={setPokemonName}>Search by name</InputText>
                 </form>
-                {props.searchByAbility &&
+                {searchByAbility &&
                     <form>
                         <InputText placeholder="Type the name of an ability" name="ability">Search by Ability</InputText>
                     </form>

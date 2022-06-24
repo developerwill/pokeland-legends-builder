@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Textarea = (props) => {
+const Textarea = ({ children, classes, placeholder, id }) => {
     return (
         <div className="form-floating">
-            <textarea className={`form-control custom-border purple-bk ${props.classes}`} placeholder={props.placeholder} id={props.id}></textarea>
-            <label htmlFor={props.id}> {props.children} </label>
+            <textarea className={`form-control custom-border purple-bk ${classes}`} placeholder={placeholder} id={id}></textarea>
+            <label htmlFor={id}> {children} </label>
         </div>
     );
 }

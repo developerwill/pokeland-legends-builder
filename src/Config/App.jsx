@@ -2,7 +2,7 @@ import React, { createContext } from 'react';
 
 const AppConfigContext = createContext()
 
-const AppConfig = props => {
+const AppConfig = ({ children }) => {
     const base_url = 'https://pokeland-legends.club/pokeland-builds/'
 
     function site_url(segments) {
@@ -11,7 +11,7 @@ const AppConfig = props => {
 
     return (
         <AppConfigContext.Provider value={{ site_url }} site_url={site_url}>
-            {props.children}
+            {children}
         </AppConfigContext.Provider>
     );
 }

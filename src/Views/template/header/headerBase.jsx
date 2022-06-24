@@ -1,10 +1,10 @@
 import React from 'react';
 
-const HeaderBase = (props) => {
+const HeaderBase = ({ children }) => {
     return (
         <div className="container my-4">
             <div className="row">
-                {props.children}
+                {children}
             </div>
         </div>
     );

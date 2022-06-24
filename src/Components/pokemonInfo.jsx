@@ -9,11 +9,11 @@ import ImgTooltip from './pokemonImg/imgTooltip';
 
 import { PokedexContext } from '../Data/Context/pokelandApi';
 
-const PokemonInfo = (props) => {
+const PokemonInfo = ({ isBuilding }) => {
     let teamMates = [];
     const { pokemonData } = useContext(PokedexContext)
 
-    if (props.isBuilding)
+    if (isBuilding)
         for (let i = 1; i <= 4; i++) {
             teamMates.push(
                 <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary mx-1 my-1">+</BtnModal>
@@ -37,9 +37,9 @@ const PokemonInfo = (props) => {
                             }
                         </div>
                         <p className="box col mb-3">{pokemonData.name.pokeland}</p>
-                        <PokemonImg borderType="blue-border" src={pokemonData.sprites.pokeland} animated={true} />
+                        <PokemonImg borderType="blue-border" src={pokemonData.sprites.pokeland} alt={pokemonData.name.pokeland} animated={true} />
 
-                        {props.isBuilding
+                        {isBuilding
                             ? <BtnOffcanvas classes="btn-primary mt-3" offcanvas="offcanvas-search-1" text="Change Pokémon"></BtnOffcanvas>
                             :
                             <div className='row d-flex justify-content-center build-vote mt-3'>

@@ -1,17 +1,17 @@
 import React from 'react';
 
-const BtnModal = (props) => {
-    if (props.animated)
+const BtnModal = ({ children, animated, disabled, id, classes, modal }) => {
+    if (animated)
         return (
             <>
-                {props.disabled
+                {disabled
                     ?
-                    <button id={props.id} className={`btn ${props.classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={props.modal} data-bss-hover-animate="tada">
-                        {props.children}
+                    <button id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
+                        {children}
                     </button>
                     :
-                    <button id={props.id} className={`btn ${props.classes}`} type="button" data-bs-toggle="modal" data-bs-target={props.modal} data-bss-hover-animate="tada">
-                        {props.children}
+                    <button id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
+                        {children}
                     </button>
                 }
             </>
@@ -19,14 +19,14 @@ const BtnModal = (props) => {
     else
         return (
             <>
-                {props.disabled
+                {disabled
                     ?
-                    <button id={props.id} className={`btn ${props.classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={props.modal}>
-                        {props.children}
+                    <button id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal}>
+                        {children}
                     </button>
                     :
-                    <button id={props.id} className={`btn ${props.classes}`} type="button" data-bs-toggle="modal" data-bs-target={props.modal}>
-                        {props.children}
+                    <button id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                        {children}
                     </button>
                 }
             </>
