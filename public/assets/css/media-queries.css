@@ -8,6 +8,24 @@
     .offcanvas-end {
         width: 230px;
     }
+
+    .add-button {
+        font-size: 45px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-type-pokemon-container h3 {
+        font-size: 1em;
+    }
+
+    .header-type-type {
+        width: 30px;
+    }
+
+    .header-type-pokemon {
+        width: 70px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -22,17 +40,53 @@
     .form-floating textarea.form-control {
         overflow: clip;
     }
+
+    .add-button {
+        font-size: 45px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .header-type-pokemon-container h3 {
+        font-size: 1.4em;
+    }
+
+    .header-type-type {
+        width: 35px;
+    }
+
+    .header-type-pokemon {
+        width: 85px;
+    }
 }
 
 @media (min-width: 768px) {
     .header-type-pokemon {
         max-width: 200px;
     }
+
+    .add-button {
+        font-size: 80px;
+        width: 62px;
+        height: 62px;
+    }
 }
 
 @media (min-width: 992px) {
     .header-type-pokemon {
         max-width: 200px;
+    }
+
+    .header-type-pokemon-container h3 {
+        font-size: 2em;
+    }
+
+    .header-type-type {
+        width: 45px;
+    }
+
+    .header-type-pokemon {
+        width: 130px;
     }
 }
 

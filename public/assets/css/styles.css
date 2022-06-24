@@ -72,10 +72,6 @@ body {
 }
 
 .add-button {
-    font-size: 80px;
-    padding: 17px;
-    width: 75px;
-    height: 75px;
     margin: 0px;
     background-color: #2c2b57;
     margin-bottom: 0px;
@@ -154,6 +150,10 @@ form {
 
 .form-builder .search-input {
     text-align: center;
+}
+
+.builder-body button {
+    margin: 10px 5px;
 }
 
 .best-teams img {

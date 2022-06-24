@@ -1,10 +1,10 @@
 import React from 'react';
 
 import ItemRow from './itemRow/itemRow';
-import AddButton from './btn/addButton';
 import HeaderType from './headerType/headerType';
 import BuildStatus from './btn/buildStatus';
 import InputText from './forms/inputText';
+import BtnModal from './btn/btnModal';
 
 const BuilderContent = (props) => {
     let abilitiesButtons = [];
@@ -14,15 +14,20 @@ const BuilderContent = (props) => {
     let hiddenSkillsButtons = [];
 
     for (let i = 1; i <= 4; i++)
-        abilitiesButtons.push(<AddButton key={i} id={`ability-${i}`} disabled={false}></AddButton>);
+        abilitiesButtons.push(<BtnModal key={i} id={`ability-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary " animated={true} modal="#modal-1">+</BtnModal>);
+
     for (let i = 1; i <= 4; i++)
-        heldItemsButtons.push(<AddButton key={i} id={`held-item-${i}`} disabled={true}></AddButton>);
+        heldItemsButtons.push(<BtnModal key={i} id={`held-item-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary " animated={true} modal="#modal-1">+</BtnModal>);
     for (let i = 1; i <= 4; i++)
-        personalityButtons.push(<AddButton key={i} id={`personality-${i}`} disabled={true}></AddButton>);
+        personalityButtons.push(<BtnModal key={i} id={`personality-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary " animated={true} modal="#modal-1">+</BtnModal>);
     for (let i = 1; i <= 4; i++)
-        gearButtons.push(<AddButton key={i} id={`gear-${i}`} disabled={true}></AddButton>);
-    for (let i = 1; i <= 12; i++)
-        hiddenSkillsButtons.push(<AddButton key={i} id={`hidden-skill-${i}`} disabled={true}></AddButton>);
+        gearButtons.push(<BtnModal key={i} id={`gear-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary " animated={true} modal="#modal-1">+</BtnModal>);
+    for (let i = 1; i <= 12; i++) {
+        if (i === 5 || i === 9)
+            hiddenSkillsButtons.push(<div key={i * 7} className='row'></div>)
+
+        hiddenSkillsButtons.push(<BtnModal key={i} id={`hidden-skill-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary " animated={true} modal="#modal-1">+</BtnModal>);
+    }
 
     return (
         <div className="col-lg-7 col-xl-8 col-xxl-9 custom-border rounded-3">
