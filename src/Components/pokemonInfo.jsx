@@ -31,9 +31,9 @@ const PokemonInfo = (props) => {
                 <div className="col-12 py-3 text-center">
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="mb-3">
-                            <Span type={pokemonData.types.type_1}></Span>
+                            <Span classes={'me-0'} type={pokemonData.types.type_1}></Span>
                             {pokemonData.types.type_2 &&
-                                <Span type={pokemonData.types.type_2}></Span>
+                                <Span classes={'ms-2 me-0'} type={pokemonData.types.type_2}></Span>
                             }
                         </div>
                         <p className="box col mb-3">{pokemonData.name.pokeland}</p>
