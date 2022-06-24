@@ -1,10 +1,12 @@
-import React, { useEffect, useState, createContext } from 'react';
+import React, { useEffect, useState, createContext, useContext } from 'react';
 import cryptoRandomString from 'crypto-random-string';
+import { AppConfigContext } from '../../Config/App';
 
 export const PokedexContext = createContext();
 
 export const PokedexProvider = props => {
 
+    const { site_url } = useContext(AppConfigContext)
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [pokedex, setPokedex] = useState([]);
@@ -87,7 +89,7 @@ export const PokedexProvider = props => {
                         type_1: typeImg + type_1 + '.webp',
                         type_2: typeImg + type_2 + '.webp'
                     },
-                    buildKey: buildKey
+                    build_url: site_url(pokelandName.toLowerCase().replace(/\s+/g, '-') + '/' + buildKey)
                 }
             )
         }
