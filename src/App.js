@@ -5,19 +5,21 @@ import Navbar from "./Views/template/navbar/navbar";
 import Content from "./Views/content";
 import OffcanvasBase from "./Components/offcanvas/offcanvasBase";
 import { PokedexProvider } from "./Data/Context/pokelandApi";
+import { AppConfig } from "./Config/App";
 
 function App() {
-
     return (
-        <PokedexProvider>
-            <Router>
-                <Navbar />
-                <Content></Content>
-                <OffcanvasBase id="offcanvas-search-1">
-                    <SearchPokemonForm searchByAbility={false} />
-                </OffcanvasBase>
-            </Router>
-        </PokedexProvider>
+        <AppConfig>
+            <PokedexProvider>
+                <Router>
+                    <Navbar />
+                    <Content></Content>
+                    <OffcanvasBase id="offcanvas-search-1">
+                        <SearchPokemonForm searchByAbility={false} />
+                    </OffcanvasBase>
+                </Router>
+            </PokedexProvider>
+        </AppConfig>
     );
 }
 
