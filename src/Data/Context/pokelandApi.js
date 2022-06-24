@@ -1,4 +1,5 @@
 import React, { useEffect, useState, createContext } from 'react';
+import cryptoRandomString from 'crypto-random-string';
 
 export const PokedexContext = createContext();
 
@@ -40,6 +41,7 @@ export const PokedexProvider = props => {
 
         function fetchPokemon(pokemonID) {
             const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID) }
+            const buildKey = cryptoRandomString({ length: 11, type: 'alphanumeric' })
 
             //Pokemon personal info
             const type_1 = pokemonInfo[0].types.type_1;
@@ -84,7 +86,8 @@ export const PokedexProvider = props => {
                         avatar: picture + pokedexID + '.webp',
                         type_1: typeImg + type_1 + '.webp',
                         type_2: typeImg + type_2 + '.webp'
-                    }
+                    },
+                    buildKey: buildKey
                 }
             )
         }
