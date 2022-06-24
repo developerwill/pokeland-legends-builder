@@ -14,17 +14,13 @@ const PokemonInfo = (props) => {
     const { pokemonData } = useContext(PokedexContext)
 
     if (props.isBuilding)
-        for (let i = 1; i <= 6; i++) {
-            if (i === 3 || i === 5) {
-                teamMates.push(<div key={i * 7} className='row best-teams-fix'></div>)
-            }
-
+        for (let i = 1; i <= 4; i++) {
             teamMates.push(
-                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary mx-2 my-2">+</BtnModal>
+                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary mx-1 my-1">+</BtnModal>
             );
         }
     else
-        for (let i = 1; i <= 9; i++)
+        for (let i = 1; i <= 4; i++)
             teamMates.push(
                 <ImgTooltip key={i} classes="col-3 col-md-2 col-lg-3 blue-border border-small m-1" src="assets/img/150_mega_shadow_mewtwo-x.webp" alt="butt"></ImgTooltip>
             )
