@@ -1,7 +1,7 @@
 import React from 'react';
 import SideInfo from '../../Components/sideInfo';
 import Builder from '../../Components/builderContent';
-import Modal from '../../Components/modal/modal';
+import AbilitiesModal from '../../Components/modal/abilitiesModal';
 import PokemonInfo from '../../Components/pokemonInfo';
 import CopyLinkHeader from '../template/header/copyLink';
 import Textarea from '../../Components/forms/textarea';
@@ -22,7 +22,7 @@ const BuilderPage = (props) => {
                 }
             </SideInfo>
             <Builder />
-            <Modal></Modal>
+            <AbilitiesModal></AbilitiesModal>
         </>
     );
 }

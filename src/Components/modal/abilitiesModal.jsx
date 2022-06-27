@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import ImgTooltip from '../pokemonImg/imgTooltip';
 import { PokedexContext } from '../../Data/Context/pokelandApi';
 
-const Modal = () => {
+const AbilitiesModal = () => {
     const { itemList } = useContext(PokedexContext)
     const itemsListArray = []
 
@@ -13,7 +13,7 @@ const Modal = () => {
     ))
 
     return (
-        <div className="modal fade" role="dialog" tabIndex="-1" id="modal-1">
+        <div className="modal fade" role="dialog" tabIndex="-1" id="abilities-modal">
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-body purple-bk-darker text-center">
@@ -28,4 +28,4 @@ const Modal = () => {
         </div>
     );
 }
-export default Modal;
+export default AbilitiesModal;

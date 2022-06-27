@@ -17,7 +17,7 @@ const BuilderContent = (props) => {
     const { pokemonData } = useContext(PokedexContext)
 
     for (let i = 1; i <= pokemonData.numberOf.abilities; i++) {
-        abilitiesButtons.push(<BtnModal itemList={`set_${i}`} key={i} id={`ability-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+        abilitiesButtons.push(<BtnModal itemList={`set_${i}`} key={i} id={`ability-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#abilities-modal">+</BtnModal>);
     }
 
     for (let i = 1; i <= pokemonData.numberOf.personalities; i++)
