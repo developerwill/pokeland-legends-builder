@@ -5,7 +5,7 @@ import HeaderType from './headerType/headerType';
 import BuildStatus from './btn/buildStatus';
 import InputText from './forms/inputText';
 import BtnModal from './btn/btnModal';
-import { PokedexContext } from '../Data/Context/pokelandApi';
+import { PokedexContext } from '../Data/Context/pokemonData';
 
 const BuilderContent = (props) => {
     let abilitiesButtons = [];

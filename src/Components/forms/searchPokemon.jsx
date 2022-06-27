@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import InputText from './inputText';
-import { PokedexContext } from '../../Data/Context/pokelandApi';
+import { PokedexContext } from '../../Data/Context/pokemonData';
 
 const SearchPokemonForm = ({ searchByAbility }) => {
     const [pokemonName, setPokemonName] = useState('');

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { PokedexContext } from '../../Data/Context/pokelandApi';
+import { PokedexContext } from '../../Data/Context/pokemonData';
 
 const BtnModal = ({ children, animated, disabled, id, classes, modal, itemList }) => {
     const { getItemList } = useContext(PokedexContext)

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import ImgTooltip from '../pokemonImg/imgTooltip';
-import { PokedexContext } from '../../Data/Context/pokelandApi';
+import { PokedexContext } from '../../Data/Context/pokemonData';
 
-const AbilitiesModal = () => {
+const Modal = () => {
     const { itemList } = useContext(PokedexContext)
     const itemsListArray = []
 
@@ -28,4 +28,4 @@ const AbilitiesModal = () => {
         </div>
     );
 }
-export default AbilitiesModal;
+export default Modal;

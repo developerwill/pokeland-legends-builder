@@ -7,7 +7,7 @@ import BestTeams from './bestTeams';
 import BtnModal from './btn/btnModal';
 import ImgTooltip from './pokemonImg/imgTooltip';
 
-import { PokedexContext } from '../Data/Context/pokelandApi';
+import { PokedexContext } from '../Data/Context/pokemonData';
 
 const PokemonInfo = ({ isBuilding }) => {
     let teamMates = [];

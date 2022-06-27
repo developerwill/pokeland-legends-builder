@@ -4,7 +4,7 @@ import SearchPokemonForm from "./Components/forms/searchPokemon";
 import Navbar from "./Views/template/navbar/navbar";
 import Content from "./Views/content";
 import OffcanvasBase from "./Components/offcanvas/offcanvasBase";
-import { PokedexProvider } from "./Data/Context/pokelandApi";
+import { PokedexProvider } from "./Data/Context/pokemonData";
 import { AppConfig } from "./Config/App";
 
 function App() {

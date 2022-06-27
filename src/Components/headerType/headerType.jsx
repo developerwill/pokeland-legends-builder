@@ -1,6 +1,6 @@
 import './headerType.css';
 import React, { useContext } from 'react';
-import { PokedexContext } from '../../Data/Context/pokelandApi';
+import { PokedexContext } from '../../Data/Context/pokemonData';
 
 const HeaderType = (props) => {
     const { pokemonData } = useContext(PokedexContext);
