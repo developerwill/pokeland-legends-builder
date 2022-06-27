@@ -12,6 +12,8 @@ export const PokedexProvider = ({ children }) => {
     const [pokedex, setPokedex] = useState([]);
     const [pokemonData, setPokemonData] = useState({})
     const [pokemonList, setPokemonList] = useState([])
+    const [itemList, setItemList] = useState([])
+    let abilitiesNum = 0;
 
     useEffect(() => {
         //fetch("https://pokeland-legends.club/api/pokemon/all")
@@ -89,15 +91,48 @@ export const PokedexProvider = ({ children }) => {
                         type_1: typeImg + type_1 + '.webp',
                         type_2: typeImg + type_2 + '.webp'
                     },
-                    build_url: site_url(pokelandName.toLowerCase().replace(/\s+/g, '-') + '/' + buildKey)
+                    build_url: site_url(pokelandName.toLowerCase().replace(/\s+/g, '-') + '/' + buildKey),
+                    abilities: {
+                        set_1: getAbilities(pokemonInfo[0].abilities.set_1),
+                        set_2: getAbilities(pokemonInfo[0].abilities.set_2),
+                        set_3: getAbilities(pokemonInfo[0].abilities.set_3),
+                        set_4: getAbilities(pokemonInfo[0].abilities.set_4)
+                    },
+                    numberOf: {
+                        abilities: abilitiesNum,
+                        personalities: 4,
+                        heldItems: 4,
+                        gear: 4,
+                        hiddenSkills: 12
+                    }
                 }
             )
+
+            function getAbilities(ability_set) {
+                if (ability_set !== undefined) {
+                    abilitiesNum += 1;
+                }
+                return [ability_set]
+            }
+        }
+
+        function getItemList(itemType) {
+            if (itemType === 'set_1')
+                setItemList(pokemonData.abilities.set_1)
+            else if (itemType === 'set_2')
+                setItemList(pokemonData.abilities.set_2)
+            else if (itemType === 'set_3')
+                setItemList(pokemonData.abilities.set_3)
+            else
+                setItemList(pokemonData.abilities.set_4)
+
+            //console.log(itemList);
         }
 
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
 
         return (
-            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList }}>
+            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList }}>
                 {children}
             </PokedexContext.Provider>
         );
