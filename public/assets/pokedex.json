@@ -48,7 +48,24 @@
       "type_1": "rock",
       "type_2": "ground"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "spotlight.webp",
+        "ability_2": "ice_body.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "heavy_armor.webp",
+        "ability_2": "flame_body_2.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "adaptability.webp",
+        "ability_5": "stamina.webp",
+        "ability_6": "friend_guard.webp"
+      }
+    }
   },
   {
     "id": 3,
@@ -66,7 +83,24 @@
       "type_1": "rock",
       "type_2": "ground"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "spotlight.webp",
+        "ability_2": "ice_body.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "heavy_armor.webp",
+        "ability_2": "flame_body_2.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "adaptability.webp",
+        "ability_5": "stamina.webp",
+        "ability_6": "friend_guard.webp"
+      }
+    }
   },
   {
     "id": 4,
@@ -84,7 +118,22 @@
       "type_1": "ghost",
       "type_2": "poison"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "leadership.webp",
+        "ability_5": "daunt.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "poison_point.webp",
+        "ability_4": "levitate.webp"
+      }
+    }
   },
   {
     "id": 5,
@@ -102,7 +151,22 @@
       "type_1": "ghost",
       "type_2": "poison"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "leadership.webp",
+        "ability_5": "daunt.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "poison_point.webp",
+        "ability_4": "levitate.webp"
+      }
+    }
   },
   {
     "id": 6,
@@ -120,7 +184,21 @@
       "type_1": "poison",
       "type_2": "dark"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 7,
@@ -138,7 +216,21 @@
       "type_1": "poison",
       "type_2": "dark"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 8,
@@ -3926,7 +4018,25 @@
       "type_1": "dragon",
       "type_2": "ice"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "leadership.webp",
+        "ability_2": "accuracy.webp",
+        "ability_3": "holy_body.webp",
+        "ability_4": "line_strike.webp",
+        "ability_5": "strength.webp",
+        "ability_6": "intelligence.webp",
+        "ability_7": "dragon_whisper.webp",
+        "ability_8": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "struggle.webp",
+        "ability_2": "shed_skin.webp",
+        "ability_3": "berserk.webp",
+        "ability_4": "moxie.webp",
+        "ability_5": "heavy_armor.webp"
+      }
+    }
   },
   {
     "id": 106,
@@ -4667,7 +4777,21 @@
       "type_1": "dragon",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "daunt.webp",
+        "ability_3": "struggle.webp",
+        "ability_4": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "steadfast.webp",
+        "ability_2": "quick_feet.webp",
+        "ability_3": "justified.webp",
+        "ability_4": "fluffy.webp",
+        "ability_5": "moxie.webp"
+      }
+    }
   },
   {
     "id": 126,
@@ -4839,7 +4963,27 @@
       "type_1": "dark",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "pain_treatment.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "intelligence.webp",
+        "ability_4": "dragon_whisper.webp",
+        "ability_5": "speed_boost.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "steadfast.webp",
+        "ability_5": "cursed_body.webp",
+        "ability_6": "moxie.webp",
+        "ability_7": "competitive.webp",
+        "ability_8": "berserk.webp",
+        "ability_9": "heavy_armor.webp"
+      }
+    }
   },
   {
     "id": 131,
@@ -8774,7 +8918,21 @@
       "type_1": "ice",
       "type_2": "steel"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "strength.webp",
+        "ability_4": "ice_body.webp",
+        "ability_5": "ice_heart.webp"
+      },
+      "set_2": {
+        "ability_1": "berserk.webp",
+        "ability_2": "competitive.webp",
+        "ability_3": "quick_feet.webp",
+        "ability_4": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 234,
@@ -9965,7 +10123,21 @@
       "type_1": "dark",
       "type_2": "normal"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "software.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "alarm.webp",
+        "ability_5": "daunt.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "justified.webp",
+        "ability_3": "competitive.webp",
+        "ability_4": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 266,
@@ -10181,7 +10353,23 @@
       "type_1": "psychic",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "holy_body.webp",
+        "ability_2": "accuracy.webp",
+        "ability_3": "leadership.webp",
+        "ability_4": "speed_boost.webp",
+        "ability_5": "intelligence.webp",
+        "ability_6": "dragon_whisper.webp"
+      },
+      "set_2": {
+        "ability_1": "shed_skin.webp",
+        "ability_2": "moxie.webp",
+        "ability_3": "competitive.webp",
+        "ability_4": "adaptability.webp",
+        "ability_5": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 273,
@@ -11050,7 +11238,20 @@
       "type_1": "fire",
       "type_2": "ghost"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "nervous.webp",
+        "ability_2": "daunt.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp"
+      },
+      "set_2": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "moxie.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "competitive.webp"
+      }
+    }
   },
   {
     "id": 299,
@@ -11068,7 +11269,23 @@
       "type_1": "grass",
       "type_2": "dragon"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "healer.webp",
+        "ability_5": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 300,
@@ -11152,7 +11369,21 @@
       "type_1": "water",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "line_strike.webp",
+        "ability_2": "strength.webp",
+        "ability_3": "ice_body.webp",
+        "ability_4": "ice_heart.webp",
+        "ability_5": "struggle.webp"
+      },
+      "set_2": {
+        "ability_1": "steadfast.webp",
+        "ability_2": "aftermath.webp",
+        "ability_3": "competitive.webp",
+        "ability_4": "stamina.webp"
+      }
+    }
   },
   {
     "id": 303,
@@ -11170,7 +11401,21 @@
       "type_1": "water",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "line_strike.webp",
+        "ability_2": "strength.webp",
+        "ability_3": "ice_body.webp",
+        "ability_4": "ice_heart.webp",
+        "ability_5": "struggle.webp"
+      },
+      "set_2": {
+        "ability_1": "steadfast.webp",
+        "ability_2": "aftermath.webp",
+        "ability_3": "competitive.webp",
+        "ability_4": "stamina.webp"
+      }
+    }
   },
   {
     "id": 304,
@@ -11188,7 +11433,21 @@
       "type_1": "psychic",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 305,
@@ -11206,7 +11465,21 @@
       "type_1": "psychic",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 306,
@@ -11224,7 +11497,24 @@
       "type_1": "rock",
       "type_2": "ground"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "spotlight.webp",
+        "ability_2": "ice_body.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "heavy_armor.webp",
+        "ability_2": "flame_body_2.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "adaptability.webp",
+        "ability_5": "stamina.webp",
+        "ability_6": "friend_guard.webp"
+      }
+    }
   },
   {
     "id": 307,
@@ -11242,7 +11532,24 @@
       "type_1": "rock",
       "type_2": "ground"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "spotlight.webp",
+        "ability_2": "ice_body.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "heavy_armor.webp",
+        "ability_2": "flame_body_2.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "adaptability.webp",
+        "ability_5": "stamina.webp",
+        "ability_6": "friend_guard.webp"
+      }
+    }
   },
   {
     "id": 308,
@@ -11260,7 +11567,22 @@
       "type_1": "ghost",
       "type_2": "poison"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "leadership.webp",
+        "ability_5": "daunt.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "poison_point.webp",
+        "ability_4": "levitate.webp"
+      }
+    }
   },
   {
     "id": 309,
@@ -11278,7 +11600,22 @@
       "type_1": "ghost",
       "type_2": "poison"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "leadership.webp",
+        "ability_5": "daunt.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "poison_point.webp",
+        "ability_4": "levitate.webp"
+      }
+    }
   },
   {
     "id": 310,
@@ -11296,7 +11633,22 @@
       "type_1": "ghost",
       "type_2": "poison"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "leadership.webp",
+        "ability_5": "daunt.webp",
+        "ability_6": "curse.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "poison_point.webp",
+        "ability_4": "levitate.webp"
+      }
+    }
   },
   {
     "id": 311,
@@ -11314,7 +11666,22 @@
       "type_1": "water",
       "type_2": "ice"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "rock_armor.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "struggle.webp",
+        "ability_5": "torrent.webp"
+      },
+      "set_2": {
+        "ability_1": "adaptability.webp",
+        "ability_2": "stamina.webp",
+        "ability_3": "justified.webp",
+        "ability_4": "moxie.webp",
+        "ability_5": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 312,
@@ -11332,7 +11699,22 @@
       "type_1": "water",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "rock_armor.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "struggle.webp",
+        "ability_5": "torrent.webp"
+      },
+      "set_2": {
+        "ability_1": "adaptability.webp",
+        "ability_2": "stamina.webp",
+        "ability_3": "justified.webp",
+        "ability_4": "moxie.webp",
+        "ability_5": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 313,
@@ -11383,7 +11765,21 @@
       "type_1": "poison",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 315,
@@ -11401,7 +11797,21 @@
       "type_1": "poison",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 316,
@@ -11419,7 +11829,22 @@
       "type_1": "water",
       "type_2": "ice"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "rock_armor.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "struggle.webp",
+        "ability_5": "torrent.webp"
+      },
+      "set_2": {
+        "ability_1": "adaptability.webp",
+        "ability_2": "stamina.webp",
+        "ability_3": "justified.webp",
+        "ability_4": "moxie.webp",
+        "ability_5": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 317,
@@ -11505,7 +11930,22 @@
       "type_1": "water",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "rock_armor.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "struggle.webp",
+        "ability_5": "torrent.webp"
+      },
+      "set_2": {
+        "ability_1": "adaptability.webp",
+        "ability_2": "stamina.webp",
+        "ability_3": "justified.webp",
+        "ability_4": "moxie.webp",
+        "ability_5": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 320,
@@ -11523,7 +11963,21 @@
       "type_1": "normal",
       "type_2": "flying"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "strength.webp",
+        "ability_4": "ice_body.webp",
+        "ability_5": "ice_heart.webp"
+      },
+      "set_2": {
+        "ability_1": "berserk.webp",
+        "ability_2": "competitive.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 321,
@@ -11541,7 +11995,21 @@
       "type_1": "normal",
       "type_2": "flying"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "strength.webp",
+        "ability_4": "ice_body.webp",
+        "ability_5": "ice_heart.webp"
+      },
+      "set_2": {
+        "ability_1": "berserk.webp",
+        "ability_2": "competitive.webp",
+        "ability_3": "shed_skin.webp",
+        "ability_4": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 322,
@@ -11559,7 +12027,21 @@
       "type_1": "normal",
       "type_2": "flying"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "software.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "alarm.webp",
+        "ability_5": "daunt.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "justified.webp",
+        "ability_3": "competitive.webp",
+        "ability_4": "steadfast.webp"
+      }
+    }
   },
   {
     "id": 323,
@@ -14204,7 +14686,22 @@
       "type_1": "fire",
       "type_2": "psychic"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "intelligence.webp",
+        "ability_2": "dragon_whisper.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "flame_body_2.webp",
+        "ability_5": "blaze.webp"
+      },
+      "set_2": {
+        "ability_1": "moxie.webp",
+        "ability_2": "berserk.webp",
+        "ability_3": "steadfast.webp",
+        "ability_4": "flame_body.webp",
+        "ability_5": "flash_fire.webp"
+      }
+    }
   },
   {
     "id": 402,
@@ -17357,7 +17854,20 @@
       "type_1": "poison",
       "type_2": "flying"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "nervous.webp",
+        "ability_2": "daunt.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp"
+      },
+      "set_2": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "moxie.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "competitive.webp"
+      }
+    }
   },
   {
     "id": 497,
@@ -23870,7 +24380,22 @@
       "type_1": "normal",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "dragon_whisper.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "dragon_scale.webp",
+        "ability_4": "pain_treatment.webp"
+      },
+      "set_2": {
+        "ability_1": "simple.webp",
+        "ability_2": "gooey.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "healer.webp",
+        "ability_5": "tangled_feet.webp",
+        "ability_6": "water_absorb.webp"
+      }
+    }
   },
   {
     "id": 694,
@@ -24756,7 +25281,23 @@
       "type_1": "grass",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp",
+        "ability_6": "accuracy.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "healer.webp",
+        "ability_5": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 721,
@@ -24774,7 +25315,31 @@
       "type_1": "normal",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "daunt.webp",
+        "ability_2": "heavy_armor.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "alarm.webp",
+        "ability_5": "fog.webp",
+        "ability_6": "speed_boost.webp",
+        "ability_7": "holy_body.webp"
+      },
+      "set_2": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "steadfast.webp",
+        "ability_4": "tangled_feet.webp",
+        "ability_5": "static.webp"
+      },
+      "set_3": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "steadfast.webp",
+        "ability_4": "tangled_feet.webp",
+        "ability_5": "static.webp"
+      }
+    }
   },
   {
     "id": 722,
@@ -24792,7 +25357,22 @@
       "type_1": "ground",
       "type_2": "rock"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "daunt.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "strength.webp",
+        "ability_4": "dragon_scale.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "heavy_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "tangled_feet.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "stamina.webp"
+      }
+    }
   },
   {
     "id": 723,
@@ -24810,7 +25390,22 @@
       "type_1": "ground",
       "type_2": "rock"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "daunt.webp",
+        "ability_2": "line_strike.webp",
+        "ability_3": "strength.webp",
+        "ability_4": "dragon_scale.webp",
+        "ability_5": "rock_armor.webp",
+        "ability_6": "heavy_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "tangled_feet.webp",
+        "ability_2": "cursed_body.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "stamina.webp"
+      }
+    }
   },
   {
     "id": 724,
@@ -24828,7 +25423,21 @@
       "type_1": "poison",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 725,
@@ -24846,7 +25455,21 @@
       "type_1": "poison",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 726,
@@ -24896,7 +25519,21 @@
       "type_1": "poison",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "fog.webp",
+        "ability_2": "software.webp",
+        "ability_3": "speed_boost.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "rock_armor.webp"
+      },
+      "set_2": {
+        "ability_1": "corrosion.webp",
+        "ability_2": "friend_guard.webp",
+        "ability_3": "cursed_body.webp",
+        "ability_4": "poison_point.webp"
+      }
+    }
   },
   {
     "id": 728,
@@ -24914,7 +25551,21 @@
       "type_1": "normal",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "nervous.webp",
+        "ability_2": "thick_fat.webp",
+        "ability_3": "daunt.webp",
+        "ability_4": "line_strike.webp",
+        "ability_5": "strength.webp"
+      },
+      "set_2": {
+        "ability_1": "tangled_feet.webp",
+        "ability_2": "simple.webp",
+        "ability_3": "fur_coat.webp",
+        "ability_4": "fluffy.webp"
+      }
+    }
   },
   {
     "id": 729,
@@ -24932,7 +25583,20 @@
       "type_1": "ground",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "nervous.webp",
+        "ability_2": "daunt.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp"
+      },
+      "set_2": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "moxie.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "competitive.webp"
+      }
+    }
   },
   {
     "id": 730,
@@ -24950,7 +25614,20 @@
       "type_1": "ground",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "nervous.webp",
+        "ability_2": "daunt.webp",
+        "ability_3": "line_strike.webp",
+        "ability_4": "strength.webp"
+      },
+      "set_2": {
+        "ability_1": "cursed_body.webp",
+        "ability_2": "moxie.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "competitive.webp"
+      }
+    }
   },
   {
     "id": 731,
@@ -24968,7 +25645,23 @@
       "type_1": "grass",
       "type_2": "psychic"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "healer.webp",
+        "ability_5": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 732,
@@ -24986,7 +25679,23 @@
       "type_1": "grass",
       "type_2": "psychic"
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "ice_body.webp",
+        "ability_2": "holy_body.webp",
+        "ability_3": "pain_treatment.webp",
+        "ability_4": "curse.webp",
+        "ability_5": "intelligence.webp",
+        "ability_6": "speed_boost.webp"
+      },
+      "set_2": {
+        "ability_1": "fluffy.webp",
+        "ability_2": "fur_coat.webp",
+        "ability_3": "friend_guard.webp",
+        "ability_4": "healer.webp",
+        "ability_5": "tangled_feet.webp"
+      }
+    }
   },
   {
     "id": 733,
@@ -25004,7 +25713,19 @@
       "type_1": "electric",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "nervous.webp"
+      },
+      "set_2": {
+        "ability_1": "volt_absorb.webp",
+        "ability_2": "static.webp",
+        "ability_3": "motor_drive.webp"
+      }
+    }
   },
   {
     "id": 734,
@@ -25022,7 +25743,19 @@
       "type_1": "electric",
       "type_2": ""
     },
-    "abilities": {}
+    "abilities": {
+      "set_1": {
+        "ability_1": "speed_boost.webp",
+        "ability_2": "alarm.webp",
+        "ability_3": "accuracy.webp",
+        "ability_4": "nervous.webp"
+      },
+      "set_2": {
+        "ability_1": "volt_absorb.webp",
+        "ability_2": "static.webp",
+        "ability_3": "motor_drive.webp"
+      }
+    }
   },
   {
     "id": 738,
