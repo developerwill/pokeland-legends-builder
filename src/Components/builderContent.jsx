@@ -8,33 +8,40 @@ import BtnModal from './btn/btnModal';
 import { PokedexContext } from '../Data/Context/pokemonData';
 
 const BuilderContent = (props) => {
+    const { pokemonData } = useContext(PokedexContext);
+    const numberOfAbilities = pokemonData.numberOf.abilities;
+    let gearButtons = [];
+    let heldItemsButtons = [];
     let abilitiesButtons = [];
     let personalityButtons = [];
-    let heldItemsButtons = [];
-    let gearButtons = [];
     let hiddenSkillsButtons = [];
+    let uniqueKey = 1;
 
-    const { pokemonData } = useContext(PokedexContext)
-
-    for (let i = 1; i <= pokemonData.numberOf.abilities; i++) {
-        abilitiesButtons.push(<BtnModal itemList={`set_${i}`} key={i} id={`ability-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#abilities-modal">+</BtnModal>);
+    for (let j = 1; j <= 2; j++) {
+        for (let i = 1; i <= numberOfAbilities; i++) {
+            abilitiesButtons.push(<BtnModal itemList={`set_${i}`} numOfItems={numberOfAbilities} key={uniqueKey} id={`ability-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#abilities-modal">+</BtnModal>);
+            uniqueKey++
+        }
     }
 
     for (let i = 1; i <= pokemonData.numberOf.personalities; i++)
-        personalityButtons.push(<BtnModal key={i} id={`personality-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+        personalityButtons.push(<BtnModal key={i} id={`personality-${i}`} disabled={true} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
 
     for (let i = 1; i <= pokemonData.numberOf.heldItems; i++)
-        heldItemsButtons.push(<BtnModal key={i} id={`held-item-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+        heldItemsButtons.push(<BtnModal key={i} id={`held-item-${i}`} disabled={true} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
 
 
     for (let i = 1; i <= pokemonData.numberOf.gear; i++)
-        gearButtons.push(<BtnModal key={i} id={`gear-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+        gearButtons.push(<BtnModal key={i} id={`gear-${i}`} disabled={true} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
 
     for (let i = 1; i <= pokemonData.numberOf.hiddenSkills; i++) {
         if (i === 5 || i === 9)
-            hiddenSkillsButtons.push(<div key={i * 7} className='row'></div>)
 
-        hiddenSkillsButtons.push(<BtnModal key={i} id={`hidden-skill-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+            hiddenSkillsButtons.push(<div key={i * 7} className='row'></div>)
+        if (i <= 3)
+            hiddenSkillsButtons.push(<BtnModal key={i} id={`hidden-skill-${i}`} disabled={false} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
+        else
+            hiddenSkillsButtons.push(<BtnModal key={i} id={`hidden-skill-${i}`} disabled={true} classes="border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary" animated={true} modal="#modal-1">+</BtnModal>);
     }
 
     return (

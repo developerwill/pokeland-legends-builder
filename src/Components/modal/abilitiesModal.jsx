@@ -6,8 +6,9 @@ const Modal = () => {
     const { itemList } = useContext(PokedexContext)
     const itemsListArray = []
 
-    itemList.map((ability_set, i) => (
-        Object.values(ability_set).map(function (name, i) {
+    itemList.map((ability_set) => (
+        // eslint-disable-next-line
+        Object.values(ability_set).map(function (name) {
             itemsListArray.push(name)
         })
     ))
@@ -17,11 +18,9 @@ const Modal = () => {
             <div className="modal-dialog modal-dialog-centered" role="document">
                 <div className="modal-content">
                     <div className="modal-body purple-bk-darker text-center">
-                        {
-                            itemsListArray.map((name, index) =>
-                                <ImgTooltip key={index} classes="purple-border border-small m-1 img-fluid" src={`assets/img/abilities/${name}`} alt="butt"></ImgTooltip>
-                            )
-                        }
+                        {itemsListArray.map((name, index) =>
+                            <ImgTooltip key={index} classes="purple-border border-small m-1 img-fluid" src={`assets/img/abilities/${name}`} alt="butt"></ImgTooltip>
+                        )}
                     </div>
                 </div>
             </div>

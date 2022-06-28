@@ -1,10 +1,8 @@
 import React, { useContext } from 'react';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 
-const BtnModal = ({ children, animated, disabled, id, classes, modal, itemList }) => {
+const BtnModal = ({ children, animated, disabled, id, classes, modal, itemList, numOfItems }) => {
     const { getItemList } = useContext(PokedexContext)
-
-
 
     if (animated)
         return (
