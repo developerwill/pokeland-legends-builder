@@ -116,14 +116,14 @@ export const PokedexProvider = ({ children }) => {
             }
         }
 
-        function getItemList(itemType) {
-            if (itemType === 'set_1')
+        function getItemList(item) {
+            if (item === 'ability_set_1')
                 setItemList(pokemonData.abilities.set_1)
-            else if (itemType === 'set_2')
+            else if (item === 'ability_set_2')
                 setItemList(pokemonData.abilities.set_2)
-            else if (itemType === 'set_3')
+            else if (item === 'ability_set_3')
                 setItemList(pokemonData.abilities.set_3)
-            else
+            else if (item === 'ability_set_4')
                 setItemList(pokemonData.abilities.set_4)
 
             //console.log(itemList);

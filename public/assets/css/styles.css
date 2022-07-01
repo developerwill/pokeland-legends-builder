@@ -253,3 +253,7 @@ form {
 .search-result .list-group-item:hover {
     background: rgb(28, 27, 70);
 }
+
+.options {
+    color: #43aada;
+}

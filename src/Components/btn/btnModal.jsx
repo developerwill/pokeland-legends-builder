@@ -1,19 +1,17 @@
-import React, { useContext } from 'react';
-import { PokedexContext } from '../../Data/Context/pokemonData';
+import React from 'react';
 
-const BtnModal = ({ children, animated, disabled, id, classes, modal, itemList, numOfItems }) => {
-    const { getItemList } = useContext(PokedexContext)
+const BtnModal = ({ children, animated, disabled, id, classes, modal }) => {
 
     if (animated)
         return (
             <>
                 {disabled
                     ?
-                    <button onClick={() => getItemList(itemList)} id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
+                    <button id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
                         {children}
                     </button>
                     :
-                    <button onClick={() => getItemList(itemList)} id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
+                    <button id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal} data-bss-hover-animate="tada">
                         {children}
                     </button>
                 }
@@ -24,16 +22,17 @@ const BtnModal = ({ children, animated, disabled, id, classes, modal, itemList, 
             <>
                 {disabled
                     ?
-                    <button onClick={() => getItemList(itemList)} id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal}>
+                    <button id={id} className={`btn ${classes}`} type="button" disabled data-bs-toggle="modal" data-bs-target={modal}>
                         {children}
                     </button>
                     :
-                    <button onClick={() => getItemList(itemList)} id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                    <button id={id} className={`btn ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                         {children}
                     </button>
                 }
             </>
         );
+
 }
 
 export default BtnModal;
