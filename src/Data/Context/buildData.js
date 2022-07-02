@@ -1,14 +1,16 @@
-import React, { useRef, createContext, useContext } from 'react';
+import React, { useRef, createContext, useContext, useState } from 'react';
 import { PokedexContext } from './pokemonData';
 //import cryptoRandomString from 'crypto-random-string';
 //import { AppConfigContext } from '../../Config/App';
+import uuid from 'uuidv4';
 
 export const BuildContext = createContext();
 
 export const BuildProvider = ({ children }) => {
     const buildData = useRef()
-    const btnPressed = useRef()
+    const [btnPressed, setBtnPressed] = useState()
     const { pokemonData } = useContext(PokedexContext)
+    const [buildUpdated, setBuildUpdate] = useState()
 
     const ability_1 = useRef()
     const ability_2 = useRef()
@@ -43,7 +45,9 @@ export const BuildProvider = ({ children }) => {
     const hiddenSkill_11 = useRef()
     const hiddenSkill_12 = useRef()
 
-    function getBtnKey(key) { btnPressed.current = key; console.log(btnPressed.current) }
+    function getBtnKey(key) {
+        setBtnPressed(key)
+    }
 
     function updateBuild(item) {
         addItem(item)
@@ -93,48 +97,48 @@ export const BuildProvider = ({ children }) => {
                 hiddenSkill_11: hiddenSkill_11.current,
                 hiddenSkill_12: hiddenSkill_12.current,
             },
-
         }
-        console.log(buildData.current);
+
+        setBuildUpdate(uuid())
     }
 
     function addItem(item) {
-        if (btnPressed.current === 1) ability_1.current = item
-        if (btnPressed.current === 2) ability_2.current = item
-        if (btnPressed.current === 3) ability_3.current = item
-        if (btnPressed.current === 4) ability_4.current = item
-        if (btnPressed.current === 5) ability_5.current = item
-        if (btnPressed.current === 6) ability_6.current = item
-        if (btnPressed.current === 7) ability_7.current = item
-        if (btnPressed.current === 8) ability_8.current = item
-        if (btnPressed.current === 9) personality_1.current = item
-        if (btnPressed.current === 10) personality_2.current = item
-        if (btnPressed.current === 11) personality_3.current = item
-        if (btnPressed.current === 12) personality_4.current = item
-        if (btnPressed.current === 13) heldItem_1.current = item
-        if (btnPressed.current === 14) heldItem_2.current = item
-        if (btnPressed.current === 15) heldItem_3.current = item
-        if (btnPressed.current === 16) heldItem_4.current = item
-        if (btnPressed.current === 17) gear_1.current = item
-        if (btnPressed.current === 18) gear_2.current = item
-        if (btnPressed.current === 19) gear_3.current = item
-        if (btnPressed.current === 20) gear_4.current = item
-        if (btnPressed.current === 21) hiddenSkill_1.current = item
-        if (btnPressed.current === 22) hiddenSkill_2.current = item
-        if (btnPressed.current === 23) hiddenSkill_3.current = item
-        if (btnPressed.current === 24) hiddenSkill_4.current = item
-        if (btnPressed.current === 25) hiddenSkill_5.current = item
-        if (btnPressed.current === 26) hiddenSkill_6.current = item
-        if (btnPressed.current === 27) hiddenSkill_7.current = item
-        if (btnPressed.current === 28) hiddenSkill_8.current = item
-        if (btnPressed.current === 29) hiddenSkill_9.current = item
-        if (btnPressed.current === 30) hiddenSkill_10.current = item
-        if (btnPressed.current === 31) hiddenSkill_11.current = item
-        if (btnPressed.current === 32) hiddenSkill_12.current = item
+        if (btnPressed === 1) ability_1.current = item
+        if (btnPressed === 2) ability_2.current = item
+        if (btnPressed === 3) ability_3.current = item
+        if (btnPressed === 4) ability_4.current = item
+        if (btnPressed === 5) ability_5.current = item
+        if (btnPressed === 6) ability_6.current = item
+        if (btnPressed === 7) ability_7.current = item
+        if (btnPressed === 8) ability_8.current = item
+        if (btnPressed === 9) personality_1.current = item
+        if (btnPressed === 10) personality_2.current = item
+        if (btnPressed === 11) personality_3.current = item
+        if (btnPressed === 12) personality_4.current = item
+        if (btnPressed === 13) heldItem_1.current = item
+        if (btnPressed === 14) heldItem_2.current = item
+        if (btnPressed === 15) heldItem_3.current = item
+        if (btnPressed === 16) heldItem_4.current = item
+        if (btnPressed === 17) gear_1.current = item
+        if (btnPressed === 18) gear_2.current = item
+        if (btnPressed === 19) gear_3.current = item
+        if (btnPressed === 20) gear_4.current = item
+        if (btnPressed === 21) hiddenSkill_1.current = item
+        if (btnPressed === 22) hiddenSkill_2.current = item
+        if (btnPressed === 23) hiddenSkill_3.current = item
+        if (btnPressed === 24) hiddenSkill_4.current = item
+        if (btnPressed === 25) hiddenSkill_5.current = item
+        if (btnPressed === 26) hiddenSkill_6.current = item
+        if (btnPressed === 27) hiddenSkill_7.current = item
+        if (btnPressed === 28) hiddenSkill_8.current = item
+        if (btnPressed === 29) hiddenSkill_9.current = item
+        if (btnPressed === 30) hiddenSkill_10.current = item
+        if (btnPressed === 31) hiddenSkill_11.current = item
+        if (btnPressed === 32) hiddenSkill_12.current = item
     }
 
     return (
-        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey }}>
+        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, buildUpdated }}>
             {children}
         </BuildContext.Provider>
     );
