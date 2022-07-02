@@ -5,13 +5,14 @@ import AbilitiesModal from '../../Components/modal/abilitiesModal';
 import PokemonInfo from '../../Components/pokemonInfo';
 import CopyLinkHeader from '../template/header/copyLink';
 import Textarea from '../../Components/forms/textarea';
+import { BuildProvider } from '../../Data/Context/buildData';
 
 const BuilderPage = (props) => {
     const isLoggedIn = false;
     const isBuilding = true;
 
     return (
-        <>
+        <BuildProvider>
             <CopyLinkHeader />
             <SideInfo classes="col mb-4 mb-lg-0 me-lg-3 pb-3">
                 <PokemonInfo isLoggedIn={isLoggedIn} isBuilding={isBuilding} />
@@ -23,7 +24,7 @@ const BuilderPage = (props) => {
             </SideInfo>
             <Builder />
             <AbilitiesModal></AbilitiesModal>
-        </>
+        </BuildProvider>
     );
 }
 export default BuilderPage;
