@@ -117,14 +117,26 @@ export const PokedexProvider = ({ children }) => {
         }
 
         function getItemList(item) {
-            if (item === 'ability_set_1')
-                setItemList(pokemonData.abilities.set_1)
-            else if (item === 'ability_set_2')
-                setItemList(pokemonData.abilities.set_2)
+            if (item === 'ability_set_1') {
+                setItemList([{
+                    set: 1,
+                    abilities: pokemonData.abilities.set_1
+                }])
+            } else if (item === 'ability_set_2')
+                setItemList([{
+                    set: 2,
+                    abilities: pokemonData.abilities.set_2
+                }])
             else if (item === 'ability_set_3')
-                setItemList(pokemonData.abilities.set_3)
+                setItemList([{
+                    set: 3,
+                    abilities: pokemonData.abilities.set_3
+                }])
             else if (item === 'ability_set_4')
-                setItemList(pokemonData.abilities.set_4)
+                setItemList([{
+                    set: 4,
+                    abilities: pokemonData.abilities.set_4
+                }])
 
             //console.log(itemList);
         }
