@@ -4,7 +4,7 @@ import { BuildContext } from '../../Data/Context/buildData';
 
 const AddItemBtn = ({ modal, index, btnIndex }) => {
     const { getItemList } = useContext(PokedexContext)
-    const { getBtnKey, buildData, buildUpdated } = useContext(BuildContext)
+    const { getBtnKey, buildData } = useContext(BuildContext)
     const btnStyle = 'btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary'
 
     function getItems(btnIndex) {
@@ -12,14 +12,10 @@ const AddItemBtn = ({ modal, index, btnIndex }) => {
         getBtnKey(btnIndex)
     }
 
-    useEffect(() => {
-        console.log(buildUpdated);
-    }, [buildUpdated])
-
     return (
         <button onClick={() => getItems(btnIndex)} key={btnIndex} className={btnStyle} type="button" data-bs-toggle="modal" data-bs-target={modal}>
             {buildData.current && buildData.current.abilities['ability_' + btnIndex]
-                ? <img src={`assets/img/abilities/${buildData.current.abilities['ability_' + btnIndex]}`}></img>
+                ? <img className='border rounded-circle add-button btn-primary' src={`assets/img/abilities/${buildData.current.abilities['ability_' + btnIndex]}`}></img>
                 : '+'
             }
         </button>

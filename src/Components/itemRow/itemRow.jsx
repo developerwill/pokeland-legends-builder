@@ -53,31 +53,31 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                                 }
 
                                 <>
-                                    {numberOfItems >= 3
-                                        ?
-                                        <div className={`col-12 col-xl-${numberOfItems} d-flex justify-content-center options text-center`}>
-                                            {mainItems.map((desc, index) => (
-                                                <>
-                                                    {btnIndexer()}
-                                                    <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
-                                                        <p><small>{desc}</small></p>
-                                                    </div>
-                                                </>
-                                            ))}
-                                        </div>
-                                        :
-                                        <div className={`col-${numberOfItems} d-none d-xl-flex justify-content-center options text-center`}>
-                                            {mainItems.map((desc, index) => (
-                                                <>
-                                                    {btnIndexer()}
-                                                    <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
-                                                        <p><small>{desc}</small></p>
-                                                    </div>
-                                                </>
-                                            ))}
-                                        </div>
+                                    {numberOfItems >= 3 &&
+                                        <>
+                                            <div className={`col-12 col-xl-${numberOfItems} d-flex justify-content-center options text-center`}>
+                                                {mainItems.map((desc, index) => (
+                                                    <>
+                                                        {btnIndexer()}
+                                                        <div>
+                                                            <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                            <p><small>{desc}</small></p>
+                                                        </div>
+                                                    </>
+                                                ))}
+                                            </div>
+                                            <div className={`col-${numberOfItems} d-none d-xl-flex justify-content-center options text-center`}>
+                                                {optionalItems.map((desc, index) => (
+                                                    <>
+                                                        {btnIndexer()}
+                                                        <div>
+                                                            <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                            <p><small>{desc}</small></p>
+                                                        </div>
+                                                    </>
+                                                ))}
+                                            </div>
+                                        </>
                                     }
 
                                     {numberOfItems === 4
@@ -85,35 +85,8 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                                         : <div className='col-xl-1'></div>
                                     }
 
-                                    {numberOfItems >= 3
-                                        ?
-                                        <div className={`col-12 col-xl-${numberOfItems} d-flex justify-content-center options text-center`}>
-                                            {mainItems.map((desc, index) => (
-                                                <>
-                                                    {btnIndexer()}
-                                                    <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
-                                                        <p><small>{desc}</small></p>
-                                                    </div>
-                                                </>
-                                            ))}
-                                        </div>
-                                        :
-                                        <div className={`col-${numberOfItems} d-none d-xl-flex justify-content-center options text-center`}>
-                                            {optionalItems.map((desc, index) => (
-                                                <>
-                                                    {btnIndexer()}
-                                                    <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
-                                                        <p><small>{desc}</small></p>
-                                                    </div>
-                                                </>
-                                            ))}
-                                        </div>
-                                    }
-
                                     {numberOfItems <= 2 &&
-                                        <div className={`col-12 col-xl-${numberOfItems} d-flex d-xl-none justify-content-center options text-center`}>
+                                        <div className={`col-12 d-flex justify-content-center options text-center`}>
                                             {mainItems.map((desc, index) => (
                                                 <>
                                                     {btnIndexer()}
