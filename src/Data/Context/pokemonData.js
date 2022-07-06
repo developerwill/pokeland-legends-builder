@@ -141,10 +141,18 @@ export const PokedexProvider = ({ children }) => {
             //console.log(itemList);
         }
 
+        function getSprite(pokemonID) {
+            const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID) }
+            const variation = pokemonInfo[0].variation
+            const spritePath = 'assets/img/pokedex/pokeland/'
+
+            return spritePath + variation + '/' + pokemonInfo[0].sprites.pokeland
+        }
+
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
 
         return (
-            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList }}>
+            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList, getSprite }}>
                 {children}
             </PokedexContext.Provider>
         );
