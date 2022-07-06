@@ -4,8 +4,6 @@ import PokemonImg from './pokemonImg/pokemonImg';
 import BtnOffcanvas from './btn/btnOffcanvas';
 import BtnRounded from './btn/btnRounded';
 import BestTeams from './bestTeams';
-//import BtnModal from './btn/btnModal';
-//import { BuildContext } from '../Data/Context/buildData';
 import AddItemBtn from './btn/addItemBtn';
 import uuid from 'uuidv4';
 
@@ -14,20 +12,10 @@ import { PokedexContext } from '../Data/Context/pokemonData';
 const PokemonInfo = ({ isBuilding }) => {
     let teamMates = [];
     const { pokemonData } = useContext(PokedexContext)
-    //const { updateTeammate, teammates } = useContext(BuildContext)
-
-    //console.log(teammates.current[0]['teammate_' + 3]);
-    //if (teammates[0] !== undefined)
-    //console.log(teammates.current)
-
-    //console.log(teammates.current)
-    //if (teammates.current)
-    /*  if (teammates && teammates.teammate_1)
-         console.log(teammates.teammate_1) */
 
     for (let i = 1; i <= 4; i++) {
         teamMates.push(
-            <AddItemBtn key={uuid()} index={i} itemType={'pokemon'} modal={'#teammates-modal'}></AddItemBtn>
+            <AddItemBtn key={uuid()} index={i} itemType={'pokemon'} modal={'#teammates-modal'} classes={'mx-1'}></AddItemBtn>
         );
     }
 
