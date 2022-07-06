@@ -6,6 +6,7 @@ import PokemonInfo from '../../Components/pokemonInfo';
 import CopyLinkHeader from '../template/header/copyLink';
 import Textarea from '../../Components/forms/textarea';
 import { BuildProvider } from '../../Data/Context/buildData';
+import TeamMatesModal from '../../Components/modal/teamMateModal';
 
 const BuilderPage = (props) => {
     const isLoggedIn = false;
@@ -23,7 +24,8 @@ const BuilderPage = (props) => {
                 }
             </SideInfo>
             <Builder />
-            <AbilitiesModal></AbilitiesModal>
+            <TeamMatesModal />
+            <AbilitiesModal />
         </BuildProvider>
     );
 }
