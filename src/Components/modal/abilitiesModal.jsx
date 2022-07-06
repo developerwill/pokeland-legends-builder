@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import ImgSelect from '../pokemonImg/imgSelect';
 
-const Modal = () => {
+const AbilitiesModal = () => {
     const { itemList } = useContext(PokedexContext)
     const itemsListArray = []
 
@@ -30,15 +30,10 @@ const Modal = () => {
                                 )
                             })
                         }
-                        <>
-                        </>
-                        {/* {itemsListArray.map((name, index) =>
-                            <ImgSelect key={index + 1} position={index + 1} item={name} classes="purple-border border-small m-1 img-fluid img-select" src={`assets/img/abilities/${name}`} alt="butt"></ImgSelect>
-                        )} */}
                     </div>
                 </div>
             </div>
         </div>
     );
 }
-export default Modal;
+export default AbilitiesModal;

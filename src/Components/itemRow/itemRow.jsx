@@ -57,24 +57,24 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                                         <>
                                             <div className={`col-12 col-xl-${numberOfItems} d-flex justify-content-center options text-center`}>
                                                 {mainItems.map((desc, index) => (
-                                                    <>
+                                                    <div key={uuid()}>
                                                         {btnIndexer()}
                                                         <div>
                                                             <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                             <p><small>{desc}</small></p>
                                                         </div>
-                                                    </>
+                                                    </div>
                                                 ))}
                                             </div>
                                             <div className={`col-${numberOfItems} d-none d-xl-flex justify-content-center options text-center`}>
                                                 {optionalItems.map((desc, index) => (
-                                                    <>
+                                                    <div key={uuid()}>
                                                         {btnIndexer()}
                                                         <div>
                                                             <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                             <p><small>{desc}</small></p>
                                                         </div>
-                                                    </>
+                                                    </div>
                                                 ))}
                                             </div>
                                         </>
@@ -88,23 +88,23 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                                     {numberOfItems <= 2 &&
                                         <div className={`col-12 d-flex justify-content-center options text-center`}>
                                             {mainItems.map((desc, index) => (
-                                                <>
+                                                <div key={uuid()}>
                                                     {btnIndexer()}
                                                     <div>
                                                         <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                         <p><small>{desc}</small></p>
                                                     </div>
-                                                </>
+                                                </div>
                                             ))}
                                             <div className='mx-1'></div>
                                             {optionalItems.map((desc, index) => (
-                                                <>
+                                                <div key={uuid()}>
                                                     {btnIndexer()}
                                                     <div>
                                                         <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                         <p><small>{desc}</small></p>
                                                     </div>
-                                                </>
+                                                </div>
                                             ))}
                                         </div>
                                     }
@@ -128,13 +128,13 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                             <>
                                 <div className={`d-flex justify-content-center options text-center`}>
                                     {mainItems.map((desc, index) => (
-                                        <>
+                                        <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
                                                 <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 4} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
-                                        </>
+                                        </div>
                                     ))}
                                 </div>
                             </>
@@ -156,13 +156,13 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                             <>
                                 <div className={`d-flex justify-content-center options text-center`}>
                                     {mainItems.map((desc, index) => (
-                                        <>
+                                        <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
                                                 <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
-                                        </>
+                                        </div>
                                     ))}
                                 </div>
                             </>
@@ -184,13 +184,13 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                             <>
                                 <div className={`d-flex justify-content-center options text-center`}>
                                     {mainItems.map((desc, index) => (
-                                        <>
+                                        <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
                                                 <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 12} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
-                                        </>
+                                        </div>
                                     ))}
                                 </div>
                             </>
@@ -212,13 +212,13 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                             <>
                                 <div className={`d-flex justify-content-center options text-center flex-wrap`}>
                                     {mainItems.map((desc, index) => (
-                                        <>
+                                        <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
                                                 <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
-                                        </>
+                                        </div>
                                     ))}
                                 </div>
                             </>

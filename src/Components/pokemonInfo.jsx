@@ -4,30 +4,37 @@ import PokemonImg from './pokemonImg/pokemonImg';
 import BtnOffcanvas from './btn/btnOffcanvas';
 import BtnRounded from './btn/btnRounded';
 import BestTeams from './bestTeams';
-import BtnModal from './btn/btnModal';
-import ImgTooltip from './pokemonImg/imgTooltip';
+//import BtnModal from './btn/btnModal';
+//import { BuildContext } from '../Data/Context/buildData';
+import AddItemBtn from './btn/addItemBtn';
+import uuid from 'uuidv4';
 
 import { PokedexContext } from '../Data/Context/pokemonData';
 
 const PokemonInfo = ({ isBuilding }) => {
     let teamMates = [];
     const { pokemonData } = useContext(PokedexContext)
+    //const { updateTeammate, teammates } = useContext(BuildContext)
 
-    if (isBuilding)
-        for (let i = 1; i <= 4; i++) {
-            teamMates.push(
-                <BtnModal key={i} animated={true} id={`team-mate-${i}`} modal="#modal-1" classes="btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary mx-1 my-1">+</BtnModal>
-            );
-        }
-    else
-        for (let i = 1; i <= 4; i++)
-            teamMates.push(
-                <ImgTooltip key={i} classes="col-3 col-md-2 col-lg-3 blue-border border-small m-1" src="assets/img/150_mega_shadow_mewtwo-x.webp" alt="butt"></ImgTooltip>
-            )
+    //console.log(teammates.current[0]['teammate_' + 3]);
+    //if (teammates[0] !== undefined)
+    //console.log(teammates.current)
+
+    //console.log(teammates.current)
+    //if (teammates.current)
+    /*  if (teammates && teammates.teammate_1)
+         console.log(teammates.teammate_1) */
+
+    for (let i = 1; i <= 4; i++) {
+        teamMates.push(
+            <AddItemBtn key={uuid()} index={i} itemType={'pokemon'} modal={'#teammates-modal'}></AddItemBtn>
+        );
+    }
 
     return (
         <>
             <div className="row">
+
                 <div className="col-12 py-3 text-center">
                     <div className="d-flex flex-column justify-content-center align-items-center">
                         <div className="mb-3">
