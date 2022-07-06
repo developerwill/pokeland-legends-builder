@@ -1,4 +1,4 @@
-import React, { useRef, createContext, useContext, useState } from 'react';
+import React, { useRef, createContext, useContext, useState, useEffect } from 'react';
 import { PokedexContext } from './pokemonData';
 //import cryptoRandomString from 'crypto-random-string';
 //import { AppConfigContext } from '../../Config/App';
@@ -9,8 +9,15 @@ export const BuildContext = createContext();
 export const BuildProvider = ({ children }) => {
     const buildData = useRef()
     const [btnPressed, setBtnPressed] = useState()
-    const { pokemonData } = useContext(PokedexContext)
+    const { pokemonData, getSprite } = useContext(PokedexContext)
     const [buildUpdated, setBuildUpdate] = useState()
+    //const teammates = useRef([])
+    const [teammates, setTeammates] = useState()
+    const teammate_1 = useRef()
+    const teammate_2 = useRef()
+    const teammate_3 = useRef()
+    const teammate_4 = useRef()
+    //const currentTeammate = useRef()
 
     const ability_1 = useRef()
     const ability_2 = useRef()
@@ -137,8 +144,24 @@ export const BuildProvider = ({ children }) => {
         if (btnPressed === 32) hiddenSkill_12.current = item
     }
 
+    function updateTeammate(pokemonID) {
+        if (btnPressed === 1) teammate_1.current = getSprite(pokemonID)
+        if (btnPressed === 2) teammate_2.current = getSprite(pokemonID)
+        if (btnPressed === 3) teammate_3.current = getSprite(pokemonID)
+        if (btnPressed === 4) teammate_4.current = getSprite(pokemonID)
+
+        setTeammates(
+            {
+                teammate_1: teammate_1.current,
+                teammate_2: teammate_2.current,
+                teammate_3: teammate_3.current,
+                teammate_4: teammate_4.current
+            }
+        )
+    }
+
     return (
-        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, buildUpdated }}>
+        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, buildUpdated, updateTeammate, teammates }}>
             {children}
         </BuildContext.Provider>
     );
