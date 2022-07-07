@@ -271,3 +271,7 @@ form {
     color: #fff;
     background-color: rgb(75, 75, 112);
 }
+
+.pokemon-ratio-img {
+    width: 60px;
+}

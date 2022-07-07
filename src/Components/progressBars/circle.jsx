@@ -14,8 +14,8 @@ const ProgressCircle = styled.div({
         conic-gradient(orange 0deg, yellow 90deg, lightgreen 180deg, green)`
     },
     borderRadius: '50%',
-    width: '75px',
-    height: '75px',
+    width: '74px',
+    height: '73px',
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
