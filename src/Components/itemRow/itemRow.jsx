@@ -3,7 +3,7 @@ import React, { /* useContext */ } from 'react';
 import uuid from 'uuidv4';
 import AddItemBtn from '../btn/addItemBtn';
 
-const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, itemType }) => {
+const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfItems, itemType }) => {
     //const { getItemList } = useContext(PokedexContext)
     const mainItems = []
     const optionalItems = []
@@ -225,8 +225,16 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                         }
                     </>
                 }
+
+                {/* Save and Share */}
+                {itemType === 'saveShare' &&
+                    <>
+                        {children}
+                    </>
+                }
             </div>
         </>
+
     );
 }
 export default ItemRow;
