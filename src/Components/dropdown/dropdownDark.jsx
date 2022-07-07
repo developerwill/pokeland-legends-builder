@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const DropDownDark = (props) => {
     return (
         <>
-            <div className="dropdown">
+            <div className="dropdown dropstart">
                 <button className="btn btn-secondary dropdown-toggle purple-bk" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                     Language
                 </button>
