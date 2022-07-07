@@ -10,7 +10,7 @@ const Navbar = (props) => {
                 <div className="container p-sm-0">
 
                     <div className='col d-flex justify-content-between'>
-                        <img className='d-sm-none' src='assets/img/pokeland_legends_club_logo.webp'></img>
+                        <img alt="alt" className='d-sm-none' src='assets/img/pokeland_legends_club_logo.webp'></img>
                         <BtnOffcanvas classes="navbar-toggler" disabled={false} offcanvas="navbar-mobile">
                             <span className="navbar-toggler-icon"></span>
                         </BtnOffcanvas>
@@ -18,7 +18,7 @@ const Navbar = (props) => {
 
                     <div className="col-12 d-none d-sm-flex justify-content-between align-items-center">
                         <a className="navbar-brand" href="/">
-                            <img src='assets/img/pokeland_legends_club_logo.webp'></img>
+                            <img alt="alt" src='assets/img/pokeland_legends_club_logo.webp'></img>
                         </a>
                         <NavbarLinks />
                     </div>
