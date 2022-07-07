@@ -176,7 +176,7 @@ form {
 
 .form-floating textarea.form-control {
     color: white;
-    height: 250px;
+    height: auto;
 }
 
 .form-floating>.form-control,
@@ -185,7 +185,7 @@ form {
 }
 
 .form-floating>label {
-    padding: 0.4rem .75rem;
+    padding: 0.4rem 1.5rem;
 }
 
 #build-info p:first-child {
@@ -274,4 +274,15 @@ form {
 
 .pokemon-ratio-img {
     width: 60px;
+}
+
+.add-note {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 1.3em;
+}
+
+.add-note a:hover {
+    color: #43aada;
 }

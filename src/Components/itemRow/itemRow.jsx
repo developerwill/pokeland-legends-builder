@@ -1,7 +1,9 @@
-import React, { /* useContext */ } from 'react';
+import React, { useState } from 'react';
 //import { PokedexContext } from '../../Data/Context/pokemonData';
 import uuid from 'uuidv4';
 import AddItemBtn from '../btn/addItemBtn';
+import { Link } from 'react-router-dom';
+import Textarea from '../forms/textarea';
 
 const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfItems, itemType }) => {
     //const { getItemList } = useContext(PokedexContext)
@@ -9,12 +11,17 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
     const optionalItems = []
     const btnStyle = 'btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary'
     let btnIndex = 0
+    const [note, showNote] = useState()
 
     for (var i = 1; i <= numberOfItems; i++)
         mainItems.push(`${itemCategory} ${i}`)
 
     for (var j = 1; j <= numberOfItems; j++)
         optionalItems.push(`${itemCategory} ${j}`)
+
+    function addNote(note) {
+        showNote(note)
+    }
 
     function btnIndexer() {
         btnIndex++;
@@ -23,8 +30,11 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
     return (
         <>
             <div id={id} className="row d-flex justify-content-center builder-body rounded purple-bk-darker my-4 mx-2 pb-4">
-                <div className="col-12 d-flex justify-content-center align-items-center text-center items-title">
+                <div className="col-12 d-flex justify-content-center align-items-center text-center items-title position-relative">
                     <h2>{title}</h2>
+                    <div className='add-note pe-1'>
+                        <Link className='options' to="" onClick={() => addNote(itemType)}><i className="fa-solid fa-note-sticky"></i></Link>
+                    </div>
                 </div>
 
                 {/* Abilities */}
@@ -111,6 +121,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                 </>
                             </>
                         }
+                        {note === 'ability' &&
+                            <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                        }
                     </>
                 }
 
@@ -137,6 +150,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
+                                {note === 'personality' &&
+                                    <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                }
                             </>
                         }
                     </>
@@ -165,6 +181,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
+                                {note === 'heldItem' &&
+                                    <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                }
                             </>
                         }
                     </>
@@ -193,6 +212,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
+                                {note === 'gear' &&
+                                    <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                }
                             </>
                         }
                     </>
@@ -221,6 +243,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
+                                {note === 'hiddenSkill' &&
+                                    <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                }
                             </>
                         }
                     </>
@@ -229,6 +254,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                 {/* Save and Share */}
                 {itemType === 'saveShare' &&
                     <>
+                        {note === 'saveShare' &&
+                            <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                        }
                         {children}
                     </>
                 }

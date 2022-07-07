@@ -11,7 +11,7 @@ const BuilderContent = (props) => {
 
     return (
         <div className="col-lg-7 col-xl-8 col-xxl-9 custom-border rounded-3">
-            <HeaderType pokemonID={137} />
+            <HeaderType />
             <form className='form-builder'>
                 <InputText placeholder="Type a Pokémon name" name="pokemon-name">Build Title</InputText>
 
