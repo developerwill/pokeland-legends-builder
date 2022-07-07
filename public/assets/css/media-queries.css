@@ -60,6 +60,12 @@
     }
 }
 
+@media (max-width: 767px) {
+    .hidden-skills-container {
+        width: 290px;
+    }
+}
+
 @media (min-width: 768px) {
     .header-type-pokemon {
         max-width: 200px;
@@ -69,6 +75,10 @@
         font-size: 80px;
         width: 62px;
         height: 62px;
+    }
+
+    .hidden-skills-container {
+        width: 375px;
     }
 }
 

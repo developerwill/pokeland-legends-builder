@@ -210,7 +210,7 @@ const ItemRow = ({ id, modal, title, disabled, itemCategory, numberOfItems, item
                             </div>
                             :
                             <>
-                                <div className={`d-flex justify-content-center options text-center flex-wrap`}>
+                                <div className={`d-flex justify-content-center options text-center flex-wrap hidden-skills-container px-0 px-sm-2`}>
                                     {mainItems.map((desc, index) => (
                                         <div key={uuid()}>
                                             {btnIndexer()}
