@@ -14,8 +14,8 @@ const PokemonInfo = ({ isBuilding }) => {
     const { pokemonData } = useContext(PokedexContext)
 
     for (let i = 1; i <= 6; i++) {
-        if (i === 1) teamMates.push(<div className='row mt-3 best-teams options'><p className='text-center'>Team 1</p></div>)
-        if (i === 4) teamMates.push(<div className='row mt-3 best-teams options'><p className='text-center'>Team 2</p></div>)
+        if (i === 1) teamMates.push(<div key={uuid()} className='row mt-3 best-teams options'><p className='text-center'>Team 1</p></div>)
+        if (i === 4) teamMates.push(<div key={uuid()} className='row mt-3 best-teams options'><p className='text-center'>Team 2</p></div>)
         teamMates.push(
             <AddItemBtn key={uuid()} index={i} itemType={'pokemon'} modal={'#teammates-modal'} classes={'mx-1'}></AddItemBtn>
         );
