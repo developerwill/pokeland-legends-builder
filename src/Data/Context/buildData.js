@@ -13,11 +13,10 @@ export const BuildProvider = ({ children }) => {
     const [buildUpdated, setBuildUpdate] = useState()
     //const teammates = useRef([])
     const [teammates, setTeammates] = useState()
-    const teammate_1 = useRef()
     const teammate_2 = useRef()
     const teammate_3 = useRef()
-    const teammate_4 = useRef()
-    //const currentTeammate = useRef()
+    const teammate_5 = useRef()
+    const teammate_6 = useRef()
 
     const ability_1 = useRef()
     const ability_2 = useRef()
@@ -145,17 +144,17 @@ export const BuildProvider = ({ children }) => {
     }
 
     function updateTeammate(pokemonID) {
-        if (btnPressed === 1) teammate_1.current = getSprite(pokemonID)
         if (btnPressed === 2) teammate_2.current = getSprite(pokemonID)
         if (btnPressed === 3) teammate_3.current = getSprite(pokemonID)
-        if (btnPressed === 4) teammate_4.current = getSprite(pokemonID)
+        if (btnPressed === 5) teammate_5.current = getSprite(pokemonID)
+        if (btnPressed === 6) teammate_6.current = getSprite(pokemonID)
 
         setTeammates(
             {
-                teammate_1: teammate_1.current,
                 teammate_2: teammate_2.current,
                 teammate_3: teammate_3.current,
-                teammate_4: teammate_4.current
+                teammate_5: teammate_5.current,
+                teammate_6: teammate_6.current
             }
         )
     }
