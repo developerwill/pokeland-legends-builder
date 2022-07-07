@@ -4,7 +4,7 @@ import { PokedexContext } from '../../../Data/Context/pokemonData';
 import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-const CopyLinkHeader = () => {
+const BuilderHeader = () => {
     const [show, setShow] = useState(false);
     const target = useRef(null);
 
@@ -43,4 +43,4 @@ const CopyLinkHeader = () => {
         </HeaderBase>
     );
 }
-export default CopyLinkHeader;
+export default BuilderHeader;
