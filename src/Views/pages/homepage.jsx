@@ -11,7 +11,7 @@ const Homepage = (props) => {
         <>
             <HomepageHeader />
             <SideInfo classes="col me-lg-3 mb-4 pb-3 pe-0 d-none d-sm-block">
-                <SearchPokemonForm />
+                <SearchPokemonForm dismiss={'offcanvas'} />
             </SideInfo>
             <LatestBuilds />
         </>

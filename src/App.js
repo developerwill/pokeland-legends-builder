@@ -17,7 +17,7 @@ function App() {
                         <Navbar />
                         <Content></Content>
                         <OffcanvasBase id="offcanvas-search-1">
-                            <SearchPokemonForm />
+                            <SearchPokemonForm dismiss={'offcanvas'} />
                         </OffcanvasBase>
                     </Router>
                 </BuildProvider>

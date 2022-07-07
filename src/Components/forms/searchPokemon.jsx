@@ -4,7 +4,7 @@ import { PokedexContext } from '../../Data/Context/pokemonData';
 import { BuildContext } from '../../Data/Context/buildData';
 import uuid from 'uuidv4';
 
-const SearchPokemonForm = ({ searchType }) => {
+const SearchPokemonForm = ({ searchType, dismiss }) => {
     const [pokemonName, setPokemonName] = useState('');
     const { getPokemonList, pokemonList, fetchPokemon } = useContext(PokedexContext)
     const { updateTeammate } = useContext(BuildContext)
@@ -47,11 +47,11 @@ const SearchPokemonForm = ({ searchType }) => {
                                     <div key={uuid()}>
                                         {searchType === 'teamSearch'
                                             ?
-                                            <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss="modal" aria-label="Close" className="list-group-item list-group-item-action">
+                                            <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
                                                 {pokemon.name.pokeland}
                                             </li>
                                             :
-                                            <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} aria-label="Close" className="list-group-item list-group-item-action">
+                                            <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
                                                 {pokemon.name.pokeland}
                                             </li>
                                         }

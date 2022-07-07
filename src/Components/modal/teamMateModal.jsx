@@ -31,7 +31,7 @@ const TeamMatesModal = () => {
                                 )
                             })
                         } */}
-                        <SearchPokemonForm searchType="teamSearch"></SearchPokemonForm>
+                        <SearchPokemonForm searchType="teamSearch" dismiss={'modal'}></SearchPokemonForm>
                     </div>
                 </div>
             </div>
