@@ -261,3 +261,13 @@ form {
 .rounded-circle {
     border-radius: 20% !important;
 }
+
+.dropdown-toggle,
+.dropdown-menu-dark {
+    background-color: rgb(44, 43, 87) !important;
+}
+
+.dropdown-menu-dark .dropdown-item:active {
+    color: #fff;
+    background-color: rgb(75, 75, 112);
+}
