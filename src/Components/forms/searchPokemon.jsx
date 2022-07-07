@@ -7,7 +7,7 @@ import uuid from 'uuidv4';
 const SearchPokemonForm = ({ searchType }) => {
     const [pokemonName, setPokemonName] = useState('');
     const { getPokemonList, pokemonList, fetchPokemon } = useContext(PokedexContext)
-    const { updateTeammate, teammates } = useContext(BuildContext)
+    const { updateTeammate } = useContext(BuildContext)
 
     //Tentar resetar o input depois de escolher o pokemon
     //resetar a lista de pokemons tambem

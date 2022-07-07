@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import { BuildContext } from '../../Data/Context/buildData';
 

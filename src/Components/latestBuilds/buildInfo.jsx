@@ -18,7 +18,7 @@ const BuildInfo = (props) => {
                         <div className='col' id="build-info">
                             <p className='mb-1'>Resonance Spell Of The Unown</p>
                             <p>Created by: Vir7uaL</p>
-                            <p>Personality: Timid</p>
+                            <p>Created at: 06/07/2022</p>
                         </div>
 
                     </div>

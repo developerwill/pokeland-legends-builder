@@ -1,4 +1,4 @@
-import React, { useRef, createContext, useContext, useState, useEffect } from 'react';
+import React, { useRef, createContext, useContext, useState } from 'react';
 import { PokedexContext } from './pokemonData';
 //import cryptoRandomString from 'crypto-random-string';
 //import { AppConfigContext } from '../../Config/App';
