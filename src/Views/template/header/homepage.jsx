@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BtnOffcanvas from '../../../Components/btn/btnOffcanvas';
 import HeaderBase from './headerBase';
 
@@ -10,7 +11,10 @@ const HomepageHeader = (props) => {
             </div>
             <div className="col p-0 d-flex justify-content-end">
                 <BtnOffcanvas classes="btn-primary me-2 d-sm-none" offcanvas="offcanvas-search-1" text="Search Builds" icon="fa-solid fa-plus"></BtnOffcanvas>
-                <BtnOffcanvas classes="btn-success" offcanvas="offcanvas-search-1" text="Create Build" icon="fa-solid fa-plus"></BtnOffcanvas>
+
+                <Link className='btn btn-success' to={'new-build'}>
+                    Create Build <i className='fa-solid fa-plus'></i>
+                </Link>
             </div>
         </HeaderBase>
     );

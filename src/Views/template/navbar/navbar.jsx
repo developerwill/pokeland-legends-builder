@@ -2,6 +2,7 @@ import React from 'react';
 import BtnOffcanvas from '../../../Components/btn/btnOffcanvas';
 import OffcanvasBase from '../../../Components/offcanvas/offcanvasBase';
 import NavbarLinks from './navbarLinks';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
     return (
@@ -17,9 +18,9 @@ const Navbar = (props) => {
                     </div>
 
                     <div className="col-12 d-none d-sm-flex justify-content-between align-items-center">
-                        <a className="navbar-brand" href="/">
+                        <Link className="navbar-brand" to="/">
                             <img alt="alt" src='assets/img/pokeland_legends_club_logo.webp'></img>
-                        </a>
+                        </Link>
                         <NavbarLinks />
                     </div>
 
