@@ -6,7 +6,7 @@ const DropDownDark = (props) => {
         <>
             <div className="dropdown dropstart">
                 <button className="btn btn-secondary dropdown-toggle purple-bk" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                    Language
+                    Pokeland<img className='ms-3' alt='alt' src='assets/img/flags/eng.webp'></img>
                 </button>
 
                 <ul className='dropdown-menu dropdown-menu-dark purple-bk'>
