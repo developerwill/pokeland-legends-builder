@@ -28,15 +28,15 @@ const SaveShare = (props) => {
     if (!saveBuild)
         return (
             <>
-                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i class="fa-solid fa-floppy-disk"></i> Save</button>
-                <button className='btn btn-primary m-2' type="button" disabled><i class="fa-solid fa-share-nodes"></i> Copy Link</button>
+                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save</button>
+                <button className='btn btn-primary m-2' type="button" disabled><i className="fa-solid fa-share-nodes"></i> Copy Link</button>
             </>
         )
     else
         return (
             <>
-                <button className='btn btn-success m-2' type="button"><i class="fa-solid fa-floppy-disk"></i> Saved</button>
-                <button onClick={() => copyLink(pokemonData.build_url)} ref={target} className='btn btn-primary m-2' type="button"><i class="fa-solid fa-share-nodes"></i> Copy Link</button>
+                <button className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Saved</button>
+                <button onClick={() => copyLink(pokemonData.build_url)} ref={target} className='btn btn-primary m-2' type="button"><i className="fa-solid fa-share-nodes"></i> Copy Link</button>
                 <Overlay target={target.current} show={show} placement="right">
                     {(props) => (
                         <Tooltip id="overlay-example" {...props}>
