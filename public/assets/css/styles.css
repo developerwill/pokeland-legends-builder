@@ -286,3 +286,12 @@ form {
 .add-note a:hover {
     color: #43aada;
 }
+
+a.options {
+    color: #ffd283;
+    text-decoration: none;
+}
+
+a.options:hover {
+    color: #ffd283;
+}

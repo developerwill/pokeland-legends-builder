@@ -32,9 +32,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
             <div id={id} className="row d-flex justify-content-center builder-body rounded purple-bk-darker my-4 mx-2 pb-4">
                 <div className="col-12 d-flex justify-content-center align-items-center text-center items-title position-relative">
                     <h2>{title}</h2>
-                    <div className='add-note pe-1'>
-                        <Link className='options' to="" onClick={() => addNote(itemType)}><i className="fa-solid fa-note-sticky"></i></Link>
-                    </div>
+
                 </div>
 
                 {/* Abilities */}
@@ -124,9 +122,16 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                 </>
                             </>
                         }
-                        {note === 'ability' &&
+
+                        {note === 'ability'
+                            ?
                             <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                            :
+                            <div className='text-end mx-3'>
+                                <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
+                            </div>
                         }
+
                     </>
                 }
 
@@ -153,8 +158,13 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
-                                {note === 'personality' &&
+                                {note === 'personality'
+                                    ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                    :
+                                    <div className='text-end mx-3'>
+                                        <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
+                                    </div>
                                 }
                             </>
                         }
@@ -184,8 +194,13 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
-                                {note === 'heldItem' &&
+                                {note === 'heldItem'
+                                    ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                    :
+                                    <div className='text-end mx-3'>
+                                        <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
+                                    </div>
                                 }
                             </>
                         }
@@ -215,8 +230,13 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
-                                {note === 'gear' &&
+                                {note === 'gear'
+                                    ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                    :
+                                    <div className='text-end mx-3'>
+                                        <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
+                                    </div>
                                 }
                             </>
                         }
@@ -246,8 +266,13 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </div>
                                     ))}
                                 </div>
-                                {note === 'hiddenSkill' &&
+                                {note === 'hiddenSkill'
+                                    ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
+                                    :
+                                    <div className='text-end mx-3'>
+                                        <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
+                                    </div>
                                 }
                             </>
                         }
