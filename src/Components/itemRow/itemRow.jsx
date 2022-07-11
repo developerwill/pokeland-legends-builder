@@ -49,23 +49,25 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                             </div>
                             :
                             <>
-                                {numberOfItems > 2
-                                    ?
-                                    <div className='d-none d-xl-flex justify-content-center options text-center'>
-                                        <div className={`col-6 col-sm-${numberOfItems + 2} `}><b>Option 1</b></div>
-                                        <div className={`col-6 col-sm-${numberOfItems + 2} `}><b>Option 2</b></div>
+                                {numberOfItems <= 2 &&
+                                    <div className='d-flex justify-content-center options'>
+                                        <div className={`col-6 text-end mx-2`}><b>Option 1</b></div>
+                                        <div className={`col-6 mx-2`}><b>Option 2</b></div>
                                     </div>
-                                    :
-                                    <div className='d-flex justify-content-center options text-center'>
-                                        <div className={`col-6 col-sm-${numberOfItems + 1} `}><b>Option 1</b></div>
-                                        <div className={`col-6 col-sm-${numberOfItems + 1} `}><b>Option 2</b></div>
+                                }
+
+                                {numberOfItems >= 3 &&
+                                    <div className='d-none d-xl-flex justify-content-center options text-center'>
+                                        <div className={`col-6`}><b>Option 1</b></div>
+                                        <div className={`col-6`}><b>Option 2</b></div>
                                     </div>
                                 }
 
                                 <>
                                     {numberOfItems >= 3 &&
                                         <>
-                                            <div className={`col-12 col-xl-${numberOfItems} d-flex justify-content-center options text-center`}>
+                                            <div className={`row options text-center d-xl-none`}><b>Option 1</b></div>
+                                            <div className={`col-12 col-xl-6 d-flex justify-content-center options text-center`}>
                                                 {mainItems.map((desc, index) => (
                                                     <div key={uuid()}>
                                                         {btnIndexer()}
@@ -76,7 +78,8 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className={`col-${numberOfItems} d-none d-xl-flex justify-content-center options text-center`}>
+                                            <div className={`row options text-center d-xl-none`}><b>Option 2</b></div>
+                                            <div className={`col-12 col-xl-6 d-flex justify-content-center options text-center`}>
                                                 {optionalItems.map((desc, index) => (
                                                     <div key={uuid()}>
                                                         {btnIndexer()}
@@ -90,10 +93,10 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </>
                                     }
 
-                                    {numberOfItems === 4
+                                    {/* {numberOfItems === 4
                                         ? <div className='col-xl-2'></div>
                                         : <div className='col-xl-1'></div>
-                                    }
+                                    } */}
 
                                     {numberOfItems <= 2 &&
                                         <div className={`col-12 d-flex justify-content-center options text-center`}>
