@@ -295,3 +295,20 @@ a.options {
 a.options:hover {
     color: #ffd283;
 }
+
+.iconType.disabled {
+    filter: brightness(70%);
+}
+
+.iconType.disabled:hover {
+    filter: brightness(70%);
+    color: white;
+}
+
+.searchByTypeBtn {
+    color: white;
+}
+
+.searchByTypeBtn:hover {
+    color: white;
+}

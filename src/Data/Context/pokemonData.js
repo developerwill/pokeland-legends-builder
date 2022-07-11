@@ -13,6 +13,7 @@ export const PokedexProvider = ({ children }) => {
     const [pokemonData, setPokemonData] = useState({})
     const [pokemonList, setPokemonList] = useState([])
     const [itemList, setItemList] = useState([])
+
     let abilitiesNum = 0;
 
     useEffect(() => {
@@ -149,10 +150,19 @@ export const PokedexProvider = ({ children }) => {
             return spritePath + variation + '/' + pokemonInfo[0].sprites.pokeland
         }
 
+        function fetchByType(type_1, type_2) {
+            if (type_1.type !== '')
+                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type))])
+            else
+                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type) && pokemon.types.type_2.toLowerCase().includes(type_2.type))])
+
+            console.log(pokemonList);
+        }
+
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
 
         return (
-            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList, getSprite }}>
+            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList, getSprite, fetchByType }}>
                 {children}
             </PokedexContext.Provider>
         );

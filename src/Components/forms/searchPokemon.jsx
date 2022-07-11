@@ -3,6 +3,7 @@ import InputText from './inputText';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import { BuildContext } from '../../Data/Context/buildData';
 import uuid from 'uuidv4';
+import SearchByType from './searchByType';
 
 const SearchPokemonForm = ({ searchType, dismiss }) => {
     const [pokemonName, setPokemonName] = useState('');
@@ -62,31 +63,7 @@ const SearchPokemonForm = ({ searchType, dismiss }) => {
                     </div>
                 </div>
                 :
-                <div className="col search-by-types">
-                    <h4 className="text-center">Search by Type</h4>
-                    <div className='text-center'>
-                        <span className="iconType type-normal">normal</span>
-                        <span className="iconType type-fire">fire</span>
-                        <span className="iconType type-water">water</span>
-                        <span className="iconType type-electric">electric</span>
-                        <span className="iconType type-grass">grass</span>
-                        <span className="iconType type-ice">ice</span>
-                        <span className="iconType type-fighting">fighting</span>
-                        <span className="iconType type-poison">poison</span>
-                        <span className="iconType type-ground">ground</span>
-                        <span className="iconType type-flying">flying</span>
-                        <span className="iconType type-psychic">psychic</span>
-                        <span className="iconType type-bug">bug</span>
-                        <span className="iconType type-rock">rock</span>
-                        <span className="iconType type-ghost">ghost</span>
-                        <span className="iconType type-dragon">dragon</span>
-                        <span className="iconType type-dark">dark</span>
-                        <span className="iconType type-steel">steel</span>
-                        <span className="iconType type-fairy">fairy</span>
-                        <span className="iconType type-non-type">non-type</span>
-                        <span className="iconType type-infinity">infinity</span>
-                    </div>
-                </div>
+                <SearchByType dismiss={dismiss}></SearchByType>
             }
         </>
     );
