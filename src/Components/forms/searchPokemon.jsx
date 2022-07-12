@@ -75,7 +75,13 @@ const SearchPokemonForm = ({ searchType, dismiss }) => {
                     </div>
                 </>
                 :
-                <SearchByType dismiss={dismiss}></SearchByType>
+                <>
+                    {searchType === 'teamSearch'
+                        ? <SearchByType dismiss={dismiss}></SearchByType>
+                        : <SearchByType teammate={true} dismiss={dismiss}></SearchByType>
+                    }
+
+                </>
             }
         </>
     );

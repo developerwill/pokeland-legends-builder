@@ -1,16 +1,18 @@
-import React, { useContext, useState, useRef, /* useEffect */ } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import uuid from 'uuidv4';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import pokemonTypes from '../../Data/pokemonTypes.js'
+import { BuildContext } from '../../Data/Context/buildData';
 
 let counter = 0
 
-const SearchByType = ({ dismiss }) => {
+const SearchByType = ({ dismiss, teammate }) => {
     const type_1 = useRef()
     const type_2 = useRef()
     const { fetchByType, pokemonList, fetchPokemon } = useContext(PokedexContext)
     const [isSearching, setIsSearching] = useState()
     const [showResult, setShowResult] = useState(false)
+    const { updateTeammate } = useContext(BuildContext)
 
     function onSelectType(type) {
         if (counter === 0)
@@ -33,14 +35,19 @@ const SearchByType = ({ dismiss }) => {
 
     function onPokemonSelect(pokemonID) {
         fetchPokemon(pokemonID)
-        onClearSelection()
+        clearSelection()
     }
 
-    function onClearSelection() {
+    function clearSelection() {
         setShowResult(false)
         type_1.current = ''
         type_2.current = ''
         setIsSearching(false)
+    }
+
+    function onUpdateTeammate(pokemonID) {
+        updateTeammate(pokemonID)
+        clearSelection()
     }
 
     return (
@@ -48,17 +55,26 @@ const SearchByType = ({ dismiss }) => {
             <div className="col search-by-types">
                 {showResult
                     ?
-                    <>
-                        <div className="search-result">
-                            <div className="list-group">
-                                {pokemonList.map((pokemon) => (
-                                    <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
-                                        {pokemon.name.pokeland}
-                                    </li>
-                                ))}
-                            </div>
+                    <div className="search-result">
+                        <div className="list-group">
+                            <>
+                                {teammate
+                                    ?
+                                    pokemonList.map((pokemon) => (
+                                        <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                            {pokemon.name.pokeland}
+                                        </li>
+                                    ))
+                                    :
+                                    pokemonList.map((pokemon) => (
+                                        <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                            {pokemon.name.pokeland}
+                                        </li>
+                                    ))
+                                }
+                            </>
                         </div>
-                    </>
+                    </div>
                     :
                     <>
                         <h4 className="text-center">Search by Type</h4>
@@ -77,7 +93,7 @@ const SearchByType = ({ dismiss }) => {
                     ?
                     <div className='d-flex justify-content-around'>
                         <button onClick={() => onSearch()} className='btn box searchByTypeBtn'>Search by Type</button>
-                        <button onClick={() => onClearSelection()} className='btn box searchByTypeBtn'>Clear Selection</button>
+                        <button onClick={() => clearSelection()} className='btn box searchByTypeBtn'>Clear Selection</button>
                     </div>
                     :
                     <button className='btn box searchByTypeBtn' disabled>Search by Type</button>
