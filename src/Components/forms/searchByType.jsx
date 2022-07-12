@@ -33,6 +33,14 @@ const SearchByType = ({ dismiss }) => {
 
     function onPokemonSelect(pokemonID) {
         fetchPokemon(pokemonID)
+        onClearSelection()
+    }
+
+    function onClearSelection() {
+        setShowResult(false)
+        type_1.current = ''
+        type_2.current = ''
+        setIsSearching(false)
     }
 
     return (
@@ -67,7 +75,10 @@ const SearchByType = ({ dismiss }) => {
             <div className='text-center mt-4'>
                 {isSearching
                     ?
-                    <button onClick={() => onSearch()} className='btn box searchByTypeBtn'>Search by Type</button>
+                    <div className='d-flex justify-content-around'>
+                        <button onClick={() => onSearch()} className='btn box searchByTypeBtn'>Search by Type</button>
+                        <button onClick={() => onClearSelection()} className='btn box searchByTypeBtn'>Clear Selection</button>
+                    </div>
                     :
                     <button className='btn box searchByTypeBtn' disabled>Search by Type</button>
                 }
