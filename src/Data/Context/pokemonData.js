@@ -151,10 +151,12 @@ export const PokedexProvider = ({ children }) => {
         }
 
         function fetchByType(type_1, type_2) {
-            if (type_1.type !== '')
-                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type))].slice(0, 10))
-            else
-                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type) && pokemon.types.type_2.toLowerCase().includes(type_2.type))].slice(0, 10))
+            if (type_1 && type_2) {
+                setPokemonList([...pokedex.filter(pokemon => (pokemon.types.type_1.includes(type_1)) && (pokemon.types.type_2.includes(type_2)))].slice(0, 10))
+            }
+            else {
+                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1 === type_1)].slice(0, 10))
+            }
         }
 
         if (!Object.keys(pokemonData).length) fetchPokemon(643)

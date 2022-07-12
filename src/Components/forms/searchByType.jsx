@@ -15,13 +15,16 @@ const SearchByType = ({ dismiss, teammate }) => {
     const { updateTeammate } = useContext(BuildContext)
 
     function onSelectType(type) {
-        if (counter === 0)
+        if (counter === 0) {
             type_1.current = type
-        else if (counter === 1)
+            fetchByType(type_1.current)
+        } else if (counter === 1) {
             type_2.current = type
-        else {
+            fetchByType(type_1.current, type_2.current)
+        } else {
             type_1.current = type
             type_2.current = ''
+            fetchByType(type_1.current)
             counter = 0
         }
         setIsSearching(true)
@@ -30,7 +33,6 @@ const SearchByType = ({ dismiss, teammate }) => {
 
     function onSearch() {
         setShowResult(true)
-        fetchByType(type_1.current, type_2.current)
     }
 
     function onPokemonSelect(pokemonID) {
@@ -42,6 +44,7 @@ const SearchByType = ({ dismiss, teammate }) => {
         setShowResult(false)
         type_1.current = ''
         type_2.current = ''
+        counter = 0
         setIsSearching(false)
     }
 
@@ -81,7 +84,7 @@ const SearchByType = ({ dismiss, teammate }) => {
                         <div className='text-center'>
                             {pokemonTypes.map((type) => (
                                 <span key={type}>
-                                    <span onClick={() => onSelectType({ type })} className={`iconType type-${type} disable`}>{type}</span>
+                                    <span onClick={() => onSelectType(type)} className={`iconType type-${type} disable`}>{type}</span>
                                 </span>
                             ))}
                         </div>
