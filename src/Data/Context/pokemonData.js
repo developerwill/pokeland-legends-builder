@@ -40,12 +40,12 @@ export const PokedexProvider = ({ children }) => {
 
         function getPokemonList(pokemonName) {
             setPokemonList(
-                [...pokedex.filter(pokemon => pokemon.name.pokeland.toLowerCase().includes(pokemonName))]
+                [...pokedex.filter(pokemon => pokemon.name.pokeland.toLowerCase().includes(pokemonName))].slice(0, 10)
             )
         }
 
         function fetchPokemon(pokemonID) {
-            const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID) }
+            const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID).slice(0, 10) }
             const buildKey = cryptoRandomString({ length: 11, type: 'alphanumeric' })
 
             //Pokemon personal info
@@ -152,11 +152,9 @@ export const PokedexProvider = ({ children }) => {
 
         function fetchByType(type_1, type_2) {
             if (type_1.type !== '')
-                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type))])
+                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type))].slice(0, 10))
             else
-                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type) && pokemon.types.type_2.toLowerCase().includes(type_2.type))])
-
-            console.log(pokemonList);
+                setPokemonList([...pokedex.filter(pokemon => pokemon.types.type_1.toLowerCase().includes(type_1.type) && pokemon.types.type_2.toLowerCase().includes(type_2.type))].slice(0, 10))
         }
 
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
