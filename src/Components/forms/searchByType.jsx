@@ -13,15 +13,22 @@ const SearchByType = ({ dismiss, teammate }) => {
     const [isSearching, setIsSearching] = useState()
     const [showResult, setShowResult] = useState(false)
     const { updateTeammate } = useContext(BuildContext)
+    const [type_1_selected, setType_1_selected] = React.useState('')
+    const [type_2_selected, setType_2_selected] = React.useState('')
 
     function onSelectType(type) {
+
         if (counter === 0) {
+            setType_1_selected(type)
             type_1.current = type
             fetchByType(type_1.current)
         } else if (counter === 1) {
+            setType_2_selected(type)
             type_2.current = type
             fetchByType(type_1.current, type_2.current)
         } else {
+            setType_1_selected(type)
+            setType_2_selected()
             type_1.current = type
             type_2.current = ''
             fetchByType(type_1.current)
@@ -45,6 +52,8 @@ const SearchByType = ({ dismiss, teammate }) => {
         type_1.current = ''
         type_2.current = ''
         counter = 0
+        setType_1_selected()
+        setType_2_selected()
         setIsSearching(false)
     }
 
@@ -61,20 +70,32 @@ const SearchByType = ({ dismiss, teammate }) => {
                     <div className="search-result">
                         <div className="list-group">
                             <>
-                                {teammate
+                                {pokemonList.length > 0
                                     ?
-                                    pokemonList.map((pokemon) => (
-                                        <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
-                                            {pokemon.name.pokeland}
-                                        </li>
-                                    ))
+                                    <>
+                                        {teammate
+                                            ?
+                                            pokemonList.map((pokemon) => (
+                                                <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                                    {pokemon.name.pokeland}
+                                                </li>
+                                            ))
+                                            :
+                                            pokemonList.map((pokemon) => (
+                                                <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                                    {pokemon.name.pokeland}
+                                                </li>
+                                            ))
+                                        }
+                                    </>
                                     :
-                                    pokemonList.map((pokemon) => (
-                                        <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
-                                            {pokemon.name.pokeland}
-                                        </li>
-                                    ))
+                                    <>
+                                        <p>No Pokémon were found with these personalities.</p>
+                                        <h5>Tip</h5>
+                                        <p>If the Pokémon you're shearching is Fire/Water you must choose in that same order.</p>
+                                    </>
                                 }
+
                             </>
                         </div>
                     </div>
@@ -83,9 +104,19 @@ const SearchByType = ({ dismiss, teammate }) => {
                         <h4 className="text-center">Search by Type</h4>
                         <div className='text-center'>
                             {pokemonTypes.map((type) => (
-                                <span key={type}>
-                                    <span onClick={() => onSelectType(type)} className={`iconType type-${type} disable`}>{type}</span>
-                                </span>
+                                <>
+                                    {(type_1_selected && type_1_selected === type) || (type_2_selected && type_2_selected === type)
+                                        ?
+                                        <span key={type}>
+                                            <button onClick={() => onSelectType(type)} className={`iconType type-${type} disabled`}>{type}</button>
+                                        </span>
+                                        :
+                                        <span key={type}>
+                                            <button onClick={() => onSelectType(type)} className={`iconType type-${type}`}>{type}</button>
+                                        </span>
+                                    }
+
+                                </>
                             ))}
                         </div>
                     </>

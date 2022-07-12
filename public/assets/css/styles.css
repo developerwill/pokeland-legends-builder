@@ -85,7 +85,8 @@ body {
     color: white;
 }
 
-.search-by-types span {
+.search-by-types span,
+.search-by-types button {
     margin-top: 15px;
 }
 
@@ -301,7 +302,7 @@ a.options:hover {
 }
 
 .iconType.disabled:hover {
-    filter: brightness(70%);
+    filter: brightness(50%);
     color: white;
 }
 
