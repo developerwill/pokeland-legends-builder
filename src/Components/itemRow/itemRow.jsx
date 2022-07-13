@@ -70,7 +70,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                                     <div key={uuid()}>
                                                         {btnIndexer()}
                                                         <div>
-                                                            <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                            <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                             <p><small>{desc}</small></p>
                                                         </div>
                                                     </div>
@@ -82,7 +82,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                                     <div key={uuid()}>
                                                         {btnIndexer()}
                                                         <div>
-                                                            <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                            <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                             <p><small>{desc}</small></p>
                                                         </div>
                                                     </div>
@@ -102,7 +102,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                                 <div key={uuid()}>
                                                     {btnIndexer()}
                                                     <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                        <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                         <p><small>{desc}</small></p>
                                                     </div>
                                                 </div>
@@ -112,7 +112,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                                 <div key={uuid()}>
                                                     {btnIndexer()}
                                                     <div>
-                                                        <AddItemBtn key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
+                                                        <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex} index={index + 1} modal={modal}></AddItemBtn>
                                                         <p><small>{desc}</small></p>
                                                     </div>
                                                 </div>
@@ -152,7 +152,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 4} index={index + 1} modal={modal}></AddItemBtn>
+                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 4} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
                                         </div>
@@ -188,7 +188,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
+                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
                                         </div>
@@ -224,7 +224,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 12} index={index + 1} modal={modal}></AddItemBtn>
+                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 12} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
                                         </div>
@@ -260,7 +260,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
+                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
                                                 <p><small>{desc}</small></p>
                                             </div>
                                         </div>
