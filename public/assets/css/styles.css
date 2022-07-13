@@ -85,9 +85,12 @@ body {
     color: white;
 }
 
-.search-by-types span,
-.search-by-types button {
+.search-by-types span {
     margin-top: 15px;
+}
+
+.search-by-types button {
+    margin-top: 7.5px;
 }
 
 .outlined-button:hover,
@@ -249,6 +252,7 @@ form {
 .search-result .list-group-item {
     background: transparent;
     color: white;
+    cursor: pointer;
 }
 
 .search-result .list-group-item:hover {
@@ -312,4 +316,8 @@ a.options:hover {
 
 .searchByTypeBtn:hover {
     color: white;
+}
+
+.alert {
+    text-shadow: none;
 }

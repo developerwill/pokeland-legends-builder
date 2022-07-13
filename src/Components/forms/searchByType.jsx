@@ -3,6 +3,7 @@ import uuid from 'uuidv4';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import pokemonTypes from '../../Data/pokemonTypes.js'
 import { BuildContext } from '../../Data/Context/buildData';
+import Alert from './alert'
 
 let counter = 0
 
@@ -39,12 +40,15 @@ const SearchByType = ({ dismiss, teammate }) => {
     }
 
     function onSearch() {
-        setShowResult(true)
+        if (pokemonList.length === 0) {
+            clearSelection()
+            setShowResult(false)
+        } else
+            setShowResult(true)
     }
 
     function onPokemonSelect(pokemonID) {
         fetchPokemon(pokemonID)
-        clearSelection()
     }
 
     function clearSelection() {
@@ -70,32 +74,20 @@ const SearchByType = ({ dismiss, teammate }) => {
                     <div className="search-result">
                         <div className="list-group">
                             <>
-                                {pokemonList.length > 0
+                                {teammate
                                     ?
-                                    <>
-                                        {teammate
-                                            ?
-                                            pokemonList.map((pokemon) => (
-                                                <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
-                                                    {pokemon.name.pokeland}
-                                                </li>
-                                            ))
-                                            :
-                                            pokemonList.map((pokemon) => (
-                                                <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
-                                                    {pokemon.name.pokeland}
-                                                </li>
-                                            ))
-                                        }
-                                    </>
+                                    pokemonList.map((pokemon) => (
+                                        <li onClick={() => onPokemonSelect(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                            {pokemon.name.pokeland}
+                                        </li>
+                                    ))
                                     :
-                                    <>
-                                        <p>No Pokémon were found with these personalities.</p>
-                                        <h5>Tip</h5>
-                                        <p>If the Pokémon you're shearching is Fire/Water you must choose in that same order.</p>
-                                    </>
+                                    pokemonList.map((pokemon) => (
+                                        <li onClick={() => onUpdateTeammate(pokemon.id)} key={uuid()} data-bs-dismiss={dismiss} aria-label="Close" className="list-group-item list-group-item-action">
+                                            {pokemon.name.pokeland}
+                                        </li>
+                                    ))
                                 }
-
                             </>
                         </div>
                     </div>
@@ -104,33 +96,34 @@ const SearchByType = ({ dismiss, teammate }) => {
                         <h4 className="text-center">Search by Type</h4>
                         <div className='text-center'>
                             {pokemonTypes.map((type) => (
-                                <>
+                                <span key={uuid()}>
                                     {(type_1_selected && type_1_selected === type) || (type_2_selected && type_2_selected === type)
                                         ?
-                                        <span key={type}>
-                                            <button onClick={() => onSelectType(type)} className={`iconType type-${type} disabled`}>{type}</button>
-                                        </span>
+                                        <button key={uuid()} onClick={() => onSelectType(type)} className={`iconType type-${type} disabled`}>{type}</button>
                                         :
-                                        <span key={type}>
-                                            <button onClick={() => onSelectType(type)} className={`iconType type-${type}`}>{type}</button>
-                                        </span>
+                                        <button key={uuid()} onClick={() => onSelectType(type)} className={`iconType type-${type}`}>{type}</button>
                                     }
-
-                                </>
+                                </span>
                             ))}
+
+                            {(pokemonList.length === 0) &&
+                                <div className='container mt-4'>
+                                    <Alert>
+                                        No Pokémon were found.<br></br>
+                                        Please change the types.
+                                    </Alert>
+                                </div>
+                            }
                         </div>
                     </>
                 }
             </div>
             <div className='text-center mt-4'>
-                {isSearching
-                    ?
+                {isSearching &&
                     <div className='d-flex justify-content-around'>
-                        <button onClick={() => onSearch()} className='btn box searchByTypeBtn'>Search by Type</button>
-                        <button onClick={() => clearSelection()} className='btn box searchByTypeBtn'>Clear Selection</button>
+                        <button onClick={() => onSearch()} className='btn box searchByTypeBtn'>Search</button>
+                        <button onClick={() => clearSelection()} className='btn box searchByTypeBtn'>Clear</button>
                     </div>
-                    :
-                    <button className='btn box searchByTypeBtn' disabled>Search by Type</button>
                 }
             </div>
         </>
