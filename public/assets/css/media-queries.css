@@ -64,6 +64,10 @@
     .hidden-skills-container {
         width: 290px;
     }
+
+    .itemsBtn small {
+        font-size: 12px !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -79,6 +83,10 @@
 
     .hidden-skills-container {
         width: 375px;
+    }
+
+    .itemsBtn small {
+        font-size: 14px !important;
     }
 }
 
