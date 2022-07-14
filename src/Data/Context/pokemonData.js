@@ -12,7 +12,9 @@ export const PokedexProvider = ({ children }) => {
     const [pokedex, setPokedex] = useState([]);
     const [pokemonData, setPokemonData] = useState({})
     const [pokemonList, setPokemonList] = useState([])
-    const [itemList, setItemList] = useState([])
+
+    //Builder related. This should be moved
+    const [pokemonAbilities, setPokemonAbilities] = useState([])
 
     let abilitiesNum = 0;
 
@@ -117,29 +119,27 @@ export const PokedexProvider = ({ children }) => {
             }
         }
 
-        function getItemList(item) {
+        function getPokemonAbilities(item) {
             if (item === 'ability_set_1') {
-                setItemList([{
+                setPokemonAbilities([{
                     set: 1,
                     abilities: pokemonData.abilities.set_1
                 }])
             } else if (item === 'ability_set_2')
-                setItemList([{
+                setPokemonAbilities([{
                     set: 2,
                     abilities: pokemonData.abilities.set_2
                 }])
             else if (item === 'ability_set_3')
-                setItemList([{
+                setPokemonAbilities([{
                     set: 3,
                     abilities: pokemonData.abilities.set_3
                 }])
             else if (item === 'ability_set_4')
-                setItemList([{
+                setPokemonAbilities([{
                     set: 4,
                     abilities: pokemonData.abilities.set_4
                 }])
-
-            //console.log(itemList);
         }
 
         function getSprite(pokemonID) {
@@ -162,7 +162,7 @@ export const PokedexProvider = ({ children }) => {
         if (!Object.keys(pokemonData).length) fetchPokemon(643)
 
         return (
-            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getItemList, itemList, getSprite, fetchByType }}>
+            <PokedexContext.Provider value={{ pokedex, fetchPokemon, pokemonData, getPokemonList, pokemonList, getPokemonAbilities, pokemonAbilities, getSprite, fetchByType }}>
                 {children}
             </PokedexContext.Provider>
         );
