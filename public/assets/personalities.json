@@ -1,156 +1,227 @@
 [
   {
-    "personality": {
-      "lonely": {
-        "name": "lonely",
-        "positive_stat": "p.atk",
-        "negative_stat": "p.def",
-        "picture": "lonely.webp"
-      },
-      "stubborn": {
-        "name": "stubborn",
-        "positive_stat": "p.atk",
-        "negative_stat": "sp.atk",
-        "picture": "stubborn.webp"
-      },
-      "naughty": {
-        "name": "naughty",
-        "positive_stat": "p.atk",
-        "negative_stat": "sp.def",
-        "picture": "naughty.webp"
-      },
-      "brave": {
-        "name": "brave",
-        "positive_stat": "p.atk",
-        "negative_stat": "spd",
-        "picture": "brave.webp"
-      },
-      "bold": {
-        "name": "bold",
-        "positive_stat": "p.def",
-        "negative_stat": "p.atk",
-        "picture": "bold.webp"
-      },
-      "impish": {
-        "name": "impish",
-        "positive_stat": "p.def",
-        "negative_stat": "sp.atk",
-        "picture": "impish.webp"
-      },
-      "carefree": {
-        "name": "carefree",
-        "positive_stat": "p.def",
-        "negative_stat": "sp.def",
-        "picture": "carefree.webp"
-      },
-      "relaxed": {
-        "name": "relaxed",
-        "positive_stat": "p.def",
-        "negative_stat": "spd",
-        "picture": "relaxed.webp"
-      },
-      "modest": {
-        "name": "modest",
-        "positive_stat": "sp.atk",
-        "negative_stat": "p.atk",
-        "picture": "modest.webp"
-      },
-      "mild": {
-        "name": "mild",
-        "positive_stat": "sp.atk",
-        "negative_stat": "p.def",
-        "picture": "mild.webp"
-      },
-      "rash": {
-        "name": "rash",
-        "positive_stat": "sp.atk",
-        "negative_stat": "sp.def",
-        "picture": "rash.webp"
-      },
-      "calm": {
-        "name": "calm",
-        "positive_stat": "sp.atk",
-        "negative_stat": "spd",
-        "picture": "calm.webp"
-      },
-      "composed": {
-        "name": "composed",
-        "positive_stat": "sp.def",
-        "negative_stat": "p.atk",
-        "picture": "composed.webp"
-      },
-      "gentle": {
-        "name": "gentle",
-        "positive_stat": "sp.def",
-        "negative_stat": "p.def",
-        "picture": "gentle.webp"
-      },
-      "careful": {
-        "name": "careful",
-        "positive_stat": "sp.def",
-        "negative_stat": "sp.atk",
-        "picture": "careful.webp"
-      },
-      "sassy": {
-        "name": "sassy",
-        "positive_stat": "sp.def",
-        "negative_stat": "spd",
-        "picture": "sassy.webp"
-      },
-      "timid": {
-        "name": "timid",
-        "positive_stat": "spd",
-        "negative_stat": "p.atk",
-        "picture": "timid.webp"
-      },
-      "hasty": {
-        "name": "hasty",
-        "positive_stat": "spd",
-        "negative_stat": "p.def",
-        "picture": "hasty.webp"
-      },
-      "cheerful": {
-        "name": "cheerful",
-        "positive_stat": "spd",
-        "negative_stat": "sp.atk",
-        "picture": "cheerful.webp"
-      },
-      "naive": {
-        "name": "naive",
-        "positive_stat": "spd",
-        "negative_stat": "sp.def",
-        "picture": "naive.webp"
-      },
-      "shy": {
-        "name": "shy",
-        "positive_stat": "",
-        "negative_stat": "",
-        "picture": "shy.webp"
-      },
-      "hardy": {
-        "name": "hardy",
-        "positive_stat": "",
-        "negative_stat": "",
-        "picture": "hardy.webp"
-      },
-      "candid": {
-        "name": "candid",
-        "positive_stat": "",
-        "negative_stat": "",
-        "picture": "candid.webp"
-      },
-      "immonsteruous": {
-        "name": "immonsteruous",
-        "positive_stat": "",
-        "negative_stat": "",
-        "picture": "immonsteruous.webp"
-      },
-      "serious": {
-        "name": "serious",
-        "positive_stat": "",
-        "negative_stat": "",
-        "picture": "serious.webp"
-      }
+    "id": 1,
+    "info": {
+      "name": "lonely",
+      "positive_stat": "p.atk",
+      "negative_stat": "p.def",
+      "picture": "lonely.webp"
+    }
+  },
+  {
+    "id": 2,
+    "info": {
+      "name": "stubborn",
+      "positive_stat": "p.atk",
+      "negative_stat": "sp.atk",
+      "picture": "stubborn.webp"
+    }
+  },
+  {
+    "id": 3,
+    "info": {
+      "name": "naughty",
+      "positive_stat": "p.atk",
+      "negative_stat": "sp.def",
+      "picture": "naughty.webp"
+    }
+  },
+  {
+    "id": 4,
+    "info": {
+      "name": "brave",
+      "positive_stat": "p.atk",
+      "negative_stat": "spd",
+      "picture": "brave.webp"
+    }
+  },
+  {
+    "id": 5,
+    "info": {
+      "name": "bold",
+      "positive_stat": "p.def",
+      "negative_stat": "p.atk",
+      "picture": "bold.webp"
+    }
+  },
+  {
+    "id": 6,
+    "info": {
+      "name": "impish",
+      "positive_stat": "p.def",
+      "negative_stat": "sp.atk",
+      "picture": "impish.webp"
+    }
+  },
+  {
+    "id": 7,
+    "info": {
+      "name": "carefree",
+      "positive_stat": "p.def",
+      "negative_stat": "sp.def",
+      "picture": "carefree.webp"
+    }
+  },
+  {
+    "id": 8,
+    "info": {
+      "name": "relaxed",
+      "positive_stat": "p.def",
+      "negative_stat": "spd",
+      "picture": "relaxed.webp"
+    }
+  },
+  {
+    "id": 9,
+    "info": {
+      "name": "modest",
+      "positive_stat": "sp.atk",
+      "negative_stat": "p.atk",
+      "picture": "modest.webp"
+    }
+  },
+  {
+    "id": 10,
+    "info": {
+      "name": "mild",
+      "positive_stat": "sp.atk",
+      "negative_stat": "p.def",
+      "picture": "mild.webp"
+    }
+  },
+  {
+    "id": 11,
+    "info": {
+      "name": "rash",
+      "positive_stat": "sp.atk",
+      "negative_stat": "sp.def",
+      "picture": "rash.webp"
+    }
+  },
+  {
+    "id": 12,
+    "info": {
+      "name": "calm",
+      "positive_stat": "sp.atk",
+      "negative_stat": "spd",
+      "picture": "calm.webp"
+    }
+  },
+  {
+    "id": 13,
+    "info": {
+      "name": "composed",
+      "positive_stat": "sp.def",
+      "negative_stat": "p.atk",
+      "picture": "composed.webp"
+    }
+  },
+  {
+    "id": 14,
+    "info": {
+      "name": "gentle",
+      "positive_stat": "sp.def",
+      "negative_stat": "p.def",
+      "picture": "gentle.webp"
+    }
+  },
+  {
+    "id": 15,
+    "info": {
+      "name": "careful",
+      "positive_stat": "sp.def",
+      "negative_stat": "sp.atk",
+      "picture": "careful.webp"
+    }
+  },
+  {
+    "id": 16,
+    "info": {
+      "name": "sassy",
+      "positive_stat": "sp.def",
+      "negative_stat": "spd",
+      "picture": "sassy.webp"
+    }
+  },
+  {
+    "id": 17,
+    "info": {
+      "name": "timid",
+      "positive_stat": "spd",
+      "negative_stat": "p.atk",
+      "picture": "timid.webp"
+    }
+  },
+  {
+    "id": 18,
+    "info": {
+      "name": "hasty",
+      "positive_stat": "spd",
+      "negative_stat": "p.def",
+      "picture": "hasty.webp"
+    }
+  },
+  {
+    "id": 19,
+    "info": {
+      "name": "cheerful",
+      "positive_stat": "spd",
+      "negative_stat": "sp.atk",
+      "picture": "cheerful.webp"
+    }
+  },
+  {
+    "id": 20,
+    "info": {
+      "name": "naive",
+      "positive_stat": "spd",
+      "negative_stat": "sp.def",
+      "picture": "naive.webp"
+    }
+  },
+  {
+    "id": 21,
+    "info": {
+      "name": "shy",
+      "positive_stat": "",
+      "negative_stat": "",
+      "picture": "shy.webp"
+    }
+  },
+  {
+    "id": 22,
+    "info": {
+      "name": "hardy",
+      "positive_stat": "",
+      "negative_stat": "",
+      "picture": "hardy.webp"
+    }
+  },
+  {
+    "id": 23,
+    "info": {
+      "name": "candid",
+      "positive_stat": "",
+      "negative_stat": "",
+      "picture": "candid.webp"
+    }
+  },
+  {
+    "id": 25,
+    "info": {
+      "name": "serious",
+      "positive_stat": "",
+      "negative_stat": "",
+      "picture": "serious.webp"
+    }
+  },
+  {
+    "id": 24,
+    "info": {
+      "name": "immonsteruous",
+      "positive_stat": "",
+      "negative_stat": "",
+      "picture": "immonsteruous.webp"
     }
   }
 ]
