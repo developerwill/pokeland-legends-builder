@@ -8,14 +8,28 @@ import { Link } from 'react-router-dom';
  * @param src Img src
  * @param alt Img Alt is required 
  */
-const ImgSelect = ({ classes, src, alt, item }) => {
-    const { updateBuild } = useContext(BuildContext)
+const ImgSelect = ({ children, classes, src, alt, item, itemType, itemName }) => {
+    const { updateBuild, updatePersonality } = useContext(BuildContext) //Ponto 7 chamar o equivalente ao updatePersonality
 
-    return (
-        <Link to="#">
-            <img onClick={() => updateBuild(item)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
-        </Link>
+    if (!itemType)
+        return (
+            <div className='text-center'>
+                <Link to="#">
+                    <img onClick={() => updateBuild(item, itemName)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
+                    <p className='text-center'><small>{children}</small></p>
+                </Link>
+            </div>
+        );
 
-    );
+    if (itemType === 'personality')//Ponto 8 Duplicar e modificar
+        return (
+            <div className='text-center'>
+                <Link to="#">
+                    <img onClick={() => updatePersonality(item)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
+                    <p className='text-center'><small>{children}</small></p>
+                </Link>
+            </div>
+        );
+
 }
 export default ImgSelect;

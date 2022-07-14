@@ -1,18 +1,21 @@
-import React, { useRef, createContext, useContext, useState } from 'react';
+import React, { useRef, createContext, useContext, useState, useEffect } from 'react';
 import { PokedexContext } from './pokemonData';
 //import cryptoRandomString from 'crypto-random-string';
 //import { AppConfigContext } from '../../Config/App';
-import uuid from 'uuidv4';
+//import uuid from 'uuidv4';
 
 export const BuildContext = createContext();
 
 export const BuildProvider = ({ children }) => {
-    const buildData = useRef()
+    const [buildData, setBuildData] = useState()
     const [btnPressed, setBtnPressed] = useState()
     const { pokemonData, getSprite } = useContext(PokedexContext)
-    const [buildUpdated, setBuildUpdate] = useState()
-    //const teammates = useRef([])
     const [teammates, setTeammates] = useState()
+
+    //Ponto 9 Duplicar estas variáveis
+    const [pokemonPersonalities, setPokemonPersonalities] = useState()
+    const [personalities, setPersonalities] = useState([])
+
     const teammate_2 = useRef()
     const teammate_3 = useRef()
     const teammate_5 = useRef()
@@ -26,10 +29,12 @@ export const BuildProvider = ({ children }) => {
     const ability_6 = useRef()
     const ability_7 = useRef()
     const ability_8 = useRef()
+
     const personality_1 = useRef()
     const personality_2 = useRef()
     const personality_3 = useRef()
     const personality_4 = useRef()
+
     const heldItem_1 = useRef()
     const heldItem_2 = useRef()
     const heldItem_3 = useRef()
@@ -51,15 +56,26 @@ export const BuildProvider = ({ children }) => {
     const hiddenSkill_11 = useRef()
     const hiddenSkill_12 = useRef()
 
+    useEffect(() => {
+        //fetch("https://pokeland-legends.club/api/pokemon/all")
+        fetch("assets/personalities.json")
+            .then(res => res.json())
+            .then(
+                (data) => {
+                    setPersonalities(data);
+                }
+            )
+    }, []);
+
     function getBtnKey(key) {
         setBtnPressed(key)
     }
 
+    //Ponto 10 Extrair as variáveis todas para além das abilities
     function updateBuild(item) {
         addItem(item)
 
-        buildData.current =
-        {
+        setBuildData({
             id: pokemonData.id,
             abilities: {
                 ability_1: ability_1.current,
@@ -70,12 +86,6 @@ export const BuildProvider = ({ children }) => {
                 ability_6: ability_6.current,
                 ability_7: ability_7.current,
                 ability_8: ability_8.current,
-            },
-            personalities: {
-                personality_1: personality_1.current,
-                personality_2: personality_2.current,
-                personality_3: personality_3.current,
-                personality_4: personality_4.current,
             },
             heldItems: {
                 heldItem_1: heldItem_1.current,
@@ -103,11 +113,10 @@ export const BuildProvider = ({ children }) => {
                 hiddenSkill_11: hiddenSkill_11.current,
                 hiddenSkill_12: hiddenSkill_12.current,
             },
-        }
-
-        setBuildUpdate(uuid())
+        })
     }
 
+    //Ponto 11 Apagar as variavies todas menos as abilities
     function addItem(item) {
         if (btnPressed === 1) ability_1.current = item
         if (btnPressed === 2) ability_2.current = item
@@ -117,10 +126,6 @@ export const BuildProvider = ({ children }) => {
         if (btnPressed === 6) ability_6.current = item
         if (btnPressed === 7) ability_7.current = item
         if (btnPressed === 8) ability_8.current = item
-        if (btnPressed === 9) personality_1.current = item
-        if (btnPressed === 10) personality_2.current = item
-        if (btnPressed === 11) personality_3.current = item
-        if (btnPressed === 12) personality_4.current = item
         if (btnPressed === 13) heldItem_1.current = item
         if (btnPressed === 14) heldItem_2.current = item
         if (btnPressed === 15) heldItem_3.current = item
@@ -159,8 +164,24 @@ export const BuildProvider = ({ children }) => {
         )
     }
 
+    //Ponto 12 Duplicar esta função
+    function updatePersonality(personality) {
+        if (btnPressed === 1) personality_1.current = personality
+        if (btnPressed === 2) personality_2.current = personality
+        if (btnPressed === 3) personality_3.current = personality
+        if (btnPressed === 4) personality_4.current = personality
+
+        setPokemonPersonalities([
+            personality_1.current,
+            personality_2.current,
+            personality_3.current,
+            personality_4.current
+        ])
+    }
+
+    //Ponto 13 adicionar as duas novas variáveis no provider
     return (
-        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, buildUpdated, updateTeammate, teammates }}>
+        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, updateTeammate, teammates, updatePersonality, pokemonPersonalities, personalities }}>
             {children}
         </BuildContext.Provider>
     );

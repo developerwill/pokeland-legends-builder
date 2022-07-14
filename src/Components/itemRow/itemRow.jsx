@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
-//import { PokedexContext } from '../../Data/Context/pokemonData';
 import uuid from 'uuidv4';
 import AddItemBtn from '../btn/addItemBtn';
 import { Link } from 'react-router-dom';
 import Textarea from '../forms/textarea';
 
 const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfItems, itemType }) => {
-    //const { getItemList } = useContext(PokedexContext)
-    const mainItems = []
+    const mainAbilities = []
     const optionalItems = []
     const btnStyle = 'btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary'
     let btnIndex = 0
     const [note, showNote] = useState()
 
     for (var i = 1; i <= numberOfItems; i++)
-        mainItems.push(`${itemCategory} ${i}`)
+        mainAbilities.push(`${itemCategory} ${i}`)
 
     for (var j = 1; j <= numberOfItems; j++)
         optionalItems.push(`${itemCategory} ${j}`)
@@ -66,7 +64,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         <>
                                             <div className={`row options text-center d-xl-none`}><b>Option 1</b></div>
                                             <div className={`col-12 col-xl-6 d-flex justify-content-center options text-center`}>
-                                                {mainItems.map((desc, index) => (
+                                                {mainAbilities.map((desc, index) => (
                                                     <div key={uuid()}>
                                                         {btnIndexer()}
                                                         <div>
@@ -91,14 +89,9 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                         </>
                                     }
 
-                                    {/* {numberOfItems === 4
-                                        ? <div className='col-xl-2'></div>
-                                        : <div className='col-xl-1'></div>
-                                    } */}
-
                                     {numberOfItems <= 2 &&
                                         <div className={`col-12 d-flex justify-content-center options text-center`}>
-                                            {mainItems.map((desc, index) => (
+                                            {mainAbilities.map((desc, index) => (
                                                 <div key={uuid()}>
                                                     {btnIndexer()}
                                                     <div>
@@ -127,7 +120,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                             ?
                             <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
                             :
-                            <div className='text-end mx-3'>
+                            <div className='text-end mx-3 mt-4'>
                                 <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
                             </div>
                         }
@@ -136,33 +129,29 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                 }
 
                 {/* Personality */}
-                {(itemType === 'personality') &&
+                {(itemType === 'personality') && //Ponto 4 copiar esta estrutura e alterar as strings "personality"
                     <>
-                        {disabled //Item disable
+                        {disabled
                             ?
-                            <div className='col d-flex justify-content-center text-center options'>
+                            <div className='col d-flex justify-content-around text-center options'>
                                 <button id={id} className={btnStyle} type="button" disabled data-bs-toggle="modal" data-bs-target={modal}>
                                     +
                                 </button>
                             </div>
                             :
                             <>
-                                <div className={`d-flex justify-content-center options text-center`}>
-                                    {mainItems.map((desc, index) => (
-                                        <div key={uuid()}>
-                                            {btnIndexer()}
-                                            <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 4} index={index + 1} modal={modal}></AddItemBtn>
-                                                <p><small>{desc}</small></p>
-                                            </div>
+                                <div className={`d-flex justify-content-center mb-4 options text-center`}>
+                                    <div key={uuid()}>
+                                        <div className='col-12 col-sm-7 col-md-12 mx-auto d-flex justify-content-center flex-row flex-wrap'>
+                                            <AddItemBtn itemType={itemType} key={uuid()} desc={itemCategory} modal={modal}></AddItemBtn>
                                         </div>
-                                    ))}
+                                    </div>
                                 </div>
                                 {note === 'personality'
                                     ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
                                     :
-                                    <div className='text-end mx-3'>
+                                    <div className='text-end mx-3 mt-4'>
                                         <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
                                     </div>
                                 }
@@ -184,7 +173,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                             :
                             <>
                                 <div className={`d-flex justify-content-center options text-center`}>
-                                    {mainItems.map((desc, index) => (
+                                    {mainAbilities.map((desc, index) => (
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
@@ -198,7 +187,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                     ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
                                     :
-                                    <div className='text-end mx-3'>
+                                    <div className='text-end mx-3 mt-4'>
                                         <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
                                     </div>
                                 }
@@ -220,7 +209,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                             :
                             <>
                                 <div className={`d-flex justify-content-center options text-center`}>
-                                    {mainItems.map((desc, index) => (
+                                    {mainAbilities.map((desc, index) => (
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
@@ -234,7 +223,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                     ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
                                     :
-                                    <div className='text-end mx-3'>
+                                    <div className='text-end mx-3 mt-4'>
                                         <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
                                     </div>
                                 }
@@ -256,7 +245,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                             :
                             <>
                                 <div className={`d-flex justify-content-center options text-center flex-wrap hidden-skills-container px-0 px-sm-2`}>
-                                    {mainItems.map((desc, index) => (
+                                    {mainAbilities.map((desc, index) => (
                                         <div key={uuid()}>
                                             {btnIndexer()}
                                             <div className='d-flex justify-content-center flex-column'>
@@ -270,7 +259,7 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                                     ?
                                     <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
                                     :
-                                    <div className='text-end mx-3'>
+                                    <div className='text-end mx-3 mt-4'>
                                         <Link className='options' to="" onClick={() => addNote(itemType)}>Add Notes <i className="fa-solid fa-note-sticky"></i></Link>
                                     </div>
                                 }
