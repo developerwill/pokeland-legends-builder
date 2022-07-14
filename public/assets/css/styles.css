@@ -321,3 +321,25 @@ a.options:hover {
 .alert {
     text-shadow: none;
 }
+
+#personalities a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+#personalities p {
+    margin-bottom: 7px;
+}
+
+.itemsBtn {
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+}
+
+.itemsBtn small {
+    font-size: 14px;
+    text-transform: capitalize;
+    position: absolute;
+    margin-top: 90px;
+}
