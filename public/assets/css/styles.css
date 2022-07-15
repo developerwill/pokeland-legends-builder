@@ -322,7 +322,8 @@ a.options:hover {
     text-shadow: none;
 }
 
-#personalities a {
+#personalities a,
+#heldItems a {
     color: white;
     text-decoration: none;
     text-transform: capitalize
@@ -341,4 +342,9 @@ a.options:hover {
     text-transform: capitalize;
     position: absolute;
     margin-top: 90px;
+}
+
+.itemDesc {
+    width: 100px;
+    display: block;
 }
