@@ -17,7 +17,7 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
 
     for (let i = 1; i <= 4; i++) {
         personalitiesBtn.push(
-            <div className='my-2 mx-3 my-xl-0'>
+            <div className='my-2 mx-3 my-xl-0' key={i}>
                 <button onClick={() => getItems(i)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                     +<small>Personality {i}</small>
                 </button>
@@ -70,7 +70,7 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
                 {pokemonPersonalities.map((personality, index) => {
                     return (
                         <div key={index} className='my-2 mx-3 my-xl-0'>
-                            <button onClick={() => getItems(index + 1)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                            <div onClick={() => getItems(index + 1)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                                 {personality
                                     ?
                                     <>
@@ -84,7 +84,7 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
                                         </button>
                                     </div>
                                 }
-                            </button>
+                            </div>
                         </div>
                     )
                 })}
