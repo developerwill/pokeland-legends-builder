@@ -163,25 +163,21 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                 {/* Held Items */}
                 {(itemType === 'heldItem') &&
                     <>
-                        {disabled //Item disable
+                        {disabled
                             ?
-                            <div className='col d-flex justify-content-center text-center options'>
+                            <div className='col d-flex justify-content-around text-center options'>
                                 <button id={id} className={btnStyle} type="button" disabled data-bs-toggle="modal" data-bs-target={modal}>
                                     +
                                 </button>
                             </div>
                             :
                             <>
-                                <div className={`d-flex justify-content-center options text-center`}>
-                                    {mainAbilities.map((desc, index) => (
-                                        <div key={uuid()}>
-                                            {btnIndexer()}
-                                            <div className='d-flex justify-content-center flex-column'>
-                                                <AddItemBtn itemType={itemType} key={uuid()} btnIndex={btnIndex + numberOfItems + 8} index={index + 1} modal={modal}></AddItemBtn>
-                                                <p><small>{desc}</small></p>
-                                            </div>
+                                <div className={`d-flex justify-content-center mb-4 options text-center`}>
+                                    <div key={uuid()}>
+                                        <div className='col-12 col-sm-7 col-md-12 mx-auto d-flex justify-content-center flex-row flex-wrap'>
+                                            <AddItemBtn itemType={itemType} key={uuid()} desc={itemCategory} modal={modal}></AddItemBtn>
                                         </div>
-                                    ))}
+                                    </div>
                                 </div>
                                 {note === 'heldItem'
                                     ?

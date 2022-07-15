@@ -1,0 +1,513 @@
+[
+  {
+    "id": 1,
+    "info": {
+      "name": "adamant orb",
+      "picture": "adamant_orb.webp"
+    }
+  },
+  {
+    "id": 2,
+    "info": {
+      "name": "alola champion trophy",
+      "picture": "alola_champion_trophy.webp"
+    }
+  },
+  {
+    "id": 3,
+    "info": {
+      "name": "armor of next generation",
+      "picture": "armor_of_next_generation.webp"
+    }
+  },
+  {
+    "id": 4,
+    "info": {
+      "name": "atk meteorite",
+      "picture": "atk_meteorite.webp"
+    }
+  },
+  {
+    "id": 5,
+    "info": {
+      "name": "black belt",
+      "picture": "black_belt.webp"
+    }
+  },
+  {
+    "id": 6,
+    "info": {
+      "name": "blue water heart drill",
+      "picture": "blue_water_heart_drill.webp"
+    }
+  },
+  {
+    "id": 7,
+    "info": {
+      "name": "burn drive",
+      "picture": "burn_drive.webp"
+    }
+  },
+  {
+    "id": 8,
+    "info": {
+      "name": "cell compound armor",
+      "picture": "cell_compound_armor.webp"
+    }
+  },
+  {
+    "id": 9,
+    "info": {
+      "name": "charcoal",
+      "picture": "charcoal.webp"
+    }
+  },
+  {
+    "id": 10,
+    "info": {
+      "name": "chill drive",
+      "picture": "chill_drive.webp"
+    }
+  },
+  {
+    "id": 11,
+    "info": {
+      "name": "cocoon of destruction",
+      "picture": "cocoon_of_destruction.webp"
+    }
+  },
+  {
+    "id": 12,
+    "info": {
+      "name": "custap berry",
+      "picture": "custap_berry.webp"
+    }
+  },
+  {
+    "id": 13,
+    "info": {
+      "name": "dark memory",
+      "picture": "dark_memory.webp"
+    }
+  },
+  {
+    "id": 14,
+    "info": {
+      "name": "def meteorite",
+      "picture": "def_meteorite.webp"
+    }
+  },
+  {
+    "id": 15,
+    "info": {
+      "name": "douse drive",
+      "picture": "douse_drive.webp"
+    }
+  },
+  {
+    "id": 16,
+    "info": {
+      "name": "dragon fang",
+      "picture": "dragon_fang.webp"
+    }
+  },
+  {
+    "id": 17,
+    "info": {
+      "name": "dread plate",
+      "picture": "dread_plate.webp"
+    }
+  },
+  {
+    "id": 18,
+    "info": {
+      "name": "earth plate",
+      "picture": "earth_plate.webp"
+    }
+  },
+  {
+    "id": 19,
+    "info": {
+      "name": "fist plate",
+      "picture": "fist_plate.webp"
+    }
+  },
+  {
+    "id": 20,
+    "info": {
+      "name": "flame plate",
+      "picture": "flame_plate.webp"
+    }
+  },
+  {
+    "id": 21,
+    "info": {
+      "name": "gene totem",
+      "picture": "gene_totem.webp"
+    }
+  },
+  {
+    "id": 22,
+    "info": {
+      "name": "gold seed",
+      "picture": "gold_seed.webp"
+    }
+  },
+  {
+    "id": 23,
+    "info": {
+      "name": "griseous orb",
+      "picture": "griseous_orb.webp"
+    }
+  },
+  {
+    "id": 24,
+    "info": {
+      "name": "heart drill",
+      "picture": "heart_drill.webp"
+    }
+  },
+  {
+    "id": 25,
+    "info": {
+      "name": "ice flame crystal",
+      "picture": "ice_flame_crystal.webp"
+    }
+  },
+  {
+    "id": 26,
+    "info": {
+      "name": "ice thunder stone",
+      "picture": "ice_thunder_stone.webp"
+    }
+  },
+  {
+    "id": 27,
+    "info": {
+      "name": "icicle plate",
+      "picture": "icicle_plate.webp"
+    }
+  },
+  {
+    "id": 28,
+    "info": {
+      "name": "insect plate",
+      "picture": "insect_plate.webp"
+    }
+  },
+  {
+    "id": 29,
+    "info": {
+      "name": "iron plate",
+      "picture": "iron_plate.webp"
+    }
+  },
+  {
+    "id": 30,
+    "info": {
+      "name": "kings rock",
+      "picture": "kings_rock.webp"
+    }
+  },
+  {
+    "id": 31,
+    "info": {
+      "name": "leftovers",
+      "picture": "leftovers.webp"
+    }
+  },
+  {
+    "id": 32,
+    "info": {
+      "name": "light ball",
+      "picture": "light_ball.webp"
+    }
+  },
+  {
+    "id": 33,
+    "info": {
+      "name": "liquid gold spray",
+      "picture": "liquid_gold_spray.webp"
+    }
+  },
+  {
+    "id": 34,
+    "info": {
+      "name": "lucky punch",
+      "picture": "lucky_punch.webp"
+    }
+  },
+  {
+    "id": 35,
+    "info": {
+      "name": "lustrous orb",
+      "picture": "lustrous_orb.webp"
+    }
+  },
+  {
+    "id": 36,
+    "info": {
+      "name": "magma stone",
+      "picture": "magma_stone.webp"
+    }
+  },
+  {
+    "id": 37,
+    "info": {
+      "name": "magnet",
+      "picture": "magnet.webp"
+    }
+  },
+  {
+    "id": 38,
+    "info": {
+      "name": "meadow plate",
+      "picture": "meadow_plate.webp"
+    }
+  },
+  {
+    "id": 39,
+    "info": {
+      "name": "metal coat",
+      "picture": "metal_coat.webp"
+    }
+  },
+  {
+    "id": 40,
+    "info": {
+      "name": "muscle band",
+      "picture": "muscle_band.webp"
+    }
+  },
+  {
+    "id": 41,
+    "info": {
+      "name": "mystic water",
+      "picture": "mystic_water.webp"
+    }
+  },
+  {
+    "id": 42,
+    "info": {
+      "name": "night cloak",
+      "picture": "night_cloak.webp"
+    }
+  },
+  {
+    "id": 43,
+    "info": {
+      "name": "origin griseous orb",
+      "picture": "origin_griseous_orb.webp"
+    }
+  },
+  {
+    "id": 44,
+    "info": {
+      "name": "overlord atk meteorite",
+      "picture": "overlord_atk_meteorite.webp"
+    }
+  },
+  {
+    "id": 45,
+    "info": {
+      "name": "overlord def meteorite",
+      "picture": "overlord_def_meteorite.webp"
+    }
+  },
+  {
+    "id": 46,
+    "info": {
+      "name": "overlord flame drive",
+      "picture": "overlord_flame_drive.webp"
+    }
+  },
+  {
+    "id": 47,
+    "info": {
+      "name": "overlord speed meteorite",
+      "picture": "overlord_speed_meteorite.webp"
+    }
+  },
+  {
+    "id": 48,
+    "info": {
+      "name": "pixie plate",
+      "picture": "pixie_plate.webp"
+    }
+  },
+  {
+    "id": 49,
+    "info": {
+      "name": "prison bottle",
+      "picture": "prison_bottle.webp"
+    }
+  },
+  {
+    "id": 50,
+    "info": {
+      "name": "proof of glory",
+      "picture": "proof_of_glory.webp"
+    }
+  },
+  {
+    "id": 51,
+    "info": {
+      "name": "quick claw",
+      "picture": "quick_claw.webp"
+    }
+  },
+  {
+    "id": 52,
+    "info": {
+      "name": "resonance dark stone",
+      "picture": "resonance_dark_stone.webp"
+    }
+  },
+  {
+    "id": 53,
+    "info": {
+      "name": "resonance light stone",
+      "picture": "resonance_light_stone.webp"
+    }
+  },
+  {
+    "id": 54,
+    "info": {
+      "name": "rusted shield",
+      "picture": "rusted_shield.webp"
+    }
+  },
+  {
+    "id": 55,
+    "info": {
+      "name": "rusted sword",
+      "picture": "rusted_sword.webp"
+    }
+  },
+  {
+    "id": 56,
+    "info": {
+      "name": "shattered echo stone",
+      "picture": "shattered_echo_stone.webp"
+    }
+  },
+  {
+    "id": 57,
+    "info": {
+      "name": "shock drive",
+      "picture": "shock_drive.webp"
+    }
+  },
+  {
+    "id": 58,
+    "info": {
+      "name": "silver wing",
+      "picture": "silver_wing.webp"
+    }
+  },
+  {
+    "id": 59,
+    "info": {
+      "name": "soul dew",
+      "picture": "soul_dew.webp"
+    }
+  },
+  {
+    "id": 60,
+    "info": {
+      "name": "spd meteorite",
+      "picture": "spd_meteorite.webp"
+    }
+  },
+  {
+    "id": 61,
+    "info": {
+      "name": "splash plate",
+      "picture": "splash_plate.webp"
+    }
+  },
+  {
+    "id": 62,
+    "info": {
+      "name": "spooky plate",
+      "picture": "spooky_plate.webp"
+    }
+  },
+  {
+    "id": 63,
+    "info": {
+      "name": "stone plate",
+      "picture": "stone_plate.webp"
+    }
+  },
+  {
+    "id": 64,
+    "info": {
+      "name": "swallowing meteor source",
+      "picture": "swallowing_meteor_source.webp"
+    }
+  },
+  {
+    "id": 65,
+    "info": {
+      "name": "thick club",
+      "picture": "thick_club.webp"
+    }
+  },
+  {
+    "id": 66,
+    "info": {
+      "name": "toxic plate",
+      "picture": "toxic_plate.webp"
+    }
+  },
+  {
+    "id": 67,
+    "info": {
+      "name": "ultranecrozium z",
+      "picture": "ultranecrozium_z.webp"
+    }
+  },
+  {
+    "id": 68,
+    "info": {
+      "name": "voltorb",
+      "picture": "voltorb.webp"
+    }
+  },
+  {
+    "id": 69,
+    "info": {
+      "name": "water boxing glove",
+      "picture": "water_boxing_glove.webp"
+    }
+  },
+  {
+    "id": 70,
+    "info": {
+      "name": "wide lens",
+      "picture": "wide_lens.webp"
+    }
+  },
+  {
+    "id": 71,
+    "info": {
+      "name": "wise glasses",
+      "picture": "wise_glasses.webp"
+    }
+  },
+  {
+    "id": 72,
+    "info": {
+      "name": "zap plate",
+      "picture": "zap_plate.webp"
+    }
+  },
+  {
+    "id": 73,
+    "info": {
+      "name": "zygarde cube",
+      "picture": "zygarde_cube.webp"
+    }
+  }
+]

@@ -8,6 +8,7 @@ import Textarea from '../../Components/forms/textarea';
 import { BuildProvider } from '../../Data/Context/buildData';
 import TeamMatesModal from '../../Components/modal/teamMateModal';
 import PersonalitiesModal from '../../Components/modal/personalitiesModal';//Ponto 14 importar o novo modal
+import HeldItemsModal from '../../Components/modal/heldItemsModal';
 
 const BuilderPage = (props) => {
     const isLoggedIn = false;
@@ -28,6 +29,7 @@ const BuilderPage = (props) => {
             <TeamMatesModal />
             <AbilitiesModal />
             <PersonalitiesModal />{/* Ponto 15 chamar o modal */}
+            <HeldItemsModal />
         </BuildProvider>
     );
 }

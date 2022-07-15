@@ -4,9 +4,10 @@ import { BuildContext } from '../../Data/Context/buildData';
 
 const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
     const { getPokemonAbilities, pokemonData } = useContext(PokedexContext)
-    const { getBtnKey, buildData, teammates, pokemonPersonalities } = useContext(BuildContext)//Ponto 1 adicioanar variável equivalente à pokemonPersonalities
+    const { getBtnKey, buildData, teammates, pokemonPersonalities, pokemonHeldItems } = useContext(BuildContext)//Ponto 1 adicioanar variável equivalente à pokemonPersonalities
     const btnStyle = 'btn border rounded-circle d-flex justify-content-center align-items-center add-button box btn-primary'
-    const personalitiesBtn = []
+    const personalitiesBtn = []//Ponto extra 2 criar um novo array
+    const heldItemsBtn = []
 
     function getItems(btnIndex) {
         if (itemType === 'ability')
@@ -15,11 +16,22 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
         getBtnKey(btnIndex)
     }
 
+    //Ponto extra 3 criar novo loop
     for (let i = 1; i <= 4; i++) {
         personalitiesBtn.push(
             <div className='my-2 mx-3 my-xl-0' key={i}>
                 <button onClick={() => getItems(i)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                     +<small>Personality {i}</small>
+                </button>
+            </div>
+        )
+    }
+
+    for (let i = 1; i <= 4; i++) {
+        heldItemsBtn.push(
+            <div className='my-2 mx-3 my-xl-0' key={i}>
+                <button onClick={() => getItems(i)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                    +<small>Held Item {i}</small>
                 </button>
             </div>
         )
@@ -56,14 +68,13 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
 
     //Ponto 2 Duplicar esta condição AQUI
     if (itemType === 'personality' && !pokemonPersonalities) {
-        return (
-            <>
-                {personalitiesBtn}
-            </>
-        )
+        return (personalitiesBtn)
     }
 
-    //Ponto 3 Duplicar esta condição AQUI
+    if (itemType === 'heldItem' && !pokemonHeldItems) {
+        return (heldItemsBtn)
+    }
+
     if (itemType === 'personality' && pokemonPersonalities) {
         return (
             <>
@@ -81,6 +92,35 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
                                     <div className='my-2 mx-3 my-xl-0'>
                                         <button onClick={() => getItems(index + 1)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                                             +<small>Personality {index + 1}</small>
+                                        </button>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    )
+                })}
+            </>
+        )
+    }
+
+    //Ponto 3 Duplicar esta condição AQUI
+    if (itemType === 'heldItem' && pokemonHeldItems) {
+        return (
+            <>
+                {pokemonHeldItems.map((heldItem, index) => {
+                    return (
+                        <div key={index} className='my-2 mx-3 my-xl-0'>
+                            <div onClick={() => getItems(index + 1)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                                {heldItem
+                                    ?
+                                    <>
+                                        <img className='border rounded-circle add-button btn-primary' alt='alt' src={`assets/img/held_items/${heldItem.replaceAll(' ', '_')}.webp`}></img>
+                                        <small>{heldItem}</small>
+                                    </>
+                                    :
+                                    <div className='my-2 mx-3 my-xl-0'>
+                                        <button onClick={() => getItems(index + 1)} key={btnIndex} className={`itemsBtn ${btnStyle}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
+                                            +<small>Held Item {index + 1}</small>
                                         </button>
                                     </div>
                                 }

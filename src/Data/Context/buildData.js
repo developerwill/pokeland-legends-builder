@@ -16,6 +16,9 @@ export const BuildProvider = ({ children }) => {
     const [pokemonPersonalities, setPokemonPersonalities] = useState()
     const [personalities, setPersonalities] = useState([])
 
+    const [pokemonHeldItems, setPokemonHeldItems] = useState()
+    const [heldItems, setHeldItems] = useState([])
+
     const teammate_2 = useRef()
     const teammate_3 = useRef()
     const teammate_5 = useRef()
@@ -56,6 +59,7 @@ export const BuildProvider = ({ children }) => {
     const hiddenSkill_11 = useRef()
     const hiddenSkill_12 = useRef()
 
+    //Ponto extra 1 duplicar o useEffect para chamar os dados
     useEffect(() => {
         //fetch("https://pokeland-legends.club/api/pokemon/all")
         fetch("assets/personalities.json")
@@ -63,6 +67,17 @@ export const BuildProvider = ({ children }) => {
             .then(
                 (data) => {
                     setPersonalities(data);
+                }
+            )
+    }, []);
+
+    useEffect(() => {
+        //fetch("https://pokeland-legends.club/api/pokemon/all")
+        fetch("assets/held_items.json")
+            .then(res => res.json())
+            .then(
+                (data) => {
+                    setHeldItems(data);
                 }
             )
     }, []);
@@ -86,12 +101,6 @@ export const BuildProvider = ({ children }) => {
                 ability_6: ability_6.current,
                 ability_7: ability_7.current,
                 ability_8: ability_8.current,
-            },
-            heldItems: {
-                heldItem_1: heldItem_1.current,
-                heldItem_2: heldItem_2.current,
-                heldItem_3: heldItem_3.current,
-                heldItem_4: heldItem_4.current,
             },
             gear: {
                 gear_1: gear_1.current,
@@ -126,10 +135,6 @@ export const BuildProvider = ({ children }) => {
         if (btnPressed === 6) ability_6.current = item
         if (btnPressed === 7) ability_7.current = item
         if (btnPressed === 8) ability_8.current = item
-        if (btnPressed === 13) heldItem_1.current = item
-        if (btnPressed === 14) heldItem_2.current = item
-        if (btnPressed === 15) heldItem_3.current = item
-        if (btnPressed === 16) heldItem_4.current = item
         if (btnPressed === 17) gear_1.current = item
         if (btnPressed === 18) gear_2.current = item
         if (btnPressed === 19) gear_3.current = item
@@ -179,9 +184,23 @@ export const BuildProvider = ({ children }) => {
         ])
     }
 
-    //Ponto 13 adicionar as duas novas variáveis no provider
+    function updateHelItem(heldItem) {
+        if (btnPressed === 1) heldItem_1.current = heldItem
+        if (btnPressed === 2) heldItem_2.current = heldItem
+        if (btnPressed === 3) heldItem_3.current = heldItem
+        if (btnPressed === 4) heldItem_4.current = heldItem
+
+        setPokemonHeldItems([
+            heldItem_1.current,
+            heldItem_2.current,
+            heldItem_3.current,
+            heldItem_4.current
+        ])
+    }
+
+    //Ponto 13 adicionar as duas novas variáveis no provider mais a função de fazer update do item
     return (
-        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, updateTeammate, teammates, updatePersonality, pokemonPersonalities, personalities }}>
+        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, updateTeammate, teammates, updatePersonality, pokemonPersonalities, personalities, updateHelItem, pokemonHeldItems, heldItems }}>
             {children}
         </BuildContext.Provider>
     );

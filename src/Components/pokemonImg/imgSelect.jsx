@@ -9,24 +9,34 @@ import { Link } from 'react-router-dom';
  * @param alt Img Alt is required 
  */
 const ImgSelect = ({ children, classes, src, alt, item, itemType, itemName }) => {
-    const { updateBuild, updatePersonality } = useContext(BuildContext) //Ponto 7 chamar o equivalente ao updatePersonality
+    const { updateBuild, updatePersonality, updateHelItem } = useContext(BuildContext) //Ponto 7 chamar o equivalente ao updatePersonality
 
     if (!itemType)
         return (
-            <div className='text-center'>
+            <div className='text-center p-1'>
                 <Link to="#">
                     <img onClick={() => updateBuild(item, itemName)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
-                    <p className='text-center'><small>{children}</small></p>
+                    <p className='text-center itemDesc'><small>{children}</small></p>
                 </Link>
             </div>
         );
 
     if (itemType === 'personality')//Ponto 8 Duplicar e modificar
         return (
-            <div className='text-center'>
+            <div className='text-center p-1'>
                 <Link to="#">
                     <img onClick={() => updatePersonality(item)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
-                    <p className='text-center'><small>{children}</small></p>
+                    <p className='text-center itemDesc'><small>{children}</small></p>
+                </Link>
+            </div>
+        );
+
+    if (itemType === 'helItem')//Ponto 8 Duplicar e modificar
+        return (
+            <div className='text-center p-1'>
+                <Link to="#">
+                    <img onClick={() => updateHelItem(item)} data-bs-dismiss="modal" data-bs-toggle="tooltip" data-bss-tooltip="" className={`${classes}`} src={src} title={alt} alt={alt}></img>
+                    <p className='text-center itemDesc'><small>{children}</small></p>
                 </Link>
             </div>
         );
