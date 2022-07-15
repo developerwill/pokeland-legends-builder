@@ -41,7 +41,7 @@ const SearchPokemonForm = ({ searchType, dismiss }) => {
         <>
             <div className="col-12">
                 <form>
-                    <InputText reference={ref} placeholder="Type a Pokémon name" name="pokemon_name" setPokemonName={setPokemonName}>Search by name</InputText>
+                    <InputText search={true} reference={ref} placeholder="Type a Pokémon name" name="pokemon_name" setPokemonName={setPokemonName}>Search by name</InputText>
                 </form>
             </div>
 
