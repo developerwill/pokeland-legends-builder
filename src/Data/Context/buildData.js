@@ -42,6 +42,7 @@ export const BuildProvider = ({ children }) => {
     const heldItem_2 = useRef()
     const heldItem_3 = useRef()
     const heldItem_4 = useRef()
+    const buildTitle = useRef()
 
     //Ponto extra 1 duplicar o useEffect para chamar os dados
     useEffect(() => {
@@ -66,16 +67,27 @@ export const BuildProvider = ({ children }) => {
             )
     }, []);
 
+    useEffect(() => {
+        updateBuild()
+        // eslint-disable-next-line
+    }, [teammates, pokemonPersonalities, pokemonHeldItems])
+
     function getBtnKey(key) {
         setBtnPressed(key)
     }
 
+    function updateBuildTitle(title) {
+        buildTitle.current = title
+    }
+
     //Ponto 10 Extrair as variáveis todas para além das abilities
     function updateBuild(item) {
-        addItem(item)
+        if (item)
+            addItem(item)
 
         setBuildData({
             id: pokemonData.id,
+            buildTitle: buildTitle.current,
             abilities: {
                 ability_1: ability_1.current,
                 ability_2: ability_2.current,
@@ -89,7 +101,6 @@ export const BuildProvider = ({ children }) => {
             personalities: pokemonPersonalities,
             heldItems: pokemonHeldItems,
             teammates: teammates
-
         })
     }
 
@@ -152,7 +163,7 @@ export const BuildProvider = ({ children }) => {
 
     //Ponto 13 adicionar as duas novas variáveis no provider mais a função de fazer update do item
     return (
-        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, updateTeammate, teammates, updatePersonality, pokemonPersonalities, personalities, updateHelItem, pokemonHeldItems, heldItems }}>
+        <BuildContext.Provider value={{ buildData, updateBuild, getBtnKey, updateTeammate, teammates, updatePersonality, pokemonPersonalities, personalities, updateHelItem, pokemonHeldItems, heldItems, updateBuildTitle }}>
             {children}
         </BuildContext.Provider>
     );
