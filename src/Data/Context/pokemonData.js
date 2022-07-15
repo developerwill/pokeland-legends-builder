@@ -145,9 +145,8 @@ export const PokedexProvider = ({ children }) => {
         function getSprite(pokemonID) {
             const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID) }
             const variation = pokemonInfo[0].variation
-            const spritePath = 'assets/img/pokedex/pokeland/'
 
-            return spritePath + variation + '/' + pokemonInfo[0].sprites.pokeland
+            return variation + '/' + pokemonInfo[0].sprites.pokeland
         }
 
         function fetchByType(type_1, type_2) {

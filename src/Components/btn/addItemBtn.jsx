@@ -48,7 +48,7 @@ const AddItemBtn = ({ modal, index, btnIndex, itemType, classes }) => {
             return (
                 <button onClick={() => getBtnKey(index)} className={`${btnStyle} ${classes}`} type="button" data-bs-toggle="modal" data-bs-target={modal}>
                     {teammates && teammates['teammate_' + index]
-                        ? <img className='border rounded-circle add-button btn-primary' alt='alt' src={teammates['teammate_' + index]}></img>
+                        ? <img className='border rounded-circle add-button btn-primary' alt='alt' src={`assets/img/pokedex/pokeland/${teammates['teammate_' + index]}`}></img>
                         : '+'
                     }
                 </button>

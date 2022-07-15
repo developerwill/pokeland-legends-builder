@@ -42,22 +42,6 @@ export const BuildProvider = ({ children }) => {
     const heldItem_2 = useRef()
     const heldItem_3 = useRef()
     const heldItem_4 = useRef()
-    const gear_1 = useRef()
-    const gear_2 = useRef()
-    const gear_3 = useRef()
-    const gear_4 = useRef()
-    const hiddenSkill_1 = useRef()
-    const hiddenSkill_2 = useRef()
-    const hiddenSkill_3 = useRef()
-    const hiddenSkill_4 = useRef()
-    const hiddenSkill_5 = useRef()
-    const hiddenSkill_6 = useRef()
-    const hiddenSkill_7 = useRef()
-    const hiddenSkill_8 = useRef()
-    const hiddenSkill_9 = useRef()
-    const hiddenSkill_10 = useRef()
-    const hiddenSkill_11 = useRef()
-    const hiddenSkill_12 = useRef()
 
     //Ponto extra 1 duplicar o useEffect para chamar os dados
     useEffect(() => {
@@ -102,26 +86,10 @@ export const BuildProvider = ({ children }) => {
                 ability_7: ability_7.current,
                 ability_8: ability_8.current,
             },
-            gear: {
-                gear_1: gear_1.current,
-                gear_2: gear_2.current,
-                gear_3: gear_3.current,
-                gear_4: gear_4.current,
-            },
-            hiddenSkills: {
-                hiddenSkill_1: hiddenSkill_1.current,
-                hiddenSkill_2: hiddenSkill_2.current,
-                hiddenSkill_3: hiddenSkill_3.current,
-                hiddenSkill_4: hiddenSkill_4.current,
-                hiddenSkill_5: hiddenSkill_5.current,
-                hiddenSkill_6: hiddenSkill_6.current,
-                hiddenSkill_7: hiddenSkill_7.current,
-                hiddenSkill_8: hiddenSkill_8.current,
-                hiddenSkill_9: hiddenSkill_9.current,
-                hiddenSkill_10: hiddenSkill_10.current,
-                hiddenSkill_11: hiddenSkill_11.current,
-                hiddenSkill_12: hiddenSkill_12.current,
-            },
+            personalities: pokemonPersonalities,
+            heldItems: pokemonHeldItems,
+            teammates: teammates
+
         })
     }
 
@@ -135,22 +103,6 @@ export const BuildProvider = ({ children }) => {
         if (btnPressed === 6) ability_6.current = item
         if (btnPressed === 7) ability_7.current = item
         if (btnPressed === 8) ability_8.current = item
-        if (btnPressed === 17) gear_1.current = item
-        if (btnPressed === 18) gear_2.current = item
-        if (btnPressed === 19) gear_3.current = item
-        if (btnPressed === 20) gear_4.current = item
-        if (btnPressed === 21) hiddenSkill_1.current = item
-        if (btnPressed === 22) hiddenSkill_2.current = item
-        if (btnPressed === 23) hiddenSkill_3.current = item
-        if (btnPressed === 24) hiddenSkill_4.current = item
-        if (btnPressed === 25) hiddenSkill_5.current = item
-        if (btnPressed === 26) hiddenSkill_6.current = item
-        if (btnPressed === 27) hiddenSkill_7.current = item
-        if (btnPressed === 28) hiddenSkill_8.current = item
-        if (btnPressed === 29) hiddenSkill_9.current = item
-        if (btnPressed === 30) hiddenSkill_10.current = item
-        if (btnPressed === 31) hiddenSkill_11.current = item
-        if (btnPressed === 32) hiddenSkill_12.current = item
     }
 
     function updateTeammate(pokemonID) {
