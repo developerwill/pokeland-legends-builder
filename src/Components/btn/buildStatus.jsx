@@ -3,11 +3,12 @@ import Overlay from 'react-bootstrap/Overlay';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { PokedexContext } from '../../Data/Context/pokemonData';
 import { BuildContext } from '../../Data/Context/buildData';
+import { saveBuild } from '../../Controllers/Database'
 
 const SaveShare = (props) => {
     const [show, setShow] = useState(false);
     const target = useRef(null);
-    const [saveBuild, setSaveBuild] = useState(false)
+    const [share, setShare] = useState(false)
 
     const { pokemonData } = useContext(PokedexContext)
     const { buildData } = useContext(BuildContext)
@@ -18,9 +19,8 @@ const SaveShare = (props) => {
     }
 
     function onSaveBuild() {
-        localStorage.clear()
-        localStorage.setItem('build_data', JSON.stringify(buildData))
-        setSaveBuild(true)
+        saveBuild(buildData)
+        setShare(true)
     }
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const SaveShare = (props) => {
         }, 1500);
     }, [show]);
 
-    if (!saveBuild)
+    if (!share)
         return (
             <>
                 <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save</button>
@@ -39,7 +39,7 @@ const SaveShare = (props) => {
     else
         return (
             <>
-                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Saved</button>
+                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save</button>
                 <button onClick={() => copyLink(pokemonData.build_url)} ref={target} className='btn btn-primary m-2' type="button"><i className="fa-solid fa-share-nodes"></i> Copy Link</button>
                 <Overlay target={target.current} show={show} placement="right">
                     {(props) => (
