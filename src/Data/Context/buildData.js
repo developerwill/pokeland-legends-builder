@@ -70,7 +70,7 @@ export const BuildProvider = ({ children }) => {
     useEffect(() => {
         updateBuild()
         // eslint-disable-next-line
-    }, [teammates, pokemonPersonalities, pokemonHeldItems])
+    }, [teammates, pokemonPersonalities, pokemonHeldItems, pokemonData])
 
     function getBtnKey(key) {
         setBtnPressed(key)
@@ -87,7 +87,9 @@ export const BuildProvider = ({ children }) => {
 
         setBuildData({
             id: pokemonData.id,
+            name: pokemonData.name.pokeland,
             buildTitle: buildTitle.current,
+            picture: pokemonData.sprites.pokeland,
             abilities: {
                 ability_1: ability_1.current,
                 ability_2: ability_2.current,
