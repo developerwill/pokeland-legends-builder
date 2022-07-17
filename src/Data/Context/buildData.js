@@ -70,7 +70,7 @@ export const BuildProvider = ({ children }) => {
     useEffect(() => {
         updateBuild()
         // eslint-disable-next-line
-    }, [teammates, pokemonPersonalities, pokemonHeldItems])
+    }, [teammates, pokemonPersonalities, pokemonHeldItems, pokemonData])
 
     function getBtnKey(key) {
         setBtnPressed(key)
