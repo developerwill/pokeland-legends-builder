@@ -7,19 +7,23 @@ import OffcanvasBase from "./Components/offcanvas/offcanvasBase";
 import { PokedexProvider } from "./Data/Context/pokemonData";
 import { AppConfig } from "./Config/App";
 import { BuildProvider } from "./Data/Context/buildData";
+import { DatabaseProvider } from "./Controllers/Database"
 
 function App() {
     return (
         <AppConfig>
+
             <PokedexProvider>
                 <BuildProvider>
-                    <Router>
-                        <Navbar />
-                        <Content></Content>
-                        <OffcanvasBase id="offcanvas-search-1">
-                            <SearchPokemonForm dismiss={'offcanvas'} />
-                        </OffcanvasBase>
-                    </Router>
+                    <DatabaseProvider>
+                        <Router>
+                            <Navbar />
+                            <Content></Content>
+                            <OffcanvasBase id="offcanvas-search-1">
+                                <SearchPokemonForm dismiss={'offcanvas'} />
+                            </OffcanvasBase>
+                        </Router>
+                    </DatabaseProvider>
                 </BuildProvider>
             </PokedexProvider>
         </AppConfig>
