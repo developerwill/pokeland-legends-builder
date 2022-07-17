@@ -1,12 +1,12 @@
-import React, { useEffect, useState, createContext, useContext } from 'react';
-import cryptoRandomString from 'crypto-random-string';
-import { AppConfigContext } from '../../Config/App';
+import React, { useEffect, useState, createContext } from 'react';
+//import cryptoRandomString from 'crypto-random-string';
+//import { AppConfigContext } from '../../Config/App';
 
 export const PokedexContext = createContext();
 
 export const PokedexProvider = ({ children }) => {
 
-    const { site_url } = useContext(AppConfigContext)
+    //const { site_url } = useContext(AppConfigContext)
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [pokedex, setPokedex] = useState([]);
@@ -48,7 +48,7 @@ export const PokedexProvider = ({ children }) => {
 
         function fetchPokemon(pokemonID) {
             const pokemonInfo = { ...pokedex.filter(pokemon => pokemon.id === pokemonID).slice(0, 10) }
-            const buildKey = cryptoRandomString({ length: 11, type: 'alphanumeric' })
+            //const buildKey = cryptoRandomString({ length: 11, type: 'alphanumeric' })
 
             //Pokemon personal info
             const type_1 = pokemonInfo[0].types.type_1;
@@ -94,7 +94,7 @@ export const PokedexProvider = ({ children }) => {
                         type_1: typeImg + type_1 + '.webp',
                         type_2: typeImg + type_2 + '.webp'
                     },
-                    build_url: site_url(pokelandName.toLowerCase().replace(/\s+/g, '-') + '/' + buildKey),
+                    //build_url: site_url(pokelandName.toLowerCase().replace(/\s+/g, '-') + '/' + buildKey),
                     abilities: {
                         set_1: getAbilities(pokemonInfo[0].abilities.set_1),
                         set_2: getAbilities(pokemonInfo[0].abilities.set_2),
