@@ -46,8 +46,8 @@ export const BuildProvider = ({ children }) => {
 
     //Ponto extra 1 duplicar o useEffect para chamar os dados
     useEffect(() => {
-        fetch("https://pokeland-legends.club/api/pokemon/all")
-            //fetch("assets/personalities.json")
+        //fetch("https://pokeland-legends.club/api/pokemon/all")
+        fetch("assets/personalities.json")
             .then(res => res.json())
             .then(
                 (data) => {
