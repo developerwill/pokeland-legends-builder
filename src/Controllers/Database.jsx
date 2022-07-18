@@ -15,13 +15,13 @@ export const DatabaseProvider = ({ children }) => {
     function saveBuild(buildData) {
         currentBuild.current =
         {
-            type: 'build',
-            build_key: buildKey.current,
+            id: buildKey.current,
             buildData,
             likes: 150,
             dislikes: 15
         }
 
+        localStorage.setItem(buildKey.current, JSON.stringify(currentBuild.current))
         getBuildUrl()
     }
 

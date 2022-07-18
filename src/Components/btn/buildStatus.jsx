@@ -43,8 +43,7 @@ const SaveShare = (props) => {
     else
         return (
             <>
-                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save</button>
-                <button onClick={() => copyLink()} ref={target} className='btn btn-primary m-2' type="button"><i className="fa-solid fa-share-nodes"></i> Copy Link</button>
+                <button onClick={() => copyLink()} ref={target} className='btn btn-primary m-2' type="button"><i className="fa-solid fa-share-nodes"></i> Copy and Share!</button>
                 <Overlay target={target.current} show={show} placement="right">
                     {(props) => (
                         <Tooltip id="overlay-example" {...props}>
