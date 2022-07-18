@@ -11,7 +11,6 @@ export const DatabaseProvider = ({ children }) => {
     const buildKey = useRef(cryptoRandomString({ length: 11, type: 'alphanumeric' }))
     const [buildUrl, setBuildUrl] = useState()
     const currentBuild = useRef()
-    const builds = []
 
     function saveBuild(buildData) {
         currentBuild.current =
@@ -21,20 +20,6 @@ export const DatabaseProvider = ({ children }) => {
             buildData,
             likes: 150,
             dislikes: 15
-        }
-
-        localStorage.setItem(buildKey.current, JSON.stringify(currentBuild.current))
-
-        if (!localStorage.getItem('builds'))
-            localStorage.setItem('builds', JSON.stringify(currentBuild.current))
-        else {
-            localStorage.removeItem('builds')
-
-            // eslint-disable-next-line
-            Object.entries(localStorage).map(([key, value]) => {
-                builds.push(JSON.parse(value))
-            })
-            localStorage.setItem('builds', JSON.stringify(builds))
         }
 
         getBuildUrl()
