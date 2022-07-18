@@ -19,8 +19,8 @@ export const PokedexProvider = ({ children }) => {
     let abilitiesNum = 0;
 
     useEffect(() => {
-        //fetch("https://pokeland-legends.club/api/pokemon/all")
-        fetch("assets/pokedex.json")
+        fetch("https://pokeland-legends.club/api/pokemon/all")
+            //fetch("assets/pokedex.json")
             .then(res => res.json())
             .then(
                 (data) => {
