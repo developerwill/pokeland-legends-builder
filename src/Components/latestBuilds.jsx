@@ -9,6 +9,7 @@ Object.entries(localStorage).map(([key, value]) => {
     builds.push(JSON.parse(value))
 })
 
+
 if (builds.length === 0)
     builds.push(
         {

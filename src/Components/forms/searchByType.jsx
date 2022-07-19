@@ -49,6 +49,7 @@ const SearchByType = ({ dismiss, teammate }) => {
 
     function onPokemonSelect(pokemonID) {
         fetchPokemon(pokemonID)
+        clearSelection()
     }
 
     function clearSelection() {
