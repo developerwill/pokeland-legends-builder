@@ -36,8 +36,9 @@ const SaveShare = (props) => {
     if (!share)
         return (
             <>
-                <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save</button>
-                <button className='btn btn-primary m-2' type="button" disabled><i className="fa-solid fa-share-nodes"></i> Copy Link</button>
+                <button className='btn btn-info' type="button" data-bs-toggle="modal" data-bs-target="#saveshare-modal">Continue <i className="fa-solid fa-circle-chevron-right"></i></button>
+
+                {/* <button onClick={() => onSaveBuild()} className='btn btn-success m-2' type="button"><i className="fa-solid fa-floppy-disk"></i> Save Build</button> */}
             </>
         )
     else

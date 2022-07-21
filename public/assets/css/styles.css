@@ -348,3 +348,17 @@ a.options:hover {
     width: 100px;
     display: block;
 }
+
+.tada.border-small {
+    width: auto;
+}
+
+.modal-body {
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}

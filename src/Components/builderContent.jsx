@@ -3,7 +3,6 @@ import ItemRow from './itemRow/itemRow';
 import HeaderType from './headerType/headerType';
 import InputText from './forms/inputText';
 import { PokedexContext } from '../Data/Context/pokemonData';
-import SaveShare from './btn/buildStatus';
 import { BuildContext } from '../Data/Context/buildData';
 
 const BuilderContent = (props) => {
@@ -29,11 +28,9 @@ const BuilderContent = (props) => {
                 {/* <ItemRow id="builder-gear" title="Gear" itemCategory={'Gear'} numberOfItems={4} itemType={'gear'} disabled={false} modal="#gears-modal" />
                 <ItemRow id="builder-hidden-skills" title="Hidden Skills" itemCategory={'Skill'} numberOfItems={12} itemType={'hiddenSkill'} disabled={false} modal="#hiddenSkills-modal" /> */}
 
-                <ItemRow id="options" title="Save and Share" itemType={'saveShare'} >
-                    <div className='d-flex justify-content-center'>
-                        <SaveShare></SaveShare>
-                    </div>
-                </ItemRow>
+                <div className='d-flex justify-content-end'>
+                    <button className='btn btn-info' type="button" data-bs-toggle="modal" data-bs-target="#saveshare-modal">Continue <i className="fa-solid fa-circle-chevron-right"></i></button>
+                </div>
             </form>
         </div>
     );

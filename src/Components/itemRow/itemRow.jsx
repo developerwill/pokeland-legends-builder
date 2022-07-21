@@ -263,16 +263,6 @@ const ItemRow = ({ children, id, modal, title, disabled, itemCategory, numberOfI
                         }
                     </>
                 }
-
-                {/* Save and Share */}
-                {itemType === 'saveShare' &&
-                    <>
-                        {note === 'saveShare' &&
-                            <Textarea placeholder="Type a Pokémon name" name="pokemon-name"> {title} notes</Textarea>
-                        }
-                        {children}
-                    </>
-                }
             </div>
         </>
 
