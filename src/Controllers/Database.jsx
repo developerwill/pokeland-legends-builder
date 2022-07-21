@@ -6,14 +6,13 @@ import { PokedexContext } from '../Data/Context/pokemonData';
 export const DatabaseContext = createContext();
 
 export const DatabaseProvider = ({ children }) => {
+    let buildsArray = []
+    let addNew = useRef(true)
+    const currentBuild = useRef()
+    const [buildUrl, setBuildUrl] = useState()
     const { site_url } = useContext(AppConfigContext)
     const { pokemonData } = useContext(PokedexContext)
     const buildKey = useRef(cryptoRandomString({ length: 11, type: 'alphanumeric' }))
-    const [buildUrl, setBuildUrl] = useState()
-    const currentBuild = useRef()
-
-    let buildsArray = []
-    let addNew = useRef(true)
 
     function saveBuild(buildData) {
         currentBuild.current =

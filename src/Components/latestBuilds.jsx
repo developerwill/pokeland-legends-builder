@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BuildRatio from './progressBars/buildRatio';
 import ProgressCircle from './progressBars/circle'
 import ImgTooltip from './pokemonImg/imgTooltip'
 
-const builds = JSON.parse(localStorage.getItem('builds'))
-
 const LatestBuilds = (props) => {
+    const [builds, setBuilds] = useState(JSON.parse(localStorage.getItem('builds')))
+
+    if (!builds)
+        setBuilds([{ "id": "RppDpC7LqOO", "buildData": { "id": 460, "name": "Probopass", "picture": "assets/img/pokedex/pokeland/normal/476_probopass.webp", "abilities": {}, "teammates": { "teammate_2": "mega/460_mega_abomasnow.webp", "teammate_3": "normal/758_salazzle.webp", "teammate_5": "normal/171_lanturn.webp", "teammate_6": "mega/94_mega_gengar.webp" } }, "likes": 150, "dislikes": 15 }])
+
     return (
         <div className="col-lg-7 col-xl-8 col-xxl-9">
             <div className='row' id="latest-builds">
-                {// eslint-disable-next-line
+                {builds &&
                     builds.map((build) => {
                         return (
                             <div key={build.id} className='build-info mb-3 purple-bk-darker custom-border rounded-3 py-1'>
@@ -26,9 +29,10 @@ const LatestBuilds = (props) => {
                                         </div>
                                     </div>
                                     <div className='col-12 col-sm-3 d-flex flex-sm-column align-items-center justify-content-center ms-md-auto my-2 my-sm-0'>
-                                        <p className='m-0'>Teams</p>
+
                                         {build.buildData.teammates &&
                                             <>
+                                                <p className='m-0'>Teams</p>
                                                 <div className='me-3 me-sm-0'>
                                                     {build.buildData.teammates.teammate_2 &&
                                                         <ImgTooltip classes="team-mate-border border-small m-1 img-fluid" src={`assets/img/pokedex/pokeland/${build.buildData.teammates.teammate_2}`} alt="butt"></ImgTooltip>
@@ -56,7 +60,7 @@ const LatestBuilds = (props) => {
                                 </div>
                             </div>
                         )
-                    })}
+                    }).slice(0, 10)}
             </div>
         </div>
     );
